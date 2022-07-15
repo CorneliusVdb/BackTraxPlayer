@@ -1,0 +1,1011 @@
+[Root]
+Most Recent Package=LilacProBackTraxPlayerSetup
+
+
+[Package|LilacProBackTraxPlayerDemo|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=C:\DevOther\BacktraxPlayer\SetupDemo
+
+[Package|LilacProBackTraxPlayerDemo|Configure DAO ISAMs]
+Applicable=No
+
+[Package|LilacProBackTraxPlayerDemo|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|LilacProBackTraxPlayerDemo|Files Found]
+bass_aac.dll=C:\DevOther\BacktraxPlayer\bass_aac.dll
+
+[Package|LilacProBackTraxPlayerDemo|Files Released]
+help.pdf=
+basswv.dll=
+basswma.dll=
+bassopus.dll=
+bassmix.dll=
+bassflac.dll=
+bassenc.dll=
+basscd.dll=
+bass_mpc.dll=
+bass_fx.dll=
+bass_ape.dll=
+bass_alac.dll=
+bass_ac3.dll=
+bass_aac.dll=
+BackTrax.CHI=
+
+[Package|LilacProBackTraxPlayerDemo|Missing Dependency Information]
+C:\Windows\System32\cpvslider.ocx=
+C:\Development\BacktraxPlayer - Copy\ID3v23xBase.dll=
+C:\Development\BacktraxPlayer\bass.dll=
+C:\Development\BacktraxPlayer\ID3v23xBase.dll=
+C:\Windows\System32\uxtheme.dll=
+C:\Development\BacktraxPlayer\bass_aac.dll=
+C:\Development\BacktraxPlayer\bass_ac3.dll=
+C:\Development\BacktraxPlayer\bass_alac.dll=
+C:\Development\BacktraxPlayer\bass_ape.dll=
+C:\Development\BacktraxPlayer\bass_fx.dll=
+C:\Development\BacktraxPlayer\bass_mpc.dll=
+C:\Development\BacktraxPlayer\basscd.dll=
+C:\Development\BacktraxPlayer\bassenc.dll=
+C:\Development\BacktraxPlayer\bassflac.dll=
+C:\Development\BacktraxPlayer\bassmix.dll=
+C:\Development\BacktraxPlayer\bassopus.dll=
+C:\Development\BacktraxPlayer\basswma.dll=
+C:\Development\BacktraxPlayer\basswv.dll=
+C:\Development\BacktraxPlayer\vbalIml240_10Tec.ocx=
+C:\Windows\System32\vsflex8l.ocx=
+C:\DevOther\BacktraxPlayer\ID3v23xBase.dll=
+C:\DevOther\BacktraxPlayer\bass.dll=
+C:\DevOther\BacktraxPlayer\bassalac.dll=
+C:\DevOther\BacktraxPlayer\bass_aac.dll=
+C:\DevOther\BacktraxPlayer\bass_ac3.dll=
+C:\DevOther\BacktraxPlayer\bass_alac.dll=
+C:\DevOther\BacktraxPlayer\bass_ape.dll=
+C:\DevOther\BacktraxPlayer\bass_fx.dll=
+C:\DevOther\BacktraxPlayer\bass_mpc.dll=
+C:\DevOther\BacktraxPlayer\basscd.dll=
+C:\DevOther\BacktraxPlayer\bassenc.dll=
+C:\DevOther\BacktraxPlayer\bassflac.dll=
+C:\DevOther\BacktraxPlayer\bassmix.dll=
+C:\DevOther\BacktraxPlayer\bassopus.dll=
+C:\DevOther\BacktraxPlayer\basswma.dll=
+C:\DevOther\BacktraxPlayer\basswv.dll=
+C:\DevOther\BacktraxPlayer\ColorBar.dll=
+C:\DevOther\BacktraxPlayer\TagsLib.dll=
+C:\DevOther\BacktraxPlayer\bass_ofr.dll=
+C:\DevOther\BacktraxPlayer\bass_spx.dll=
+C:\DevOther\BacktraxPlayer\bass_tta.dll=
+C:\DevOther\BacktraxPlayer\bass_wadsp.dll=
+C:\DevOther\BacktraxPlayer\bassdsd.dll=
+C:\DevOther\BacktraxPlayer\bassenc_ogg.dll=
+C:\DevOther\BacktraxPlayer\bassenc_opus.dll=
+C:\DevOther\BacktraxPlayer\bassmidi.dll=
+C:\DevOther\BacktraxPlayer\basswasapi.dll=
+C:\DevOther\BacktraxPlayer\OptimFROG.dll=
+C:\DevOther\BacktraxPlayer\tags.dll=
+
+[Package|LilacProBackTraxPlayerDemo|Out-of-Date Dependency Information]
+C:\Windows\System32\MSCOMCTL.OCX=
+C:\Windows\System32\scrrun.dll=
+
+[Package|LilacProBackTraxPlayerDemo|Files Added]
+bass_aac.dll=
+bass_ac3.dll=
+bass_alac.dll=
+bass_ape.dll=
+bass_fx.dll=
+bass_mpc.dll=
+basscd.dll=
+bassenc.dll=
+bassflac.dll=
+bassmix.dll=
+bassopus.dll=
+basswma.dll=
+basswv.dll=
+help.pdf=
+C:\DevOther\BacktraxPlayer\bass_aac.dll=
+C:\DevOther\BacktraxPlayer\bass_ac3.dll=
+C:\DevOther\BacktraxPlayer\bass_alac.dll=
+C:\DevOther\BacktraxPlayer\bass_ape.dll=
+C:\DevOther\BacktraxPlayer\bass_fx.dll=
+C:\DevOther\BacktraxPlayer\bass_mpc.dll=
+C:\DevOther\BacktraxPlayer\basscd.dll=
+C:\DevOther\BacktraxPlayer\bassenc.dll=
+C:\DevOther\BacktraxPlayer\bassflac.dll=
+C:\DevOther\BacktraxPlayer\bassmix.dll=
+C:\DevOther\BacktraxPlayer\bassopus.dll=
+C:\DevOther\BacktraxPlayer\basswma.dll=
+C:\DevOther\BacktraxPlayer\basswv.dll=
+C:\DevOther\BacktraxPlayer\ColorBar.dll=
+C:\DevOther\BacktraxPlayer\TagsLib.dll=
+C:\DevOther\BacktraxPlayer\BackTrax.chm=
+C:\DevOther\BacktraxPlayer\BackTrax.chw=
+C:\DevOther\BacktraxPlayer\Palets\TEMP01.DAT=
+C:\DevOther\BacktraxPlayer\AlphaIcon.res=
+C:\DevOther\BacktraxPlayer\bass_ofr.dll=
+C:\DevOther\BacktraxPlayer\bass_spx.dll=
+C:\DevOther\BacktraxPlayer\bass_tta.dll=
+C:\DevOther\BacktraxPlayer\bass_wadsp.dll=
+C:\DevOther\BacktraxPlayer\bassdsd.dll=
+C:\DevOther\BacktraxPlayer\bassenc_ogg.dll=
+C:\DevOther\BacktraxPlayer\bassenc_opus.dll=
+C:\DevOther\BacktraxPlayer\bassmidi.dll=
+C:\DevOther\BacktraxPlayer\basswasapi.dll=
+C:\DevOther\BacktraxPlayer\OptimFROG.dll=
+C:\DevOther\BacktraxPlayer\tags.dll=
+
+[Package|LilacProBackTraxPlayerDemo|Files Removed]
+c:\devother\backtraxplayer\help.pdf=
+c:\devother\backtraxplayer\bass_alac.dll=
+
+[Package|LilacProBackTraxPlayerDemo|Files In Project]
+C:\Windows\System32\msvbvm60.dll=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\Windows\System32\scrrun.dll=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MSVCRT.DLL=Yes
+C:\Windows\System32\THREED20.OCX=Yes
+C:\Windows\System32\MSCOMCTL.OCX=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\Windows\System32\VB6STKIT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+C:\Windows\System32\uxtheme.dll=Yes
+C:\Windows\System32\vsflex8l.ocx=Yes
+C:\DevOther\BacktraxPlayer\LilacProBackTraxPlayer.exe=Yes
+C:\DevOther\BacktraxPlayer\bassalac.dll=Yes
+C:\DevOther\BacktraxPlayer\bass.dll=Yes
+C:\DevOther\BacktraxPlayer\ID3v23xBase.dll=Yes
+C:\DevOther\BacktraxPlayer\vbalIml240_10Tec.ocx=Yes
+C:\DevOther\BacktraxPlayer\bass_aac.dll=Yes
+C:\DevOther\BacktraxPlayer\bass_ac3.dll=Yes
+C:\DevOther\BacktraxPlayer\bass_alac.dll=No
+C:\DevOther\BacktraxPlayer\bass_ape.dll=Yes
+C:\DevOther\BacktraxPlayer\bass_fx.dll=Yes
+C:\DevOther\BacktraxPlayer\bass_mpc.dll=Yes
+C:\DevOther\BacktraxPlayer\basscd.dll=Yes
+C:\DevOther\BacktraxPlayer\bassenc.dll=Yes
+C:\DevOther\BacktraxPlayer\bassflac.dll=Yes
+C:\DevOther\BacktraxPlayer\bassmix.dll=Yes
+C:\DevOther\BacktraxPlayer\bassopus.dll=Yes
+C:\DevOther\BacktraxPlayer\basswma.dll=Yes
+C:\DevOther\BacktraxPlayer\basswv.dll=Yes
+C:\DevOther\BacktraxPlayer\Help.pdf=No
+C:\DevOther\BacktraxPlayer\bass_ofr.dll=Yes
+C:\DevOther\BacktraxPlayer\bass_spx.dll=Yes
+C:\DevOther\BacktraxPlayer\bass_tta.dll=Yes
+C:\DevOther\BacktraxPlayer\bass_wadsp.dll=Yes
+C:\DevOther\BacktraxPlayer\bassdsd.dll=Yes
+C:\DevOther\BacktraxPlayer\bassenc_ogg.dll=Yes
+C:\DevOther\BacktraxPlayer\bassenc_opus.dll=Yes
+C:\DevOther\BacktraxPlayer\bassmidi.dll=Yes
+C:\DevOther\BacktraxPlayer\basswasapi.dll=Yes
+C:\DevOther\BacktraxPlayer\OptimFROG.dll=Yes
+C:\DevOther\BacktraxPlayer\tags.dll=Yes
+C:\DevOther\BacktraxPlayer\AlphaIcon.res=Yes
+C:\DevOther\BacktraxPlayer\BackTrax.chm=Yes
+C:\Windows\System32\hhctrl.ocx=Yes
+C:\Windows\System32\itss.dll=Yes
+C:\Windows\System32\itircl.dll=Yes
+C:\Windows\hh.exe=Yes
+C:\DevOther\BacktraxPlayer\BackTrax.chw=Yes
+
+[Package|LilacProBackTraxPlayerDemo|Configure Registry Files]
+Applicable=No
+
+[Package|LilacProBackTraxPlayerDemo|Configure Remote Servers]
+Applicable=No
+
+[Package|LilacProBackTraxPlayerDemo|Install Locations]
+C:\Development\BacktraxPlayer\LilacProBackTraxPlayer.exe=$(AppPath)
+C:\Windows\System32\msvbvm60.dll=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\Development\BacktraxPlayer\bass.dll=$(AppPath)
+C:\Windows\System32\scrrun.dll=$(WinSysPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MSVCRT.DLL=$(WinSysPathSysFile)
+C:\Development\BacktraxPlayer - Copy\ID3v23xBase.dll=$(AppPath)
+C:\Windows\System32\THREED20.OCX=$(AppPath)
+C:\Windows\System32\MSCOMCTL.OCX=$(WinSysPath)
+C:\Windows\System32\comdlg32.ocx=$(WinSysPath)
+C:\Windows\System32\cpvslider.ocx=$(AppPath)
+C:\Development\ProgressBar6\ccrpprg6.ocx=$(AppPath)
+C:\Windows\System32\MSSTKPRP.DLL=$(WinSysPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\Windows\System32\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+C:\Windows\System32\uxtheme.dll=$(AppPath)
+C:\Development\BacktraxPlayer\ID3v23xBase.dll=$(WinSysPath)
+C:\Development\BacktraxPlayer\bass_aac.dll=$(AppPath)
+C:\Development\BacktraxPlayer\bass_ac3.dll=$(AppPath)
+C:\Development\BacktraxPlayer\bass_alac.dll=$(AppPath)
+C:\Development\BacktraxPlayer\bass_ape.dll=$(AppPath)
+C:\Development\BacktraxPlayer\bass_fx.dll=$(AppPath)
+C:\Development\BacktraxPlayer\bass_mpc.dll=$(AppPath)
+C:\Development\BacktraxPlayer\basscd.dll=$(AppPath)
+C:\Development\BacktraxPlayer\bassenc.dll=$(AppPath)
+C:\Development\BacktraxPlayer\bassflac.dll=$(AppPath)
+C:\Development\BacktraxPlayer\bassmix.dll=$(AppPath)
+C:\Development\BacktraxPlayer\bassopus.dll=$(AppPath)
+C:\Development\BacktraxPlayer\basswma.dll=$(AppPath)
+C:\Development\BacktraxPlayer\basswv.dll=$(AppPath)
+C:\Development\BacktraxPlayer\Help.pdf=$(AppPath)
+C:\Windows\System32\MSFLXGRD.OCX=$(WinSysPath)
+C:\Development\BacktraxPlayer\vbalIml240_10Tec.ocx=$(WinSysPath)
+C:\Windows\System32\vsflex8l.ocx=$(AppPath)
+C:\DevOther\BacktraxPlayer\LilacProBackTraxPlayer.exe=$(AppPath)
+C:\DevOther\BacktraxPlayer\bassalac.dll=$(AppPath)
+C:\DevOther\BacktraxPlayer\bass.dll=$(AppPath)
+C:\DevOther\BacktraxPlayer\ID3v23xBase.dll=$(AppPath)
+C:\DevOther\BacktraxPlayer\vbalIml240_10Tec.ocx=$(AppPath)
+C:\DevOther\BacktraxPlayer\bass_aac.dll=$(AppPath)
+C:\DevOther\BacktraxPlayer\bass_ac3.dll=$(AppPath)
+C:\DevOther\BacktraxPlayer\bass_alac.dll=$(AppPath)
+C:\DevOther\BacktraxPlayer\bass_ape.dll=$(AppPath)
+C:\DevOther\BacktraxPlayer\bass_fx.dll=$(AppPath)
+C:\DevOther\BacktraxPlayer\bass_mpc.dll=$(AppPath)
+C:\DevOther\BacktraxPlayer\basscd.dll=$(AppPath)
+C:\DevOther\BacktraxPlayer\bassenc.dll=$(AppPath)
+C:\DevOther\BacktraxPlayer\bassflac.dll=$(AppPath)
+C:\DevOther\BacktraxPlayer\bassmix.dll=$(AppPath)
+C:\DevOther\BacktraxPlayer\bassopus.dll=$(AppPath)
+C:\DevOther\BacktraxPlayer\basswma.dll=$(AppPath)
+C:\DevOther\BacktraxPlayer\basswv.dll=$(AppPath)
+C:\DevOther\BacktraxPlayer\ColorBar.dll=$(AppPath)
+C:\DevOther\BacktraxPlayer\TagsLib.dll=$(AppPath)
+C:\DevOther\BacktraxPlayer\Help.pdf=$(AppPath)
+C:\DevOther\BacktraxPlayer\BackTrax.chm=$(AppPath)
+C:\Windows\System32\hhctrl.ocx=$(WinSysPath)
+C:\Windows\System32\itss.dll=$(WinSysPath)
+C:\Windows\System32\itircl.dll=$(WinSysPath)
+C:\Windows\hh.exe=$(WinSysPath)
+C:\DevOther\BacktraxPlayer\BackTrax.chw=$(AppPath)
+C:\DevOther\BacktraxPlayer\Palets\TEMP01.DAT=$(AppPath)\Palets
+C:\DevOther\BacktraxPlayer\AlphaIcon.res=$(AppPath)
+C:\DevOther\BacktraxPlayer\bass_ofr.dll=$(WinSysPath)
+C:\DevOther\BacktraxPlayer\bass_spx.dll=$(WinSysPath)
+C:\DevOther\BacktraxPlayer\bass_tta.dll=$(WinSysPath)
+C:\DevOther\BacktraxPlayer\bass_wadsp.dll=$(WinSysPath)
+C:\DevOther\BacktraxPlayer\bassdsd.dll=$(WinSysPath)
+C:\DevOther\BacktraxPlayer\bassenc_ogg.dll=$(WinSysPath)
+C:\DevOther\BacktraxPlayer\bassenc_opus.dll=$(WinSysPath)
+C:\DevOther\BacktraxPlayer\bassmidi.dll=$(WinSysPath)
+C:\DevOther\BacktraxPlayer\basswasapi.dll=$(WinSysPath)
+C:\DevOther\BacktraxPlayer\OptimFROG.dll=$(WinSysPath)
+C:\DevOther\BacktraxPlayer\tags.dll=$(WinSysPath)
+
+[Package|LilacProBackTraxPlayerDemo|Configure Shared Files]
+Applicable=Yes
+C:\Development\BacktraxPlayer\LilacProBackTraxPlayer.exe=No
+C:\Development\BacktraxPlayer\bass.dll=No
+C:\Development\BacktraxPlayer - Copy\ID3v23xBase.dll=No
+C:\Development\ProgressBar6\ccrpprg6.ocx=No
+C:\Development\BacktraxPlayer\bass_aac.dll=No
+C:\Development\BacktraxPlayer\bass_ac3.dll=No
+C:\Development\BacktraxPlayer\bass_alac.dll=No
+C:\Development\BacktraxPlayer\bass_ape.dll=No
+C:\Development\BacktraxPlayer\bass_fx.dll=No
+C:\Development\BacktraxPlayer\bass_mpc.dll=No
+C:\Development\BacktraxPlayer\basscd.dll=No
+C:\Development\BacktraxPlayer\bassenc.dll=No
+C:\Development\BacktraxPlayer\bassflac.dll=No
+C:\Development\BacktraxPlayer\bassmix.dll=No
+C:\Development\BacktraxPlayer\bassopus.dll=No
+C:\Development\BacktraxPlayer\basswma.dll=No
+C:\Development\BacktraxPlayer\basswv.dll=No
+C:\Development\BacktraxPlayer\Help.pdf=No
+C:\DevOther\BacktraxPlayer\LilacProBackTraxPlayer.exe=Yes
+C:\Windows\System32\uxtheme.dll=Yes
+C:\DevOther\BacktraxPlayer\bassalac.dll=No
+C:\DevOther\BacktraxPlayer\bass.dll=No
+C:\DevOther\BacktraxPlayer\ID3v23xBase.dll=Yes
+C:\Windows\System32\THREED20.OCX=Yes
+C:\Windows\System32\cpvslider.ocx=Yes
+C:\DevOther\BacktraxPlayer\vbalIml240_10Tec.ocx=Yes
+C:\Windows\System32\vsflex8l.ocx=Yes
+C:\DevOther\BacktraxPlayer\bass_aac.dll=No
+C:\DevOther\BacktraxPlayer\bass_ac3.dll=No
+C:\DevOther\BacktraxPlayer\bass_alac.dll=No
+C:\DevOther\BacktraxPlayer\bass_ape.dll=No
+C:\DevOther\BacktraxPlayer\bass_fx.dll=No
+C:\DevOther\BacktraxPlayer\bass_mpc.dll=No
+C:\DevOther\BacktraxPlayer\basscd.dll=No
+C:\DevOther\BacktraxPlayer\bassenc.dll=No
+C:\DevOther\BacktraxPlayer\bassflac.dll=No
+C:\DevOther\BacktraxPlayer\bassmix.dll=No
+C:\DevOther\BacktraxPlayer\bassopus.dll=No
+C:\DevOther\BacktraxPlayer\basswma.dll=No
+C:\DevOther\BacktraxPlayer\basswv.dll=No
+C:\DevOther\BacktraxPlayer\ColorBar.dll=Yes
+C:\DevOther\BacktraxPlayer\TagsLib.dll=Yes
+C:\DevOther\BacktraxPlayer\Help.pdf=No
+C:\DevOther\BacktraxPlayer\BackTrax.chm=No
+C:\DevOther\BacktraxPlayer\BackTrax.chw=No
+C:\DevOther\BacktraxPlayer\Palets\TEMP01.DAT=No
+C:\DevOther\BacktraxPlayer\AlphaIcon.res=No
+
+[Package|LilacProBackTraxPlayerDemo|Distribution]
+Type=single
+Size=
+Title=BackTraxPlayer
+
+[Package|LilacProBackTraxPlayerDemo|Package]
+PackageFolder=C:\DevOther\BacktraxPlayer\SetupDemo
+ProjectFolder=C:\DevOther\BacktraxPlayer
+ServerSideCab=
+File1=C:\DevOther\BacktraxPlayer\SetupDemo\setup.exe
+File2=C:\DevOther\BacktraxPlayer\SetupDemo\Setup.Lst
+File3=C:\DevOther\BacktraxPlayer\SetupDemo\LilacProBackTraxPlayer.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz
+
+[Package|LilacProBackTraxPlayerDemo|IconGroups]
+Group0=BackTraxPlayer
+PrivateGroup0=-1
+Parent0=$(Programs)
+Group1=$(Start Menu)
+PrivateGroup1=-1
+Parent1=
+
+[Package|LilacProBackTraxPlayerDemo|BackTraxPlayer]
+Icon1=LilacProBackTraxPlayer.exe
+Title1=BackTraxPlayer
+StartIn1=$(AppPath)
+Key1=Icon1
+
+[Package|LilacProBackTraxPlayerDemo|$(Start Menu)]
+Icon1=LilacProBackTraxPlayer.exe
+Title1=BackTraxPlayer
+StartIn1=$(AppPath)
+Key1=Icon2
+
+
+[Package|LilacProBackTraxPlayer|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=C:\DevOther\BacktraxPlayer\Setup
+
+[Package|LilacProBackTraxPlayer|Configure DAO ISAMs]
+Applicable=No
+
+[Package|LilacProBackTraxPlayer|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|LilacProBackTraxPlayer|Files Found]
+bass_aac.dll=C:\DevOther\BacktraxPlayer\bass_aac.dll
+
+[Package|LilacProBackTraxPlayer|Files Released]
+help.pdf=
+basswv.dll=
+basswma.dll=
+bassopus.dll=
+bassmix.dll=
+bassflac.dll=
+bassenc.dll=
+basscd.dll=
+bass_mpc.dll=
+bass_fx.dll=
+bass_ape.dll=
+bass_alac.dll=
+bass_ac3.dll=
+bass_aac.dll=
+BackTrax.CHI=
+
+[Package|LilacProBackTraxPlayer|Missing Dependency Information]
+C:\Windows\System32\cpvslider.ocx=
+C:\Development\BacktraxPlayer - Copy\ID3v23xBase.dll=
+C:\Development\BacktraxPlayer\bass.dll=
+C:\Development\BacktraxPlayer\ID3v23xBase.dll=
+C:\Windows\System32\uxtheme.dll=
+C:\Development\BacktraxPlayer\bass_aac.dll=
+C:\Development\BacktraxPlayer\bass_ac3.dll=
+C:\Development\BacktraxPlayer\bass_alac.dll=
+C:\Development\BacktraxPlayer\bass_ape.dll=
+C:\Development\BacktraxPlayer\bass_fx.dll=
+C:\Development\BacktraxPlayer\bass_mpc.dll=
+C:\Development\BacktraxPlayer\basscd.dll=
+C:\Development\BacktraxPlayer\bassenc.dll=
+C:\Development\BacktraxPlayer\bassflac.dll=
+C:\Development\BacktraxPlayer\bassmix.dll=
+C:\Development\BacktraxPlayer\bassopus.dll=
+C:\Development\BacktraxPlayer\basswma.dll=
+C:\Development\BacktraxPlayer\basswv.dll=
+C:\Development\BacktraxPlayer\vbalIml240_10Tec.ocx=
+C:\Windows\System32\vsflex8l.ocx=
+C:\DevOther\BacktraxPlayer\ID3v23xBase.dll=
+C:\DevOther\BacktraxPlayer\bass.dll=
+C:\DevOther\BacktraxPlayer\bassalac.dll=
+C:\DevOther\BacktraxPlayer\bass_aac.dll=
+C:\DevOther\BacktraxPlayer\bass_ac3.dll=
+C:\DevOther\BacktraxPlayer\bass_alac.dll=
+C:\DevOther\BacktraxPlayer\bass_ape.dll=
+C:\DevOther\BacktraxPlayer\bass_fx.dll=
+C:\DevOther\BacktraxPlayer\bass_mpc.dll=
+C:\DevOther\BacktraxPlayer\basscd.dll=
+C:\DevOther\BacktraxPlayer\bassenc.dll=
+C:\DevOther\BacktraxPlayer\bassflac.dll=
+C:\DevOther\BacktraxPlayer\bassmix.dll=
+C:\DevOther\BacktraxPlayer\bassopus.dll=
+C:\DevOther\BacktraxPlayer\basswma.dll=
+C:\DevOther\BacktraxPlayer\basswv.dll=
+C:\DevOther\BacktraxPlayer\ColorBar.dll=
+C:\DevOther\BacktraxPlayer\TagsLib.dll=
+C:\DevOther\BacktraxPlayer\bass_ofr.dll=
+C:\DevOther\BacktraxPlayer\bass_spx.dll=
+C:\DevOther\BacktraxPlayer\bass_tta.dll=
+C:\DevOther\BacktraxPlayer\bass_wadsp.dll=
+C:\DevOther\BacktraxPlayer\bassdsd.dll=
+C:\DevOther\BacktraxPlayer\bassenc_ogg.dll=
+C:\DevOther\BacktraxPlayer\bassenc_opus.dll=
+C:\DevOther\BacktraxPlayer\bassmidi.dll=
+C:\DevOther\BacktraxPlayer\basswasapi.dll=
+C:\DevOther\BacktraxPlayer\OptimFROG.dll=
+C:\DevOther\BacktraxPlayer\tags.dll=
+
+[Package|LilacProBackTraxPlayer|Out-of-Date Dependency Information]
+C:\Windows\System32\MSCOMCTL.OCX=
+C:\Windows\System32\scrrun.dll=
+
+[Package|LilacProBackTraxPlayer|Files Added]
+bass_aac.dll=
+bass_ac3.dll=
+bass_ape.dll=
+bass_fx.dll=
+bass_mpc.dll=
+basscd.dll=
+bassenc.dll=
+bassflac.dll=
+bassmix.dll=
+bassopus.dll=
+basswma.dll=
+basswv.dll=
+help.pdf=
+C:\DevOther\BacktraxPlayer\bass_aac.dll=
+C:\DevOther\BacktraxPlayer\bass_ac3.dll=
+C:\DevOther\BacktraxPlayer\bass_alac.dll=
+C:\DevOther\BacktraxPlayer\bass_ape.dll=
+C:\DevOther\BacktraxPlayer\bass_fx.dll=
+C:\DevOther\BacktraxPlayer\bass_mpc.dll=
+C:\DevOther\BacktraxPlayer\basscd.dll=
+C:\DevOther\BacktraxPlayer\bassenc.dll=
+C:\DevOther\BacktraxPlayer\bassflac.dll=
+C:\DevOther\BacktraxPlayer\bassmix.dll=
+C:\DevOther\BacktraxPlayer\bassopus.dll=
+C:\DevOther\BacktraxPlayer\basswma.dll=
+C:\DevOther\BacktraxPlayer\basswv.dll=
+C:\DevOther\BacktraxPlayer\ColorBar.dll=
+C:\DevOther\BacktraxPlayer\TagsLib.dll=
+C:\DevOther\BacktraxPlayer\BackTrax.chm=
+C:\DevOther\BacktraxPlayer\BackTrax.chw=
+C:\DevOther\BacktraxPlayer\Palets\TEMP01.DAT=
+C:\DevOther\BacktraxPlayer\AlphaIcon.res=
+C:\DevOther\BacktraxPlayer\bass_ofr.dll=
+C:\DevOther\BacktraxPlayer\bass_spx.dll=
+C:\DevOther\BacktraxPlayer\bass_tta.dll=
+C:\DevOther\BacktraxPlayer\bass_wadsp.dll=
+C:\DevOther\BacktraxPlayer\bassdsd.dll=
+C:\DevOther\BacktraxPlayer\bassenc_ogg.dll=
+C:\DevOther\BacktraxPlayer\bassenc_opus.dll=
+C:\DevOther\BacktraxPlayer\bassmidi.dll=
+C:\DevOther\BacktraxPlayer\basswasapi.dll=
+C:\DevOther\BacktraxPlayer\OptimFROG.dll=
+C:\DevOther\BacktraxPlayer\tags.dll=
+C:\DevOther\BacktraxPlayer\demo.txt=
+C:\DevOther\BacktraxPlayer\Button Close-01.ico=
+C:\DevOther\BacktraxPlayer\omed.txt=
+C:\DevOther\BacktraxPlayer\zzSlider.ctl=
+C:\DevOther\BacktraxPlayer\bassalac.dll=
+C:\DevOther\BacktraxPlayer\LilacProBackTraxPlayer.RES=
+C:\DevOther\BacktraxPlayer\AppStart.ico=
+
+[Package|LilacProBackTraxPlayer|Files Removed]
+c:\devother\backtraxplayer\help.pdf=
+c:\devother\backtraxplayer\bass_alac.dll=
+c:\devother\backtraxplayer\lilacprobacktraxplayer.res=
+
+[Package|LilacProBackTraxPlayer|Files In Project]
+C:\Windows\System32\msvbvm60.dll=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\Windows\System32\scrrun.dll=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MSVCRT.DLL=Yes
+C:\Windows\System32\MSCOMCTL.OCX=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\Windows\System32\VB6STKIT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+C:\Windows\System32\uxtheme.dll=Yes
+C:\Windows\System32\vsflex8l.ocx=Yes
+C:\DevOther\BacktraxPlayer\LilacProBackTraxPlayer.exe=Yes
+C:\DevOther\BacktraxPlayer\bassalac.dll=Yes
+C:\DevOther\BacktraxPlayer\bass.dll=Yes
+C:\DevOther\BacktraxPlayer\ID3v23xBase.dll=Yes
+C:\DevOther\BacktraxPlayer\vbalIml240_10Tec.ocx=Yes
+C:\DevOther\BacktraxPlayer\bass_aac.dll=Yes
+C:\DevOther\BacktraxPlayer\bass_ac3.dll=Yes
+C:\DevOther\BacktraxPlayer\bass_ape.dll=Yes
+C:\DevOther\BacktraxPlayer\bass_fx.dll=Yes
+C:\DevOther\BacktraxPlayer\tags.dll=Yes
+C:\Sheridan\ActiveThreed\THREED20.OCX=Yes
+C:\Windows\System32\comdlg32.ocx=Yes
+C:\DevOther\BacktraxPlayer\bass_mpc.dll=Yes
+C:\DevOther\BacktraxPlayer\bass_ofr.dll=Yes
+C:\DevOther\BacktraxPlayer\bass_spx.dll=Yes
+C:\DevOther\BacktraxPlayer\bass_tta.dll=Yes
+C:\DevOther\BacktraxPlayer\bass_wadsp.dll=Yes
+C:\DevOther\BacktraxPlayer\basscd.dll=Yes
+C:\DevOther\BacktraxPlayer\bassdsd.dll=Yes
+C:\DevOther\BacktraxPlayer\bassenc.dll=Yes
+C:\DevOther\BacktraxPlayer\bassenc_ogg.dll=Yes
+C:\DevOther\BacktraxPlayer\bassenc_opus.dll=Yes
+C:\DevOther\BacktraxPlayer\bassflac.dll=Yes
+C:\DevOther\BacktraxPlayer\bassmidi.dll=Yes
+C:\DevOther\BacktraxPlayer\bassmix.dll=Yes
+C:\DevOther\BacktraxPlayer\bassopus.dll=Yes
+C:\DevOther\BacktraxPlayer\basswasapi.dll=Yes
+C:\DevOther\BacktraxPlayer\basswma.dll=Yes
+C:\DevOther\BacktraxPlayer\basswv.dll=Yes
+C:\DevOther\BacktraxPlayer\OptimFROG.dll=Yes
+C:\DevOther\BacktraxPlayer\TagsLib.dll=Yes
+C:\DevOther\BacktraxPlayer\AlphaIcon.res=Yes
+C:\DevOther\BacktraxPlayer\AppStart.ico=Yes
+C:\DevOther\BacktraxPlayer\BackTrax.chm=Yes
+C:\Windows\System32\hhctrl.ocx=Yes
+C:\Windows\System32\itss.dll=Yes
+C:\Windows\System32\itircl.dll=Yes
+C:\Windows\hh.exe=Yes
+
+[Package|LilacProBackTraxPlayer|Configure Registry Files]
+Applicable=No
+
+[Package|LilacProBackTraxPlayer|Configure Remote Servers]
+Applicable=No
+
+[Package|LilacProBackTraxPlayer|Install Locations]
+C:\Development\BacktraxPlayer\LilacProBackTraxPlayer.exe=$(AppPath)
+C:\Windows\System32\msvbvm60.dll=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\Development\BacktraxPlayer\bass.dll=$(AppPath)
+C:\Windows\System32\scrrun.dll=$(WinSysPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MSVCRT.DLL=$(WinSysPathSysFile)
+C:\Development\BacktraxPlayer - Copy\ID3v23xBase.dll=$(AppPath)
+C:\Windows\System32\THREED20.OCX=$(WinSysPath)
+C:\Windows\System32\MSCOMCTL.OCX=$(WinSysPath)
+C:\Windows\System32\comdlg32.ocx=$(WinSysPath)
+C:\Windows\System32\cpvslider.ocx=$(AppPath)
+C:\Development\ProgressBar6\ccrpprg6.ocx=$(AppPath)
+C:\Windows\System32\MSSTKPRP.DLL=$(WinSysPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\Windows\System32\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+C:\Windows\System32\uxtheme.dll=$(AppPath)
+C:\Development\BacktraxPlayer\ID3v23xBase.dll=$(WinSysPath)
+C:\Development\BacktraxPlayer\bass_aac.dll=$(AppPath)
+C:\Development\BacktraxPlayer\bass_ac3.dll=$(AppPath)
+C:\Development\BacktraxPlayer\bass_alac.dll=$(AppPath)
+C:\Development\BacktraxPlayer\bass_ape.dll=$(AppPath)
+C:\Development\BacktraxPlayer\bass_fx.dll=$(AppPath)
+C:\Development\BacktraxPlayer\bass_mpc.dll=$(AppPath)
+C:\Development\BacktraxPlayer\basscd.dll=$(AppPath)
+C:\Development\BacktraxPlayer\bassenc.dll=$(AppPath)
+C:\Development\BacktraxPlayer\bassflac.dll=$(AppPath)
+C:\Development\BacktraxPlayer\bassmix.dll=$(AppPath)
+C:\Development\BacktraxPlayer\bassopus.dll=$(AppPath)
+C:\Development\BacktraxPlayer\basswma.dll=$(AppPath)
+C:\Development\BacktraxPlayer\basswv.dll=$(AppPath)
+C:\Development\BacktraxPlayer\Help.pdf=$(AppPath)
+C:\Windows\System32\MSFLXGRD.OCX=$(WinSysPath)
+C:\Development\BacktraxPlayer\vbalIml240_10Tec.ocx=$(WinSysPath)
+C:\Windows\System32\vsflex8l.ocx=$(WinSysPath)
+C:\DevOther\BacktraxPlayer\LilacProBackTraxPlayer.exe=$(AppPath)
+C:\DevOther\BacktraxPlayer\bassalac.dll=$(AppPath)
+C:\DevOther\BacktraxPlayer\bass.dll=$(AppPath)
+C:\DevOther\BacktraxPlayer\ID3v23xBase.dll=$(AppPath)
+C:\DevOther\BacktraxPlayer\vbalIml240_10Tec.ocx=$(WinSysPath)
+C:\DevOther\BacktraxPlayer\bass_aac.dll=$(AppPath)
+C:\DevOther\BacktraxPlayer\bass_ac3.dll=$(AppPath)
+C:\DevOther\BacktraxPlayer\bass_alac.dll=$(AppPath)
+C:\DevOther\BacktraxPlayer\bass_ape.dll=$(AppPath)
+C:\DevOther\BacktraxPlayer\bass_fx.dll=$(AppPath)
+C:\DevOther\BacktraxPlayer\bass_mpc.dll=$(AppPath)
+C:\DevOther\BacktraxPlayer\basscd.dll=$(AppPath)
+C:\DevOther\BacktraxPlayer\bassenc.dll=$(AppPath)
+C:\DevOther\BacktraxPlayer\bassflac.dll=$(AppPath)
+C:\DevOther\BacktraxPlayer\bassmix.dll=$(AppPath)
+C:\DevOther\BacktraxPlayer\bassopus.dll=$(AppPath)
+C:\DevOther\BacktraxPlayer\basswma.dll=$(AppPath)
+C:\DevOther\BacktraxPlayer\basswv.dll=$(AppPath)
+C:\DevOther\BacktraxPlayer\ColorBar.dll=$(AppPath)
+C:\DevOther\BacktraxPlayer\TagsLib.dll=$(AppPath)
+C:\DevOther\BacktraxPlayer\Help.pdf=$(AppPath)
+C:\DevOther\BacktraxPlayer\BackTrax.chm=$(AppPath)
+C:\Windows\System32\hhctrl.ocx=$(WinSysPath)
+C:\Windows\System32\itss.dll=$(WinSysPath)
+C:\Windows\System32\itircl.dll=$(WinSysPath)
+C:\Windows\hh.exe=$(WinSysPath)
+C:\DevOther\BacktraxPlayer\BackTrax.chw=$(AppPath)
+C:\DevOther\BacktraxPlayer\Palets\TEMP01.DAT=$(AppPath)\Palets
+C:\DevOther\BacktraxPlayer\AlphaIcon.res=$(AppPath)
+C:\DevOther\BacktraxPlayer\bass_ofr.dll=$(AppPath)
+C:\DevOther\BacktraxPlayer\bass_spx.dll=$(AppPath)
+C:\DevOther\BacktraxPlayer\bass_tta.dll=$(AppPath)
+C:\DevOther\BacktraxPlayer\bass_wadsp.dll=$(AppPath)
+C:\DevOther\BacktraxPlayer\bassdsd.dll=$(AppPath)
+C:\DevOther\BacktraxPlayer\bassenc_ogg.dll=$(AppPath)
+C:\DevOther\BacktraxPlayer\bassenc_opus.dll=$(AppPath)
+C:\DevOther\BacktraxPlayer\bassmidi.dll=$(AppPath)
+C:\DevOther\BacktraxPlayer\basswasapi.dll=$(AppPath)
+C:\DevOther\BacktraxPlayer\OptimFROG.dll=$(AppPath)
+C:\DevOther\BacktraxPlayer\tags.dll=$(AppPath)
+C:\DevOther\BacktraxPlayer\demo.txt=$(AppPath)
+C:\DevOther\BacktraxPlayer\Button Close-01.ico=$(AppPath)
+C:\DevOther\BacktraxPlayer\omed.txt=$(AppPath)
+C:\Sheridan\ActiveThreed\THREED20.OCX=$(WinSysPath)
+C:\DevOther\BacktraxPlayer\ccrpprg6.ocx=$(AppPath)
+C:\DevOther\BacktraxPlayer\zzSlider.ctl=$(AppPath)
+C:\DevOther\BacktraxPlayer\AppStart.ico=$(AppPath)
+
+[Package|LilacProBackTraxPlayer|Configure Shared Files]
+Applicable=Yes
+C:\Development\BacktraxPlayer\LilacProBackTraxPlayer.exe=No
+C:\Development\BacktraxPlayer\bass.dll=No
+C:\Development\BacktraxPlayer - Copy\ID3v23xBase.dll=No
+C:\Development\ProgressBar6\ccrpprg6.ocx=No
+C:\Development\BacktraxPlayer\bass_aac.dll=No
+C:\Development\BacktraxPlayer\bass_ac3.dll=No
+C:\Development\BacktraxPlayer\bass_alac.dll=No
+C:\Development\BacktraxPlayer\bass_ape.dll=No
+C:\Development\BacktraxPlayer\bass_fx.dll=No
+C:\Development\BacktraxPlayer\bass_mpc.dll=No
+C:\Development\BacktraxPlayer\basscd.dll=No
+C:\Development\BacktraxPlayer\bassenc.dll=No
+C:\Development\BacktraxPlayer\bassflac.dll=No
+C:\Development\BacktraxPlayer\bassmix.dll=No
+C:\Development\BacktraxPlayer\bassopus.dll=No
+C:\Development\BacktraxPlayer\basswma.dll=No
+C:\Development\BacktraxPlayer\basswv.dll=No
+C:\Development\BacktraxPlayer\Help.pdf=No
+C:\DevOther\BacktraxPlayer\LilacProBackTraxPlayer.exe=Yes
+C:\Windows\System32\uxtheme.dll=Yes
+C:\DevOther\BacktraxPlayer\bassalac.dll=Yes
+C:\DevOther\BacktraxPlayer\bass.dll=Yes
+C:\DevOther\BacktraxPlayer\ID3v23xBase.dll=Yes
+C:\Windows\System32\THREED20.OCX=Yes
+C:\Windows\System32\cpvslider.ocx=Yes
+C:\DevOther\BacktraxPlayer\vbalIml240_10Tec.ocx=Yes
+C:\Windows\System32\vsflex8l.ocx=Yes
+C:\DevOther\BacktraxPlayer\bass_aac.dll=Yes
+C:\DevOther\BacktraxPlayer\bass_ac3.dll=Yes
+C:\DevOther\BacktraxPlayer\bass_alac.dll=No
+C:\DevOther\BacktraxPlayer\bass_ape.dll=Yes
+C:\DevOther\BacktraxPlayer\bass_fx.dll=Yes
+C:\DevOther\BacktraxPlayer\bass_mpc.dll=Yes
+C:\DevOther\BacktraxPlayer\basscd.dll=Yes
+C:\DevOther\BacktraxPlayer\bassenc.dll=Yes
+C:\DevOther\BacktraxPlayer\bassflac.dll=Yes
+C:\DevOther\BacktraxPlayer\bassmix.dll=Yes
+C:\DevOther\BacktraxPlayer\bassopus.dll=Yes
+C:\DevOther\BacktraxPlayer\basswma.dll=Yes
+C:\DevOther\BacktraxPlayer\basswv.dll=Yes
+C:\DevOther\BacktraxPlayer\ColorBar.dll=Yes
+C:\DevOther\BacktraxPlayer\TagsLib.dll=Yes
+C:\DevOther\BacktraxPlayer\Help.pdf=No
+C:\DevOther\BacktraxPlayer\BackTrax.chm=No
+C:\DevOther\BacktraxPlayer\BackTrax.chw=No
+C:\DevOther\BacktraxPlayer\Palets\TEMP01.DAT=No
+C:\DevOther\BacktraxPlayer\AlphaIcon.res=No
+C:\DevOther\BacktraxPlayer\demo.txt=No
+C:\DevOther\BacktraxPlayer\Button Close-01.ico=No
+C:\DevOther\BacktraxPlayer\omed.txt=No
+C:\DevOther\BacktraxPlayer\bass_ofr.dll=Yes
+C:\DevOther\BacktraxPlayer\bass_spx.dll=Yes
+C:\DevOther\BacktraxPlayer\bass_tta.dll=Yes
+C:\DevOther\BacktraxPlayer\bass_wadsp.dll=Yes
+C:\DevOther\BacktraxPlayer\bassdsd.dll=Yes
+C:\DevOther\BacktraxPlayer\bassenc_ogg.dll=Yes
+C:\DevOther\BacktraxPlayer\bassenc_opus.dll=Yes
+C:\DevOther\BacktraxPlayer\bassmidi.dll=Yes
+C:\DevOther\BacktraxPlayer\basswasapi.dll=Yes
+C:\DevOther\BacktraxPlayer\ccrpprg6.ocx=No
+C:\DevOther\BacktraxPlayer\zzSlider.ctl=Yes
+C:\DevOther\BacktraxPlayer\tags.dll=Yes
+C:\DevOther\BacktraxPlayer\OptimFROG.dll=Yes
+C:\DevOther\BacktraxPlayer\AppStart.ico=No
+
+[Package|LilacProBackTraxPlayer|Distribution]
+Type=single
+Size=
+Title=BackTraxPlayer
+
+[Package|LilacProBackTraxPlayer|Package]
+PackageFolder=C:\DevOther\BacktraxPlayer\Setup
+ProjectFolder=C:\DevOther\BacktraxPlayer
+ServerSideCab=
+File1=C:\DevOther\BacktraxPlayer\Setup\setup.exe
+File2=C:\DevOther\BacktraxPlayer\Setup\Setup.Lst
+File3=C:\DevOther\BacktraxPlayer\Setup\LilacProBackTraxPlayer.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz
+
+[Package|LilacProBackTraxPlayer|IconGroups]
+Group0=BackTraxPlayer
+PrivateGroup0=-1
+Parent0=$(Programs)
+Group1=$(Start Menu)
+PrivateGroup1=-1
+Parent1=
+
+[Package|LilacProBackTraxPlayer|BackTraxPlayer]
+Icon1=LilacProBackTraxPlayer.exe
+Title1=BackTraxPlayer
+StartIn1=$(AppPath)
+Key1=Icon1
+
+[Package|LilacProBackTraxPlayer|$(Start Menu)]
+Icon1=LilacProBackTraxPlayer.exe
+Title1=BackTraxPlayer
+StartIn1=$(AppPath)
+Key1=Icon2
+
+
+[Package|LilacProBackTraxPlayerSetup|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=C:\DevOther\BacktraxPlayer\Package
+
+[Package|LilacProBackTraxPlayerSetup|Configure DAO ISAMs]
+Applicable=No
+
+[Package|LilacProBackTraxPlayerSetup|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|LilacProBackTraxPlayerSetup|Files Found]
+
+[Package|LilacProBackTraxPlayerSetup|Files Released]
+BackTrax.CHI=
+OptimFROG.dll=
+basswv.dll=
+basswma.dll=
+basswasapi.dll=
+bassopus.dll=
+bassmix.dll=
+bassmidi.dll=
+bassflac.dll=
+bassenc_opus.dll=
+bassenc_ogg.dll=
+bassenc.dll=
+bassdsd.dll=
+basscd.dll=
+bassalac.dll=
+bass_wadsp.dll=
+bass_tta.dll=
+bass_spx.dll=
+bass_ofr.dll=
+bass_mpc.dll=
+bass_ape.dll=
+bass_ac3.dll=
+bass_aac.dll=
+bass_fx.dll=
+tags.dll=
+
+[Package|LilacProBackTraxPlayerSetup|Missing Dependency Information]
+C:\DevOther\BacktraxPlayer\ID3v23xBase.dll=
+C:\DevOther\BacktraxPlayer\tags.dll=
+C:\DevOther\BacktraxPlayer\bass.dll=
+C:\Windows\System32\uxtheme.dll=
+
+[Package|LilacProBackTraxPlayerSetup|Out-of-Date Dependency Information]
+C:\Windows\System32\MSCOMCTL.OCX=
+C:\Windows\System32\scrrun.dll=
+
+[Package|LilacProBackTraxPlayerSetup|Files Added]
+bass_aac.dll=
+bass_ac3.dll=
+bass_ape.dll=
+bass_mpc.dll=
+bass_ofr.dll=
+bass_spx.dll=
+bass_tta.dll=
+bass_wadsp.dll=
+bassalac.dll=
+basscd.dll=
+bassdsd.dll=
+bassenc.dll=
+bassenc_ogg.dll=
+bassenc_opus.dll=
+bassflac.dll=
+bassmidi.dll=
+bassmix.dll=
+bassopus.dll=
+basswasapi.dll=
+basswma.dll=
+basswv.dll=
+c:\devother\backtraxplayer\colorbar.dll=
+optimfrog.dll=
+c:\devother\backtraxplayer\tagslib.dll=
+c:\devother\backtraxplayer\alphaicon.res=
+c:\devother\backtraxplayer\appstart.ico=
+c:\devother\backtraxplayer\backtrax.chm=
+
+[Package|LilacProBackTraxPlayerSetup|Files Removed]
+
+[Package|LilacProBackTraxPlayerSetup|Files In Project]
+C:\DevOther\BacktraxPlayer\LilacProBackTraxPlayer.exe=Yes
+C:\Windows\System32\msvbvm60.dll=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\Windows\System32\uxtheme.dll=Yes
+C:\DevOther\BacktraxPlayer\bass.dll=Yes
+C:\Windows\System32\scrrun.dll=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MSVCRT.DLL=Yes
+C:\DevOther\BacktraxPlayer\ID3v23xBase.dll=Yes
+C:\Windows\System32\vsflex8l.ocx=Yes
+C:\Sheridan\ActiveThreed\THREED20.OCX=Yes
+C:\Windows\System32\MSCOMCTL.OCX=Yes
+C:\DevOther\BacktraxPlayer\vbalIml240_10Tec.ocx=Yes
+C:\Windows\System32\comdlg32.ocx=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\Windows\System32\VB6STKIT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+C:\DevOther\BacktraxPlayer\ColorBar.dll=Yes
+C:\DevOther\BacktraxPlayer\TagsLib.dll=Yes
+C:\DevOther\BacktraxPlayer\AlphaIcon.res=Yes
+C:\DevOther\BacktraxPlayer\AppStart.ico=Yes
+C:\DevOther\BacktraxPlayer\BackTrax.chm=Yes
+C:\Windows\System32\hhctrl.ocx=Yes
+C:\Windows\System32\itss.dll=Yes
+C:\Windows\System32\itircl.dll=Yes
+C:\Windows\hh.exe=Yes
+
+[Package|LilacProBackTraxPlayerSetup|Configure Registry Files]
+Applicable=No
+
+[Package|LilacProBackTraxPlayerSetup|Configure Remote Servers]
+Applicable=No
+
+[Package|LilacProBackTraxPlayerSetup|Install Locations]
+C:\DevOther\BacktraxPlayer\LilacProBackTraxPlayer.exe=$(AppPath)
+C:\Windows\System32\msvbvm60.dll=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\Windows\System32\uxtheme.dll=$(AppPath)
+C:\DevOther\BacktraxPlayer\bass.dll=$(AppPath)
+C:\DevOther\BacktraxPlayer\tags.dll=$(AppPath)
+C:\DevOther\BacktraxPlayer\bass_fx.dll=$(AppPath)
+C:\Windows\System32\scrrun.dll=$(WinSysPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MSVCRT.DLL=$(WinSysPathSysFile)
+C:\DevOther\BacktraxPlayer\ID3v23xBase.dll=$(AppPath)
+C:\Windows\System32\vsflex8l.ocx=$(WinSysPath)
+C:\Sheridan\ActiveThreed\THREED20.OCX=$(WinSysPath)
+C:\Windows\System32\MSCOMCTL.OCX=$(WinSysPath)
+C:\DevOther\BacktraxPlayer\vbalIml240_10Tec.ocx=$(AppPath)
+C:\Windows\System32\comdlg32.ocx=$(WinSysPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\Windows\System32\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+C:\DevOther\BacktraxPlayer\bass_aac.dll=$(AppPath)
+C:\DevOther\BacktraxPlayer\bass_ac3.dll=$(AppPath)
+C:\DevOther\BacktraxPlayer\bass_ape.dll=$(AppPath)
+C:\DevOther\BacktraxPlayer\bass_mpc.dll=$(AppPath)
+C:\DevOther\BacktraxPlayer\bass_ofr.dll=$(AppPath)
+C:\DevOther\BacktraxPlayer\bass_spx.dll=$(AppPath)
+C:\DevOther\BacktraxPlayer\bass_tta.dll=$(AppPath)
+C:\DevOther\BacktraxPlayer\bass_wadsp.dll=$(AppPath)
+C:\DevOther\BacktraxPlayer\bassalac.dll=$(AppPath)
+C:\DevOther\BacktraxPlayer\basscd.dll=$(AppPath)
+C:\DevOther\BacktraxPlayer\bassdsd.dll=$(AppPath)
+C:\DevOther\BacktraxPlayer\bassenc.dll=$(AppPath)
+C:\DevOther\BacktraxPlayer\bassenc_ogg.dll=$(AppPath)
+C:\DevOther\BacktraxPlayer\bassenc_opus.dll=$(AppPath)
+C:\DevOther\BacktraxPlayer\bassflac.dll=$(AppPath)
+C:\DevOther\BacktraxPlayer\bassmidi.dll=$(AppPath)
+C:\DevOther\BacktraxPlayer\bassmix.dll=$(AppPath)
+C:\DevOther\BacktraxPlayer\bassopus.dll=$(AppPath)
+C:\DevOther\BacktraxPlayer\basswasapi.dll=$(AppPath)
+C:\DevOther\BacktraxPlayer\basswma.dll=$(AppPath)
+C:\DevOther\BacktraxPlayer\basswv.dll=$(AppPath)
+C:\DevOther\BacktraxPlayer\ColorBar.dll=$(AppPath)
+C:\DevOther\BacktraxPlayer\OptimFROG.dll=$(AppPath)
+C:\DevOther\BacktraxPlayer\TagsLib.dll=$(AppPath)
+C:\DevOther\BacktraxPlayer\AlphaIcon.res=$(AppPath)
+C:\DevOther\BacktraxPlayer\AppStart.ico=$(AppPath)
+C:\DevOther\BacktraxPlayer\BackTrax.chm=$(AppPath)
+C:\Windows\System32\hhctrl.ocx=$(WinSysPath)
+C:\Windows\System32\itss.dll=$(WinSysPath)
+C:\Windows\System32\itircl.dll=$(WinSysPath)
+C:\Windows\hh.exe=$(WinSysPath)
+
+[Package|LilacProBackTraxPlayerSetup|Configure Shared Files]
+Applicable=Yes
+C:\DevOther\BacktraxPlayer\LilacProBackTraxPlayer.exe=No
+C:\DevOther\BacktraxPlayer\AlphaIcon.res=Yes
+C:\DevOther\BacktraxPlayer\AppStart.ico=Yes
+C:\DevOther\BacktraxPlayer\BackTrax.chm=Yes
+C:\Windows\System32\uxtheme.dll=Yes
+C:\DevOther\BacktraxPlayer\bass.dll=Yes
+C:\DevOther\BacktraxPlayer\tags.dll=Yes
+C:\DevOther\BacktraxPlayer\bass_fx.dll=Yes
+C:\DevOther\BacktraxPlayer\ID3v23xBase.dll=Yes
+C:\DevOther\BacktraxPlayer\vbalIml240_10Tec.ocx=Yes
+C:\DevOther\BacktraxPlayer\bass_aac.dll=Yes
+C:\DevOther\BacktraxPlayer\bass_ac3.dll=Yes
+C:\DevOther\BacktraxPlayer\bass_ape.dll=Yes
+C:\DevOther\BacktraxPlayer\bass_mpc.dll=Yes
+C:\DevOther\BacktraxPlayer\bass_ofr.dll=Yes
+C:\DevOther\BacktraxPlayer\bass_spx.dll=Yes
+C:\DevOther\BacktraxPlayer\bass_tta.dll=Yes
+C:\DevOther\BacktraxPlayer\bass_wadsp.dll=Yes
+C:\DevOther\BacktraxPlayer\bassalac.dll=Yes
+C:\DevOther\BacktraxPlayer\basscd.dll=Yes
+C:\DevOther\BacktraxPlayer\bassdsd.dll=Yes
+C:\DevOther\BacktraxPlayer\bassenc.dll=Yes
+C:\DevOther\BacktraxPlayer\bassenc_ogg.dll=Yes
+C:\DevOther\BacktraxPlayer\bassenc_opus.dll=Yes
+C:\DevOther\BacktraxPlayer\bassflac.dll=Yes
+C:\DevOther\BacktraxPlayer\bassmidi.dll=Yes
+C:\DevOther\BacktraxPlayer\bassmix.dll=Yes
+C:\DevOther\BacktraxPlayer\bassopus.dll=Yes
+C:\DevOther\BacktraxPlayer\basswasapi.dll=Yes
+C:\DevOther\BacktraxPlayer\basswma.dll=Yes
+C:\DevOther\BacktraxPlayer\basswv.dll=Yes
+C:\DevOther\BacktraxPlayer\ColorBar.dll=Yes
+C:\DevOther\BacktraxPlayer\OptimFROG.dll=Yes
+C:\DevOther\BacktraxPlayer\TagsLib.dll=Yes
+
+[Package|LilacProBackTraxPlayerSetup|Distribution]
+Type=single
+Size=
+Title=BackTraxPlayer
+
+[Package|LilacProBackTraxPlayerSetup|IconGroups]
+Group0=BackTraxPlayer
+PrivateGroup0=-1
+Parent0=$(Programs)
+Group1=$(Start Menu)
+PrivateGroup1=-1
+Parent1=
+
+[Package|LilacProBackTraxPlayerSetup|BackTraxPlayer]
+Icon1=LilacProBackTraxPlayer.exe
+Title1=BackTraxPlayer
+StartIn1=$(AppPath)
+Key1=Icon1
+
+[Package|LilacProBackTraxPlayerSetup|$(Start Menu)]
+Icon1=LilacProBackTraxPlayer.exe
+Title1=BackTraxPlayer
+StartIn1=$(AppPath)
+Key1=Icon4
+
+[Package|LilacProBackTraxPlayerSetup|Package]
+PackageFolder=C:\DevOther\BacktraxPlayer\Package
+ProjectFolder=C:\DevOther\BacktraxPlayer
+ServerSideCab=
+File1=C:\DevOther\BacktraxPlayer\Package\setup.exe
+File2=C:\DevOther\BacktraxPlayer\Package\Setup.Lst
+File3=C:\DevOther\BacktraxPlayer\Package\LilacProBackTraxPlayer.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz

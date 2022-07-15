@@ -1,0 +1,197 @@
+[Root]
+Most Recent Package=BackTraxPlayer Installation
+
+
+[Package|BackTraxPlayer Installation|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=C:\Temp\BacktraxPlayer\Package
+
+[Package|BackTraxPlayer Installation|Configure DAO ISAMs]
+Applicable=No
+
+[Package|BackTraxPlayer Installation|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|BackTraxPlayer Installation|Files Found]
+
+[Package|BackTraxPlayer Installation|Files Released]
+
+[Package|BackTraxPlayer Installation|Missing Dependency Information]
+C:\Windows\System32\cpvslider.ocx=
+C:\Temp\BacktraxPlayer\bass.dll=
+C:\Temp\BacktraxPlayer\bass_aac.dll=
+C:\Temp\BacktraxPlayer\bass_ac3.dll=
+C:\Temp\BacktraxPlayer\bass_alac.dll=
+C:\Temp\BacktraxPlayer\bass_ape.dll=
+C:\Temp\BacktraxPlayer\bass_fx.dll=
+C:\Temp\BacktraxPlayer\bass_mpc.dll=
+C:\Temp\BacktraxPlayer\basscd.dll=
+C:\Temp\BacktraxPlayer\bassenc.dll=
+C:\Temp\BacktraxPlayer\bassflac.dll=
+C:\Temp\BacktraxPlayer\bassmix.dll=
+C:\Temp\BacktraxPlayer\bassopus.dll=
+C:\Temp\BacktraxPlayer\basswma.dll=
+C:\Temp\BacktraxPlayer\basswv.dll=
+
+[Package|BackTraxPlayer Installation|Out-of-Date Dependency Information]
+C:\Windows\System32\MSCOMCTL.OCX=
+C:\Windows\System32\scrrun.dll=
+
+[Package|BackTraxPlayer Installation|Files Added]
+c:\temp\backtraxplayer\bass_aac.dll=
+c:\temp\backtraxplayer\bass_ac3.dll=
+c:\temp\backtraxplayer\bass_alac.dll=
+c:\temp\backtraxplayer\bass_ape.dll=
+c:\temp\backtraxplayer\bass_fx.dll=
+c:\temp\backtraxplayer\bass_mpc.dll=
+c:\temp\backtraxplayer\basscd.dll=
+c:\temp\backtraxplayer\bassenc.dll=
+c:\temp\backtraxplayer\bassflac.dll=
+c:\temp\backtraxplayer\bassmix.dll=
+c:\temp\backtraxplayer\bassopus.dll=
+c:\temp\backtraxplayer\basswma.dll=
+c:\temp\backtraxplayer\basswv.dll=
+C:\Temp\BacktraxPlayer\CloseBoxRed.bmp=
+C:\Temp\BacktraxPlayer\CloseBoxRedInverted.bmp=
+C:\Temp\BacktraxPlayer\Search.bmp=
+C:\Temp\BacktraxPlayer\SearchInverted.bmp=
+
+[Package|BackTraxPlayer Installation|Files Removed]
+
+[Package|BackTraxPlayer Installation|Files In Project]
+C:\Temp\BacktraxPlayer\BackTraxPlayer.exe=Yes
+C:\Windows\System32\msvbvm60.dll=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\Temp\BacktraxPlayer\bass.dll=Yes
+C:\Windows\System32\scrrun.dll=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MSVCRT.DLL=Yes
+C:\Sheridan\ActiveThreed\THREED20.OCX=Yes
+C:\Windows\System32\MSCOMCTL.OCX=Yes
+C:\Windows\System32\COMDLG32.OCX=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\Windows\System32\VB6STKIT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+C:\Windows\System32\cpvslider.ocx=Yes
+C:\Temp\BacktraxPlayer\bass_aac.dll=Yes
+C:\Temp\BacktraxPlayer\bass_ac3.dll=Yes
+C:\Temp\BacktraxPlayer\bass_alac.dll=Yes
+C:\Temp\BacktraxPlayer\bass_ape.dll=Yes
+C:\Temp\BacktraxPlayer\bass_fx.dll=Yes
+C:\Temp\BacktraxPlayer\bass_mpc.dll=Yes
+C:\Temp\BacktraxPlayer\basscd.dll=Yes
+C:\Temp\BacktraxPlayer\bassenc.dll=Yes
+C:\Temp\BacktraxPlayer\bassflac.dll=Yes
+C:\Temp\BacktraxPlayer\bassmix.dll=Yes
+C:\Temp\BacktraxPlayer\bassopus.dll=Yes
+C:\Temp\BacktraxPlayer\basswma.dll=Yes
+C:\Temp\BacktraxPlayer\basswv.dll=Yes
+C:\Temp\BacktraxPlayer\CloseBoxRed.bmp=Yes
+C:\Temp\BacktraxPlayer\CloseBoxRedInverted.bmp=Yes
+C:\Temp\BacktraxPlayer\Search.bmp=Yes
+C:\Temp\BacktraxPlayer\SearchInverted.bmp=Yes
+
+[Package|BackTraxPlayer Installation|Configure Registry Files]
+Applicable=No
+
+[Package|BackTraxPlayer Installation|Configure Remote Servers]
+Applicable=No
+
+[Package|BackTraxPlayer Installation|Install Locations]
+C:\Temp\BacktraxPlayer\BackTraxPlayer.exe=$(AppPath)
+C:\Windows\System32\msvbvm60.dll=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\Temp\BacktraxPlayer\bass.dll=$(AppPath)
+C:\Windows\System32\scrrun.dll=$(WinSysPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MSVCRT.DLL=$(WinSysPathSysFile)
+C:\Sheridan\ActiveThreed\THREED20.OCX=$(WinSysPath)
+C:\Windows\System32\MSCOMCTL.OCX=$(WinSysPath)
+C:\Windows\System32\COMDLG32.OCX=$(WinSysPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\Windows\System32\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+C:\Windows\System32\cpvslider.ocx=$(WinSysPath)
+C:\Temp\BacktraxPlayer\bass_aac.dll=$(AppPath)
+C:\Temp\BacktraxPlayer\bass_ac3.dll=$(AppPath)
+C:\Temp\BacktraxPlayer\bass_alac.dll=$(AppPath)
+C:\Temp\BacktraxPlayer\bass_ape.dll=$(AppPath)
+C:\Temp\BacktraxPlayer\bass_fx.dll=$(AppPath)
+C:\Temp\BacktraxPlayer\bass_mpc.dll=$(AppPath)
+C:\Temp\BacktraxPlayer\basscd.dll=$(AppPath)
+C:\Temp\BacktraxPlayer\bassenc.dll=$(AppPath)
+C:\Temp\BacktraxPlayer\bassflac.dll=$(AppPath)
+C:\Temp\BacktraxPlayer\bassmix.dll=$(AppPath)
+C:\Temp\BacktraxPlayer\bassopus.dll=$(AppPath)
+C:\Temp\BacktraxPlayer\basswma.dll=$(AppPath)
+C:\Temp\BacktraxPlayer\basswv.dll=$(AppPath)
+C:\Temp\BacktraxPlayer\CloseBoxRed.bmp=$(AppPath)
+C:\Temp\BacktraxPlayer\CloseBoxRedInverted.bmp=$(AppPath)
+C:\Temp\BacktraxPlayer\Search.bmp=$(AppPath)
+C:\Temp\BacktraxPlayer\SearchInverted.bmp=$(AppPath)
+
+[Package|BackTraxPlayer Installation|Configure Shared Files]
+Applicable=Yes
+C:\Temp\BacktraxPlayer\BackTraxPlayer.exe=No
+C:\Temp\BacktraxPlayer\bass.dll=No
+C:\Temp\BacktraxPlayer\bass_aac.dll=No
+C:\Temp\BacktraxPlayer\bass_ac3.dll=No
+C:\Temp\BacktraxPlayer\bass_alac.dll=No
+C:\Temp\BacktraxPlayer\bass_ape.dll=No
+C:\Temp\BacktraxPlayer\bass_fx.dll=No
+C:\Temp\BacktraxPlayer\bass_mpc.dll=No
+C:\Temp\BacktraxPlayer\basscd.dll=No
+C:\Temp\BacktraxPlayer\bassenc.dll=No
+C:\Temp\BacktraxPlayer\bassflac.dll=No
+C:\Temp\BacktraxPlayer\bassmix.dll=No
+C:\Temp\BacktraxPlayer\bassopus.dll=No
+C:\Temp\BacktraxPlayer\basswma.dll=No
+C:\Temp\BacktraxPlayer\basswv.dll=No
+C:\Temp\BacktraxPlayer\CloseBoxRed.bmp=No
+C:\Temp\BacktraxPlayer\CloseBoxRedInverted.bmp=No
+C:\Temp\BacktraxPlayer\Search.bmp=No
+C:\Temp\BacktraxPlayer\SearchInverted.bmp=No
+
+[Package|BackTraxPlayer Installation|Distribution]
+Type=single
+Size=
+Title=BackTraxPlayer
+
+[Package|BackTraxPlayer Installation|Package]
+PackageFolder=C:\Temp\BacktraxPlayer\Package
+ProjectFolder=C:\Temp\BacktraxPlayer
+ServerSideCab=
+File1=C:\Temp\BacktraxPlayer\Package\setup.exe
+File2=C:\Temp\BacktraxPlayer\Package\Setup.Lst
+File3=C:\Temp\BacktraxPlayer\Package\BackTraxPlayer.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz
+
+[Package|BackTraxPlayer Installation|IconGroups]
+Group0=BackTraxPlayer
+PrivateGroup0=-1
+Parent0=$(Programs)
+Group1=$(Start Menu)
+PrivateGroup1=-1
+Parent1=
+
+[Package|BackTraxPlayer Installation|BackTraxPlayer]
+Icon1=BackTraxPlayer.EXE
+Title1=BackTraxPlayer
+StartIn1=$(AppPath)
+Key1=Icon1
+
+[Package|BackTraxPlayer Installation|$(Start Menu)]
+Icon1=BackTraxPlayer.exe
+Title1=BackTraxPlayer
+StartIn1=$(AppPath)
+Key1=Icon3

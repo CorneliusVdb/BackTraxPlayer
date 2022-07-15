@@ -1,0 +1,48 @@
+:Base CCRPPRG.hlp
+:Title CCRP Progress Bar Control
+1 CCRP Progress Bar Control
+2 Introduction=csCstIntroduction
+2 Support, updates, reporting bugs and suggesting improvements.=csCstSupportupdatesreportingbugsandsuggestingimprovements
+2 COMCTL32.DLL versions=csCstCOMCTL32DLLversions
+2 Included Demos and Examples=csCstIncludedDemosandExamples
+2 Distribution and Licensing Agreement=csCstDistributionandLicensingAgreement
+2 About CCRP=csCstAboutCCRP
+2 ccrpProgressBar Control
+3 ccrpProgressBar Control=csCtlccrpProgressBar
+3 ccrpProgressBar Properties
+4 Alignment=csPAlignmentccrpProgressBar
+4 AutoCaption=csPAutoCaptionccrpProgressBar
+4 AutoCaptionSeparator=csPAutoCaptionSeparatorccrpProgressBar
+4 AutoCaptionSuffix=csPAutoCaptionSuffixccrpProgressBar
+4 AutoToolTip=csPAutoToolTipccrpProgressBar
+4 AutoTooltipSuffix=csPAutoTooltipSuffixccrpProgressBar
+4 BackPicture=csPBackPictureccrpProgressBar
+4 CaptionOrientation=csPCaptionOrientationccrpProgressBar
+4 ComCtlVer=csPComCtlVerccrpProgressBar
+4 FillStyle=csPFillStyleccrpProgressBar
+4 IncrementSize=csPIncrementSizeccrpProgressBar
+4 Max=csPMaxccrpProgressBar
+4 Min=csPMinccrpProgressBar
+4 Percentage=csPPercentageccrpProgressBar
+4 Picture=csPPictureccrpProgressBar
+4 ReverseFill=csPReverseFillccrpProgressBar
+4 Shape=csPShapeccrpProgressBar
+4 Smooth=csPSmoothccrpProgressBar
+4 Style=csPStyleccrpProgressBar
+4 Value=csPValueccrpProgressBar
+4 Vertical=csPVerticalccrpProgressBar
+3 ccrpProgressBar Events
+4 FetchAutoCaption=csEFetchAutoCaptionccrpProgressBar
+4 FetchAutoTooltip=csEFetchAutoTooltipccrpProgressBar
+3 ccrpProgressBar Methods
+4 Clear=csMClearccrpProgressBar
+4 Increase=csMIncreaseccrpProgressBar
+4 Increment=csMIncrementccrpProgressBar
+1  Constants
+2 ccrpAutoCaptionConstants Constants=csSetccrpAutoCaptionConstants
+2 ccrpBorderStyleConstants Constants=csSetccrpBorderStyleConstants
+2 prgAppearanceConstants Constants=csSetprgAppearanceConstants
+2 prgCaptionOrientationConstants Constants=csSetprgCaptionOrientationConstants
+2 prgFillStyleConstants Constants=csSetprgFillStyleConstants
+2 prgShapeConstants Constants=csSetprgShapeConstants
+2 prgStyleConstants Constants=csSetprgStyleConstants
