@@ -22,6 +22,7 @@ Begin VB.Form frmSetupSoundCards
    Icon            =   "frmSetupSoundCards.frx":0000
    KeyPreview      =   -1  'True
    LinkTopic       =   "Form1"
+   LockControls    =   -1  'True
    MaxButton       =   0   'False
    MinButton       =   0   'False
    Picture         =   "frmSetupSoundCards.frx":000C
@@ -245,7 +246,7 @@ Begin VB.Form frmSetupSoundCards
                Italic          =   0   'False
                Strikethrough   =   0   'False
             EndProperty
-            Caption         =   "STOP Current  PLAY NEXT"
+            Caption         =   "FADE to STOP  PLAY NEXT"
             BevelOuter      =   0
          End
       End
@@ -440,7 +441,6 @@ Begin VB.Form frmSetupSoundCards
          Left            =   9360
          TabIndex        =   20
          Top             =   7695
-         Visible         =   0   'False
          Width           =   3330
          _ExtentX        =   5874
          _ExtentY        =   1085
@@ -468,7 +468,7 @@ Begin VB.Form frmSetupSoundCards
                Italic          =   0   'False
                Strikethrough   =   0   'False
             EndProperty
-            Caption         =   "25"
+            Caption         =   "20"
             BevelOuter      =   0
          End
          Begin Threed.SSPanel sspOption3 
@@ -507,6 +507,7 @@ Begin VB.Form frmSetupSoundCards
             _Version        =   131074
             ForeColor       =   15194953
             BackColor       =   0
+            Enabled         =   0   'False
             BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
                Name            =   "Arial"
                Size            =   9.75
@@ -531,6 +532,7 @@ Begin VB.Form frmSetupSoundCards
             _Version        =   131074
             ForeColor       =   15194953
             BackColor       =   0
+            Enabled         =   0   'False
             BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
                Name            =   "Arial"
                Size            =   9.75
@@ -1048,7 +1050,6 @@ Begin VB.Form frmSetupSoundCards
          Left            =   9360
          TabIndex        =   25
          Top             =   7410
-         Visible         =   0   'False
          Width           =   3240
       End
       Begin VB.Label Label2 
@@ -1690,7 +1691,11 @@ lblPlugins.Caption = ListOfPlugins
 
 For i = 1 To 4
    sspOption3(i).ForeColor = vbDirectionColor
-   sspOption3(i).Enabled = False
+   If i = 1 Then
+      sspOption3(i).Enabled = False
+   Else
+      sspOption3(i).Enabled = True
+   End If
 Next i
 
 SetCorrectLayoutButton iButtonDirection
@@ -1714,8 +1719,8 @@ txtPassword.text = sSecurePWD
 ''Me.Top = 0
 ''Me.Left = 0
 
-Label2(4).Top = 15000
-SSPanel5.Top = 15000
+'Label2(4).Top = 15000
+'SSPanel5.Top = 15000
 
 Me.Width = frmPlayer.Width
 Me.Height = frmPlayer.Height
@@ -1852,7 +1857,7 @@ c = 1      ' device 1 = 1st real device
 iItem = 0
 iDev = 2
 While BASS_GetDeviceInfo(c, i)
-  If (i.Flags And BASS_DEVICE_ENABLED) Then  ' enabled, so add it...
+  If (i.flags And BASS_DEVICE_ENABLED) Then  ' enabled, so add it...
       iDev = iDev + 1
       If iDev > 6 Then iDev = 6
       'lstDevices.AddItem VBStrFromAnsiPtr(i.name)

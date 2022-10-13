@@ -20,7 +20,7 @@ Begin VB.Form frmLoader
    Begin Threed.SSPanel sspDemo 
       Height          =   570
       Left            =   60
-      TabIndex        =   11
+      TabIndex        =   8
       Top             =   1275
       Visible         =   0   'False
       Width           =   6735
@@ -53,7 +53,7 @@ Begin VB.Form frmLoader
       Picture         =   "frmLoader.frx":000C
       ScaleHeight     =   1050
       ScaleWidth      =   3300
-      TabIndex        =   8
+      TabIndex        =   5
       Top             =   375
       Width           =   3300
    End
@@ -63,14 +63,14 @@ Begin VB.Form frmLoader
       BackColor       =   &H004F423C&
       BorderStyle     =   0  'None
       ForeColor       =   &H80000008&
-      Height          =   720
+      Height          =   480
       Left            =   5910
       Picture         =   "frmLoader.frx":3551
-      ScaleHeight     =   720
-      ScaleWidth      =   720
-      TabIndex        =   7
+      ScaleHeight     =   480
+      ScaleWidth      =   480
+      TabIndex        =   4
       Top             =   3780
-      Width           =   720
+      Width           =   480
    End
    Begin VB.Timer Timer3 
       Enabled         =   0   'False
@@ -89,76 +89,10 @@ Begin VB.Form frmLoader
       Left            =   9075
       Top             =   60
    End
-   Begin Threed.SSPanel sspError 
-      Height          =   1050
-      Left            =   10605
-      TabIndex        =   0
-      Top             =   15
-      Width           =   5190
-      _ExtentX        =   9155
-      _ExtentY        =   1852
-      _Version        =   131074
-      CaptionStyle    =   1
-      ForeColor       =   255
-      BackColor       =   5194300
-      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-         Name            =   "MS Sans Serif"
-         Size            =   24
-         Charset         =   0
-         Weight          =   700
-         Underline       =   0   'False
-         Italic          =   0   'False
-         Strikethrough   =   0   'False
-      EndProperty
-      RoundedCorners  =   0   'False
-      Begin Threed.SSPanel SSPanel2 
-         Height          =   405
-         Left            =   60
-         TabIndex        =   1
-         Top             =   45
-         Width           =   5085
-         _ExtentX        =   8969
-         _ExtentY        =   714
-         _Version        =   131074
-         CaptionStyle    =   1
-         ForeColor       =   16777215
-         BackColor       =   5194300
-         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "Arial"
-            Size            =   12
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Caption         =   "Pastel Accounting is already running."
-         BevelOuter      =   0
-         RoundedCorners  =   0   'False
-      End
-      Begin VB.CommandButton cmdClose 
-         BackColor       =   &H009C9B9A&
-         Caption         =   "OK"
-         BeginProperty Font 
-            Name            =   "Arial"
-            Size            =   9
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Height          =   405
-         Left            =   1890
-         TabIndex        =   2
-         Top             =   540
-         Width           =   1275
-      End
-   End
    Begin Threed.SSPanel SSPanel1 
       Height          =   1500
       Left            =   0
-      TabIndex        =   3
+      TabIndex        =   0
       Top             =   3450
       Width           =   6825
       _ExtentX        =   12039
@@ -167,6 +101,24 @@ Begin VB.Form frmLoader
       BackColor       =   192
       BevelOuter      =   0
       RoundedCorners  =   0   'False
+      Begin VB.Label lblTheme 
+         BackStyle       =   0  'Transparent
+         BeginProperty Font 
+            Name            =   "Arial Narrow"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H00E7DB49&
+         Height          =   210
+         Left            =   1275
+         TabIndex        =   12
+         Top             =   1140
+         Width           =   2370
+      End
       Begin VB.Label lstPlugins 
          BackColor       =   &H004F423C&
          BackStyle       =   0  'Transparent
@@ -181,10 +133,10 @@ Begin VB.Form frmLoader
             Strikethrough   =   0   'False
          EndProperty
          ForeColor       =   &H0000FFFF&
-         Height          =   1035
+         Height          =   870
          Index           =   1
          Left            =   1320
-         TabIndex        =   14
+         TabIndex        =   11
          Top             =   240
          Width           =   4500
       End
@@ -204,7 +156,7 @@ Begin VB.Form frmLoader
          ForeColor       =   &H0000FFFF&
          Height          =   210
          Left            =   255
-         TabIndex        =   13
+         TabIndex        =   10
          Top             =   285
          Visible         =   0   'False
          Width           =   915
@@ -225,7 +177,7 @@ Begin VB.Form frmLoader
          Height          =   195
          Index           =   0
          Left            =   1320
-         TabIndex        =   10
+         TabIndex        =   7
          Top             =   60
          Width           =   4500
       End
@@ -245,7 +197,7 @@ Begin VB.Form frmLoader
          ForeColor       =   &H00E7DB49&
          Height          =   210
          Left            =   255
-         TabIndex        =   9
+         TabIndex        =   6
          Top             =   60
          Visible         =   0   'False
          Width           =   915
@@ -284,7 +236,7 @@ Begin VB.Form frmLoader
       ForeColor       =   &H00E7DB49&
       Height          =   210
       Left            =   570
-      TabIndex        =   12
+      TabIndex        =   9
       Top             =   3060
       Width           =   5820
    End
@@ -303,7 +255,7 @@ Begin VB.Form frmLoader
       ForeColor       =   &H00E7DB49&
       Height          =   210
       Left            =   555
-      TabIndex        =   6
+      TabIndex        =   3
       Top             =   2190
       Width           =   6210
    End
@@ -322,7 +274,7 @@ Begin VB.Form frmLoader
       ForeColor       =   &H00E7DB49&
       Height          =   285
       Left            =   555
-      TabIndex        =   5
+      TabIndex        =   2
       Top             =   1890
       Width           =   6210
    End
@@ -343,7 +295,7 @@ Begin VB.Form frmLoader
       Height          =   255
       Index           =   0
       Left            =   570
-      TabIndex        =   4
+      TabIndex        =   1
       Top             =   2760
       Width           =   6210
    End

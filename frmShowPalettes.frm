@@ -659,7 +659,7 @@ Set newFolder = FSO.GetFolder(App.Path & "\Palets")
 For Each NewFile In newFolder.Files
   newFileName = NewFile
   Open NewFile For Input As FD
-  Input #FD, sHeading
+  Line Input #FD, sHeading
   Close FD
   sStr = Left(NewFile.name, Len(NewFile.name) - 4)
   iInner = iInner + 1

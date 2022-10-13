@@ -3,6 +3,18 @@ Option Explicit
 
 Public MainApp As Boolean
 
+Public PlArr()  'Start at 1 with both dimensions
+Public Enum PLA
+   eTtle = 0    'Title
+   efTtle = 1   'Original Title
+   eFN = 2      'Filename
+   eVol = 3     'Volume
+   eAve = 4     'Average
+   eClr = 5     'Color
+   eLs = 6      'Leading Silences
+   eTp = 7      'Time Played
+End Enum
+
 Public Const bDoEq As Boolean = False ' True
 
 Public iPageno As Integer
@@ -227,6 +239,8 @@ Public Const ButSecure As Integer = 6
 Public Const ButMaxSel As Integer = 7
 Public Const ButAdjVol As Integer = 8
 
+Public Const LongPressCnt As Integer = 15  'Timer is 50, and we want to do this 30 times to get to 1500 (1.5 seconds)
+
 
 'Public iButtonStreams As Integer
 
@@ -260,8 +274,8 @@ Public strVersionPath         As String
 Public strVersionFile         As String ' = "\\ASSUPRIMARY\AsiaInst\Version.ini"
 
 'Declare the functions to read ini files
-Public Declare Function GetPrivateProfileString Lib "KERNEL32" Alias "GetPrivateProfileStringA" (ByVal lpApplicationName As String, ByVal lpKeyName As Any, ByVal lpDefault As String, ByVal lpReturnedString As String, ByVal nSize As Long, ByVal lpFileName As String) As Long
-Public Declare Function GetPrivateProfileInt Lib "KERNEL32" Alias "GetPrivateProfileIntA" (ByVal lpApplicationName As String, ByVal lpKeyName As String, ByVal nDefault As Long, ByVal lpFileName As String) As Long
+Public Declare Function GetPrivateProfileString Lib "kernel32" Alias "GetPrivateProfileStringA" (ByVal lpApplicationName As String, ByVal lpKeyName As Any, ByVal lpDefault As String, ByVal lpReturnedString As String, ByVal nSize As Long, ByVal lpFileName As String) As Long
+Public Declare Function GetPrivateProfileInt Lib "kernel32" Alias "GetPrivateProfileIntA" (ByVal lpApplicationName As String, ByVal lpKeyName As String, ByVal nDefault As Long, ByVal lpFileName As String) As Long
 
 Private Type SYSTEMTIME
    wYear                As Integer
@@ -326,7 +340,7 @@ Private Const HKeyVersion = "SOFTWARE\LilacPro\VersionCount"
 Private Const BIF_RETURNONLYFSDIRS = 1
 Private Const MAX_PATH = 260
 Private Declare Sub CoTaskMemFree Lib "ole32.dll" (ByVal hMem As Long)
-Private Declare Function lstrcat Lib "KERNEL32" Alias "lstrcatA" (ByVal lpString1 As String, ByVal lpString2 As String) As Long
+Private Declare Function lstrcat Lib "kernel32" Alias "lstrcatA" (ByVal lpString1 As String, ByVal lpString2 As String) As Long
 'Private Declare Function SHBrowseForFolder Lib "shell32" _
 '   (lpbi As BrowseInfo) As Long
 Private Declare Function SHGetPathFromIDList Lib "shell32" (ByVal pidList As Long, ByVal lpBuffer As String) As Long
@@ -364,7 +378,7 @@ Private Declare Function SendMessage Lib "user32" Alias "SendMessageA" (ByVal hW
 
 Public Declare Function CreateRoundRectRgn Lib "gdi32" (ByVal X1 As Long, ByVal Y1 As Long, ByVal X2 As Long, ByVal Y2 As Long, ByVal X3 As Long, ByVal Y3 As Long) As Long
 Public Declare Function SetWindowRgn Lib "user32" (ByVal hWnd As Long, ByVal hRgn As Long, ByVal bRedraw As Boolean) As Long
-Public Declare Sub Sleep Lib "KERNEL32" (ByVal dwMilliseconds As Long)
+Public Declare Sub Sleep Lib "kernel32" (ByVal dwMilliseconds As Long)
 
 Public Type Mp3IDTag
       Songname As String * 30
@@ -401,9 +415,9 @@ Public Type SYSTEM_INFO
    dwReserved As Long
 End Type
 
-Public Declare Function IsWow64Process Lib "KERNEL32" (ByVal hProcess As Long, ByRef Wow64Process As Long) As Long
-Public Declare Function GetCurrentProcess Lib "KERNEL32" () As Long
-Public Declare Sub GetNativeSystemInfo Lib "KERNEL32" (lpSystemInfo As SYSTEM_INFO)
+Public Declare Function IsWow64Process Lib "kernel32" (ByVal hProcess As Long, ByRef Wow64Process As Long) As Long
+Public Declare Function GetCurrentProcess Lib "kernel32" () As Long
+Public Declare Sub GetNativeSystemInfo Lib "kernel32" (lpSystemInfo As SYSTEM_INFO)
 
 
 Private Declare Function OpenThemeData Lib "uxtheme.dll" _
@@ -833,7 +847,7 @@ Dim iMid As Integer
 
 Dim ConvertThisFile As Boolean
 
-On Error GoTo Err1
+On Error GoTo err1
 
 FD = FreeFile
 ConvertThisFile = False
@@ -843,7 +857,7 @@ Dim newFolder As Folder
 Dim NewFile As file
 Dim newFileName As String
 
-ReDim sArrH(100, 2)
+ReDim sArrH(200, 2)
 
 
 Set newFolder = FSO.GetFolder(App.Path & "\Palets")
@@ -852,11 +866,11 @@ For Each NewFile In newFolder.Files
   newFileName = NewFile
   Open NewFile For Input As FD
    
-  Input #FD, sHeading
+  Line Input #FD, sHeading
   If InStr(1, sHeading, ":") = 3 Then 'Means old file, so convert this
     FileToOpen = NewFile
     ConvertThisFile = True
-    ReDim sArr(96)
+    ReDim sArr(180)
     tmpI = 0
     'set the first line, since we just read this
     sNow = Format(Now, "YYYYMMDDHHmmSS")
@@ -865,7 +879,7 @@ For Each NewFile In newFolder.Files
 '    iInner = 0
     'Read through file and load content into an array
     Do Until (EOF(FD) = True)
-       Input #FD, sTemp
+       Line Input #FD, sTemp
        tmpI = tmpI + 1
        sArr(tmpI) = Format(tmpI, "00") & ":" & Mid(sTemp, 4)
 ''       iInner = iInner + 1
@@ -900,38 +914,38 @@ For Each NewFile In newFolder.Files
     'First loop through file and check lines
     iCntRows = 1
     Do Until (EOF(FD) = True)
-      Input #FD, sTemp
+      Line Input #FD, sTemp
       If Trim(sTemp) <> "" Then iCntRows = iCntRows + 1
     Loop
     Close FD
     Open NewFile For Input As FD
-    Input #FD, sHeading
+    Line Input #FD, sHeading
     
-    Input #FD, sTemp  'Read next line, if this line has a 3 didget number, it means we have to convert this as well...
-    If iCntRows < 40 Or InStr(1, sTemp, ":") = 4 Then
+    Line Input #FD, sTemp  'Read next line, if this line has a 3 didget number, it means we have to convert this as well...
+    If iCntRows < 40 Or InStr(1, sTemp, ":") = 3 Or InStr(1, sTemp, ":") = 4 Then
       iMid = InStr(1, sTemp, ":") + 1
       FileToOpen = NewFile
       ConvertThisFile = True
-      ReDim sArr(96)
+      ReDim sArr(180)
       tmpI = 0
       'set the first line, since we just read this
       sNow = Format(Now, "YYYYMMDDHHmmSS")
       sArr(tmpI) = "000:" & sNow
       
       tmpI = tmpI + 1
-      sArr(tmpI) = Format(tmpI, "00") & ":" & Mid(sTemp, iMid)
+      sArr(tmpI) = Format(tmpI, "000") & ":" & Mid(sTemp, iMid)
       'Read through file and load content into an array
       Do Until (EOF(FD) = True)
-         Input #FD, sTemp
+         Line Input #FD, sTemp
          If Trim(sTemp) <> "" Then
             tmpI = tmpI + 1
-            sArr(tmpI) = Format(tmpI, "00") & ":" & Mid(sTemp, iMid)
+            sArr(tmpI) = Format(tmpI, "000") & ":" & Mid(sTemp, iMid)
          End If
       Loop
-      If tmpI < 96 Then
+      If tmpI < 180 Then
          'Loop until we have loaded valid values all the way to end
-         For tmpI = tmpI + 1 To 96
-            sArr(tmpI) = Format(tmpI, "00") & ":"
+         For tmpI = tmpI + 1 To 180
+            sArr(tmpI) = Format(tmpI, "000") & ":"
          Next tmpI
       End If
     End If
@@ -965,11 +979,16 @@ Close FD
 
 Return
 
-Err1:
+err1:
 MsgBox "Converting old Playlist FAILED !!!" & Chr(13) & Chr(13) & "Please check the following file for flaws." & Chr(13) & Chr(13) & "***  " & FileToOpen & "  *** ", vbExclamation, "ERROR conversting Playlist"
 WriteLog "modGlobal : ConvertOldPallets on file " & FileToOpen & " "
 ConvertThisFile = False
 Resume Next
+
+End Sub
+
+Public Sub SavePaleteLine(PaleteName As String, ButtonNo As Integer)
+'To code later  ... :-)
 
 End Sub
 
@@ -990,7 +1009,6 @@ Dim iP As Integer
 Dim iValid As Integer
 Dim bValid As Boolean
 Dim iMax As Integer
-'Dim FSO As FileSystemObject
 Dim newFolder As Folder
 Dim NewFile As file
 Dim newFileName As String
@@ -999,6 +1017,7 @@ Dim bCreateNewFile As Boolean
 Dim tmpIMaxBut As Integer
 Dim tmpIbutStart As Integer
 Dim tmpI As Integer
+Dim iButIncrease As Integer
 
    
 
@@ -1031,22 +1050,9 @@ iMax = 9
 iInner = -1
 tmpI = -1
 bEmptyFile = False
-ReDim Preserve sArr(97)  'Dimension to 97, so we can load all the songs, starting at 1
+ReDim Preserve sArr(181)  'Dimension to 97, so we can load all the songs, starting at 1
 
-'''''Overwriting a current file
-''''If bOverwritePalet Then
-''''  If sOverwritePalet <> pHeading Then 'Overwrite an existing file.
-''''  'We need to clear out the existing file, and load the current file's data into new overwriting file
-''''
-''''
-''''  Else  'Overwrite same file, so we dont need to do anything fancy
-''''
-''''  End If
-''''End If
 'We will save each list into its own file.
-
-
-
 
 '----------------------------------------------------------------------------------------
 ' The first portion will load valid data into an array.
@@ -1060,7 +1066,6 @@ If ClearPalet And Trim(UCase(pHeading)) = "TMP001" Then
 End If
 
 
-
 'Create empty file if nothing exists
 FileToOpen = strPath & "\" & Trim(UCase(pHeading)) & ".DAT"
 '---------------------------------------------
@@ -1071,13 +1076,13 @@ If Not FSO.FileExists(FileToOpen) Then
    Open FileToOpen For Output As FD
    'Close now without doing anything. This created an empty file and populated the array with default entries...
    Close FD
-    For tmpI = 0 To 96
+    For tmpI = 0 To 180
 '      iInner = iInner + 1
 '      If iInner > 16 Then iInner = 1
       If tmpI = 0 Then
          sArr(tmpI) = "000:" & sNow
       Else
-         sArr(tmpI) = Format(tmpI, "00") & ":"
+         sArr(tmpI) = Format(tmpI, "000") & ":"
          'sArr(tmpI) = Format(iInner, "00") & ":"
 '      ElseIf tmpI < 17 Then
 '        sArr(tmpI) = CStr(1) & Format(iInner, "00") & ":"
@@ -1098,19 +1103,20 @@ Else
   'File DOES EXIST, so we check if we have to overwrite, from previous screen '
   '----------------------------------------------------------------------------
   'FileToOpen = strPath & "\" & Trim(UCase(pHeading)) & ".DAT"  'Set the file if nothing needs to be changed
-  If bOverwritePalet Then
-    If sOverwritePalet <> pHeading Then 'If we overwrite some other file
-      FileToOpen = strPath & "\" & Trim(UCase(sOverwritePalet)) & ".DAT"
-    Else  'Overwrite myself, so no need for the overwrite flag anymore
-      bOverwritePalet = False
-    End If
-  End If
+'''  If bOverwritePalet Then
+'''    If sOverwritePalet <> pHeading Then 'If we overwrite some other file
+'''      FileToOpen = strPath & "\" & Trim(UCase(sOverwritePalet)) & ".DAT"
+'''    Else  'Overwrite myself, so no need for the overwrite flag anymore
+'''      bOverwritePalet = False
+'''    End If
+'''  End If
   
   Open FileToOpen For Input As FD
   'Read through file and load content into an array
   Do Until (EOF(FD) = True)
-     Input #FD, sTemp
+     Line Input #FD, sTemp
      tmpI = tmpI + 1
+     If tmpI > 181 Then Exit Sub
 '     iInner = iInner + 1
 '     If iInner > 16 Then iInner = 1
      'Re-Create EMPTY entries if nothing in file
@@ -1118,74 +1124,84 @@ Else
        If tmpI = 0 Then
          sArr(tmpI) = "000:" & sNow
        Else
-         sArr(tmpI) = Format(tmpI, "00") & ":"
-         'sArr(tmpI) = Format(iInner, "00") & ":"
+         sArr(tmpI) = Format(tmpI, "000") & ":"
        End If
-   
-'       ElseIf tmpI < 17 Then
-'         sArr(tmpI) = CStr(1) & Format(iInner, "00") & ":"
-'       ElseIf tmpI < 33 Then
-'         sArr(tmpI) = CStr(2) & Format(iInner, "00") & ":"
-'       ElseIf tmpI < 49 Then
-'         sArr(tmpI) = CStr(3) & Format(iInner, "00") & ":"
-'       ElseIf tmpI < 65 Then
-'         sArr(tmpI) = CStr(4) & Format(iInner, "00") & ":"
-'       ElseIf tmpI < 81 Then
-'         sArr(tmpI) = CStr(5) & Format(iInner, "00") & ":"
-'       ElseIf tmpI < 97 Then
-'         sArr(tmpI) = CStr(6) & Format(iInner, "00") & ":"
-'       End If
      Else
        sArr(tmpI) = sTemp
      End If
   Loop
   Close FD
   FileToOpen = strPath & "\" & Trim(UCase(pHeading)) & ".DAT" 'We need to make sure that we do save/overwrite the correct file
-  End If
+End If
 
-
-Select Case PageNo
-  Case 1 '1-16
-    tmpIMaxBut = 16
-    tmpIbutStart = 1
-  Case 2 '17-32
-    tmpIMaxBut = 32
-    tmpIbutStart = 17
-  Case 3 '33-48
-    tmpIMaxBut = 48
-    tmpIbutStart = 33
-  Case 4 '49-64
-    tmpIMaxBut = 64
-    tmpIbutStart = 49
-  Case 5 '65-80
-    tmpIMaxBut = 80
-    tmpIbutStart = 65
-  Case 6 '81-96
-    tmpIMaxBut = 96
-    tmpIbutStart = 81
-End Select
+   Select Case iMaxBut
+      Case 9
+         iButIncrease = 8
+      Case 16
+         iButIncrease = 15
+      Case 20
+         iButIncrease = 19
+      Case 30
+         iButIncrease = 29
+   End Select
+   
+   Select Case PageNo
+     Case 1 '1-16
+       tmpIbutStart = 1
+       tmpIMaxBut = tmpIbutStart + iButIncrease  '16
+     Case 2 '17-32
+       'tmpIbutStart = 17
+       tmpIbutStart = iMaxBut + 1
+       tmpIMaxBut = tmpIbutStart + iButIncrease  '16
+       'tmpIMaxBut = 32
+     Case 3 '33-48
+       tmpIbutStart = iMaxBut + iMaxBut + 1
+       'tmpIbutStart = 33
+       tmpIMaxBut = tmpIbutStart + iButIncrease  '16
+       'tmpIMaxBut = 48
+     Case 4 '49-64
+       'tmpIbutStart = 49
+       tmpIbutStart = iMaxBut + iMaxBut + iMaxBut + 1
+       tmpIMaxBut = tmpIbutStart + iButIncrease  '16
+       'tmpIMaxBut = 64
+       
+     Case 5 '65-80
+       'tmpIbutStart = 65
+       tmpIbutStart = iMaxBut + iMaxBut + iMaxBut + iMaxBut + 1
+       tmpIMaxBut = tmpIbutStart + iButIncrease  '16
+       'tmpIMaxBut = 80
+       
+     Case 6 '81-96
+       'tmpIbutStart = 81
+       tmpIbutStart = iMaxBut + iMaxBut + iMaxBut + iMaxBut + iMaxBut + 1
+       tmpIMaxBut = tmpIbutStart + iButIncrease  '16
+       'tmpIMaxBut = 96
+       
+   End Select
+   
 tmpI = 0
       
 
 'Now loop through Player form, and re-write the ARRAY with new content
-For i = tmpIbutStart To tmpIMaxBut
+sArr(0) = "000:" & sNow               'Check for first entry only, and write the CURRENT DateTime here
+For i = tmpIbutStart To tmpIMaxBut  ' - 1
    If i = 0 Then
       sArr(i) = "000:" & sNow               'Check for first entry only, and write the CURRENT DateTime here
    Else
       tmpI = tmpI + 1
-      If tmpI > 16 Then tmpI = 1
+      If tmpI > tmpIMaxBut Then tmpI = 1
       If tmpI <= iMaxBut Then 'Maxbutton will be set according to the selecion on the player...
          If frmPlayer.sspSongTitle(tmpI).TagVariant <> "" Then
-            sArr(i) = Format(GetNextButtonNumber + tmpI, "00") & ":" & AddBlank(frmPlayer.sspSongTitle(tmpI).TagVariant, 2) & "|" & frmPlayer.sspSongTitle(tmpI).Tag & "|" & frmPlayer.lblVol(tmpI).Caption & "|" & frmPlayer.cmdSong(tmpI).TagVariant & "|" & frmPlayer.sspProgress(tmpI).Tag
+            sArr(i) = Format(GetNextButtonNumber + tmpI, "000") & ":" & AddBlank(frmPlayer.sspSongTitle(tmpI).TagVariant, 2) & "|" & frmPlayer.sspSongTitle(tmpI).Tag & "|" & frmPlayer.lblVol(tmpI).Caption & "|" & frmPlayer.cmdSong(tmpI).TagVariant & "|" & frmPlayer.sspProgress(tmpI).Tag
             'sArr(i) = CStr(PageNo) & Format(tmpI, "00") & ":" & AddBlank(frmPlayer.sspSongTitle(tmpI).TagVariant, 2) & "|" & frmPlayer.sspSongTitle(tmpI).Tag & "|" & frmPlayer.lblVol(tmpI).Caption & "|" & frmPlayer.cmdSong(tmpI).TagVariant & "|" & frmPlayer.sspProgress(tmpI).Tag
          Else
-            sArr(i) = Format(GetNextButtonNumber + tmpI, "00") & ":"
+            sArr(i) = Format(GetNextButtonNumber + tmpI, "000") & ":"
             'sArr(i) = CStr(PageNo) & Format(tmpI, "00") & ":"
          End If
       Else
          'This will leave the rest of the data as original, since we ONLY change whats visible on screen
          If sArr(i) <> "" Then
-          sArr(i) = Format(i, "00") & ":"
+          sArr(i) = Format(i, "000") & ":"
           'sArr(i) = CStr(PageNo) & Format(i, "00") & ":"
          End If
       End If
@@ -1205,12 +1221,180 @@ Close FD
 Set newFolder = Nothing
 SaveSetting regMainKey, regSubKey, "Palette Name", pHeading
 
+'ReloadPlayListArray strPath & "\" & Trim(UCase(pHeading)) & ".DAT"
+
 frmPlayer.Caption = pHeading
 
 End Sub
 
+Public Sub ReloadPlayListArray(PaletteFile As String)
+Dim FD
+Dim sTemp As String
+Dim iRow As Integer
+Dim iPos As Integer
+Dim iButNum As Integer
+Dim sArr()
+Dim sVol As Integer
+
+FD = FreeFile
+iRow = 0
+
+  Open PaletteFile For Input As FD
+  'Read through file and load content into an array
+  Do Until (EOF(FD) = True)
+      Line Input #FD, sTemp
+      
+      If Left(sTemp, 3) = "000" Then
+        Line Input #FD, sTemp
+      End If
+      iRow = iRow + 1
+
+      iPos = InStr(3, sTemp, "|")
+      If iPos > 0 Then
+         '==================================================================================
+         'For Demo system, only allow load of 5 songs
+         If DemoFlag Then
+            DemoCnt = DemoCnt + 1
+            If DemoCnt > DemoMax Then
+               'GoTo ReadNext
+               Exit Do
+            End If
+         End If
+         '==================================================================================
+
+          sArr = Split(sTemp, "|")
+          'Check if file exists on the HD still...
+          'Get the Title
+          sArr(0) = Mid(sArr(0), 5)
+          PlArr(PLA.efTtle, iRow) = sArr(0)               'Keep Full title here
+          PlArr(PLA.eTtle, iRow) = FixSongTitle(CStr(sArr(0)))    'Fix the above to show nice title ('Determine if there are "-" in the title array, if so, split the 2)
+          PlArr(PLA.eFN, iRow) = sArr(1)                  'Keep the filename here
+          sVol = 70                                       'Set Default value for Volume = 70%
+          If Val(sArr(2)) > 0 Then sVol = Val(sArr(2))    'Get the volume
+          If sVol > 100 Then sVol = 99.999
+          PlArr(PLA.eVol, iRow) = sVol
+          PlArr(PLA.eAve, iRow) = sArr(3)                 'Use this to keep the Average when song is loaded...
+          PlArr(PLA.eClr, iRow) = Val(sArr(4))            'Color
+
+          Call BASS_StreamFree(chan(3))        'free the old stream
+          chan(3) = BASS_StreamCreateFile(BASSFALSE, StrPtr(PlArr(PLA.eFN, iRow)), 0, 0, 0)
+    
+          Dim Bytes As Long
+          Bytes = BASS_ChannelGetLength(chan(3), BASS_POS_BYTE)
+          Dim time As Long
+          time = BASS_ChannelBytes2Seconds(chan(3), Bytes)
+         
+          'Get the starting position by finding the silence in the front and set start after silence
+          PlArr(PLA.eLs, iRow) = CStr(ScanForLeadingSilences(CStr(PlArr(PLA.eFN, iRow)), iRow))
+          PlArr(PLA.eTp, iRow) = Trim(Format((time \ 60), "00") & ":" & Format(time Mod 60, "00"))
+      End If
+  Loop
+
+
+End Sub
+
+Public Function FixSongTitle(sData As String) As String
+Dim sTitle() As String
+
+Dim sTemp As String
+Dim MaxChars As Integer
+
+Const sNameChrs As String = "**"
+
+Select Case iMaxBut
+   Case 9, 16
+      'iChr13 = 2
+      MaxChars = 40
+   Case 20
+      'iChr13 = 1
+      MaxChars = 30
+   Case 30
+      'iChr13 = 1
+      MaxChars = 28
+
+End Select
+
+sTemp = sData
+
+If InStr(1, sTemp, "-") = 0 Then
+   If InStr(1, sTemp, "_") > 0 Then
+      sTemp = Replace(sTemp, "_", "-")
+   End If
+End If
+sTemp = Replace(sTemp, "/", " / ")
+sTitle = Split(Replace(sTemp, "&", "&&"), "-")
+
+
+
+'Select Case UBound(sTitle)
+'   Case 1
+'      If iMaxBut = 30 And Len(Trim(sTitle(1)) & Chr(13) & sNameChrs & "  " & Trim(sTitle(0)) & "  " & sNameChrs) > 70 Then
+'         FixSongTitle = Trim(sTitle(1)) & Chr(13) & sNameChrs & "  " & Trim(sTitle(0)) & "  " & sNameChrs
+'      Else
+'         FixSongTitle = String(iChr13, Chr(13)) & Trim(sTitle(1)) & Chr(13) & sNameChrs & "  " & Trim(sTitle(0)) & "  " & sNameChrs
+'      End If
+'   Case 2
+'      FixSongTitle = String(iChr13, Chr(13)) & Trim(sTitle(1)) & " " & Trim(sTitle(2)) & Chr(13) & sNameChrs & "  " & Trim(sTitle(0)) & "  " & sNameChrs
+'   Case 3
+'      FixSongTitle = String(1, Chr(13)) & Trim(sTitle(1)) & Chr(13) & sNameChrs & "  " & Trim(sTitle(0)) & "]" & Chr(13) & Trim(sTitle(2)) & Chr(13) & Trim(sTitle(3))
+'   Case 4
+'      FixSongTitle = sNameChrs & "  " & Trim(sTitle(0)) & "  " & sNameChrs
+'   Case Else
+'      If iMaxBut = 9 Or iMaxBut = 25 Then
+'         FixSongTitle = String(iChr13 + 1, Chr(13)) & Trim(sTitle(0))
+'      Else
+'         FixSongTitle = String(iChr13, Chr(13)) & Trim(sTitle(0))
+'      End If
+'End Select
+
+Select Case UBound(sTitle)
+   Case Is > 1
+      For i = 1 To UBound(sTitle)
+         FixSongTitle = FixSongTitle & Trim(sTitle(i)) & "-"
+      Next i
+      If Right(FixSongTitle, 1) = "-" Then FixSongTitle = Mid(FixSongTitle, 1, Len(FixSongTitle) - 1)
+      FixSongTitle = FixSongTitle & Chr(13) & sNameChrs & "  " & Trim(sTitle(0)) & "  " & sNameChrs
+   Case 1
+      If Len(Trim(sTitle(1))) > MaxChars Then sTitle(1) = FixTitle(sTitle(1), MaxChars)
+      If Len(Trim(sTitle(0))) > MaxChars Then sTitle(0) = FixTitle(sTitle(0), MaxChars)
+      
+      FixSongTitle = Trim(sTitle(1)) & Chr(13) & sNameChrs & "  " & Trim(sTitle(0)) & "  " & sNameChrs
+   Case Else
+      If Len(Trim(sTitle(0))) > MaxChars Then sTitle(0) = FixTitle(sTitle(0), MaxChars)
+      FixSongTitle = sNameChrs & "  " & Trim(sTitle(0)) & "  " & sNameChrs
+   
+End Select
+'If Trim(sTitle(1)) <> "" And Trim(sTitle(0)) <> "" Then  'Both present
+'   FixSongTitle = Trim(sTitle(1)) & Chr(13) & sNameChrs & "  " & Trim(sTitle(0)) & "  " & sNameChrs
+'ElseIf Trim(sTitle(1)) = "" Then
+'   FixSongTitle = sNameChrs & "  " & Trim(sTitle(0)) & "  " & sNameChrs
+'Else
+'   FixSongTitle = Trim(sTitle(1)) & Chr(13) & sNameChrs & "  " & Trim(sTitle(0)) & "  " & sNameChrs
+'End If
+
+
+'Debug.Print "sData : " & sData & "  (" & Len(sData) & ")" & Chr(13) & "sTitle(0) : " & sTitle(0) & "  (" & Len(sTitle(0)) & ")" & Chr(13) & "sTitle(1) : " & sTitle(1) & "  (" & Len(sTitle(1)) & ")" & Chr(13) & "FIXED : " & FixSongTitle & "  (" & Len(FixSongTitle) & ")"
+
+
+End Function
+
+Function FixTitle(sTitle As String, MaxChars As Integer) As String
+Dim iChr13 As Integer
+Dim iCnt As Integer
+
+   For iCnt = MaxChars To 1 Step -1
+      If Mid(sTitle, iCnt, 1) = " " Then
+         iChr13 = iCnt  'Get last position before end where we have a space so I can wrap it there
+         Exit For
+      End If
+   Next iCnt
+   FixTitle = Left(sTitle, iChr13) & Chr(13) & Mid(sTitle, iChr13 + 1)
+      
+End Function
+
 Public Function GetNextButtonNumber() As Integer
 
+If iButtonMaxSelected = 2 Then   '16 per page
    Select Case iPageno
       Case 1
          GetNextButtonNumber = 0
@@ -1225,6 +1409,37 @@ Public Function GetNextButtonNumber() As Integer
       Case 6
          GetNextButtonNumber = 80
    End Select
+ElseIf iButtonMaxSelected = 3 Then '20 per page
+   Select Case iPageno
+      Case 1
+         GetNextButtonNumber = 0
+      Case 2
+         GetNextButtonNumber = 20
+      Case 3
+         GetNextButtonNumber = 40
+      Case 4
+         GetNextButtonNumber = 60
+      Case 5
+         GetNextButtonNumber = 80
+      Case 6
+         GetNextButtonNumber = 100
+   End Select
+ElseIf iButtonMaxSelected = 4 Then  '30 per page
+   Select Case iPageno
+      Case 1
+         GetNextButtonNumber = 0
+      Case 2
+         GetNextButtonNumber = 30
+      Case 3
+         GetNextButtonNumber = 60
+      Case 4
+         GetNextButtonNumber = 90
+      Case 5
+         GetNextButtonNumber = 120
+      Case 6
+         GetNextButtonNumber = 150
+   End Select
+End If
       
 End Function
 
@@ -1955,11 +2170,15 @@ Dim errCnt As Integer
 '''#Else
 '''  MainApp = True
 '''#End If
-On Error GoTo Err1
+On Error GoTo err1
 errCnt = 0
 bSkipValidation = False
 Dim FSO As New FileSystemObject
 WriteLog "MAIN : STARTING..."
+
+
+''''BASS_SetConfig BASS_CONFIG_DEV_DEFAULT, 1
+''''BASS_Init -1, 44100, 0, 0, 0
 
 
 
@@ -2084,9 +2303,10 @@ errCnt = errCnt + 1 '8
 ' check the correct BASS was loaded
 WriteLog "MAIN : Check BASS version..."
 If (HiWord(BASS_GetVersion) <> BASSVERSION) Then
-    Call MsgBox("An incorrect version of BASS.DLL was loaded", vbCritical)
+    Call MsgBox("An incorrect version of BASS.DLL was loaded." & Chr(13) & Chr(13) & "HiWord(BASS_GetVersion) Version = " & HiWord(BASS_GetVersion) & Chr(13) & "BASSVERSION = " & BASSVERSION, vbCritical)
     End
 End If
+
 
 errCnt = errCnt + 1 '9
 WriteLog "MAIN : Set bassTime = New cbass_time..."
@@ -2162,7 +2382,7 @@ For i = 0 To UBound(sPlugIns)
 '   If iPlugCnt > 2 Then
 '      iPlugCnt = 0
 '   End If
-   frmLoader.lstPlugins(iPlugCnt).Caption = frmLoader.lstPlugins(iPlugCnt).Caption & sPlugIns(i) & Chr(13)
+   frmLoader.lstPlugins(iPlugCnt).Caption = frmLoader.lstPlugins(iPlugCnt).Caption & IIf(sPlugIns(i) = "bass.dll", sPlugIns(i) & "(" & HiWord(BASS_GetVersion) & ")", sPlugIns(i)) & Chr(13)
 '   iPlugCnt = iPlugCnt + 1
 Next i
 
@@ -2235,7 +2455,7 @@ DoEvents
 'frmTestMp3Pics.Show
    Exit Sub
 
-Err1:
+err1:
 MsgBox "ERROR " & Chr(13) & Chr(13) & "The following error has occurred : " & Chr(13) & Chr(13) & "ERROR : " & Err.Description & " (" & Err.Number & ")", vbExclamation, "MAIN"
 Resume
 Err.Clear
@@ -2457,7 +2677,7 @@ End Sub
 
 Public Sub SortArray(ByRef aArr() As String)
 Dim i As Long
-Dim J As Long
+Dim j As Long
 Dim minimum As Long
 Dim swapValue As Long
 Dim upperBound As Long
@@ -2467,13 +2687,13 @@ lowerBound = LBound(aArr)
 upperBound = UBound(aArr)
 For i = lowerBound To upperBound
   minimum = i
-  For J = i + 1 To upperBound
+  For j = i + 1 To upperBound
     'Search for the smallest remaining item in the array
-    If aArr(J) < aArr(minimum) Then
+    If aArr(j) < aArr(minimum) Then
       'A smaller value has been found, remember the position in the array
-      minimum = J
+      minimum = j
     End If
-  Next J
+  Next j
   If minimum <> i Then
     'Swap array Values
     swapValue = aArr(minimum)
@@ -2781,11 +3001,11 @@ End Function
 
 Public Function AddBlank(s As String, LenToMake As Integer) As String
 
-  Dim J As Integer
+  Dim j As Integer
     
-  J = LenToMake - Len(s$)
-  If J > 0 Then
-    AddBlank$ = s$ + Space$(J)
+  j = LenToMake - Len(s$)
+  If j > 0 Then
+    AddBlank$ = s$ + Space$(j)
   Else
     AddBlank$ = s$
   End If
@@ -2825,7 +3045,7 @@ End Function
 
 
 Public Sub CheckVersion()
-On Error GoTo Err1
+On Error GoTo err1
 Dim sTMP As String
 '===============================================================
 '               Routine to do autamated setup                  '
@@ -2886,7 +3106,7 @@ If GVersion <> App.Major & "." & Format(App.Minor, "00") & "." & Format(App.Revi
    End
 End If
 Exit Sub
-Err1:
+err1:
 MsgBox "Error : " & Err.Number & Chr(13) & Chr(13) & "Description : " & Err.Description & " ...                " & Chr(13) & "Source : " & Err.Source & Chr(13) & Chr(13) & "                                    ", vbCritical, "Program ERROR"
 End
 End Sub

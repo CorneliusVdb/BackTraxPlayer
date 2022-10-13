@@ -3,10 +3,10 @@ Object = "{0BA686C6-F7D3-101A-993E-0000C0EF6F5E}#2.0#0"; "THREED20.OCX"
 Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.1#0"; "MSCOMCTL.OCX"
 Begin VB.Form frmPlayer 
    BackColor       =   &H00000000&
-   ClientHeight    =   11775
+   ClientHeight    =   11610
    ClientLeft      =   60
    ClientTop       =   450
-   ClientWidth     =   22830
+   ClientWidth     =   26850
    BeginProperty Font 
       Name            =   "Arial Narrow"
       Size            =   6.75
@@ -20,16 +20,16 @@ Begin VB.Form frmPlayer
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
    Picture         =   "frmPlayer.frx":0000
-   ScaleHeight     =   11775
-   ScaleWidth      =   22830
+   ScaleHeight     =   11610
+   ScaleWidth      =   26850
    Begin Threed.SSPanel sspVol 
-      Height          =   525
-      Left            =   22140
+      Height          =   450
+      Left            =   21570
       TabIndex        =   17
-      Top             =   6345
+      Top             =   9150
       Width           =   3285
       _ExtentX        =   5794
-      _ExtentY        =   926
+      _ExtentY        =   794
       _Version        =   131074
       BackColor       =   3092271
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
@@ -45,33 +45,26 @@ Begin VB.Form frmPlayer
       Outline         =   -1  'True
       Alignment       =   6
       Begin LilacProBackTraxPlayer.zzSlider cpvVol 
-         Height          =   270
-         Left            =   630
+         Height          =   210
+         Left            =   495
          TabIndex        =   73
-         Top             =   195
-         Width           =   2535
-         _ExtentX        =   4471
-         _ExtentY        =   635
-         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "MS Sans Serif"
-            Size            =   8.25
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         SliderColor     =   49152
-         MaxValue        =   100
-         SmallChange     =   20
-         LargeChange     =   100
+         Top             =   165
+         Width           =   2700
+         _extentx        =   4763
+         _extenty        =   370
+         font            =   "frmPlayer.frx":3545
+         slidercolor     =   49152
+         maxvalue        =   100
+         smallchange     =   20
+         largechange     =   100
       End
       Begin VB.Image cmdCloseVol 
-         Height          =   375
-         Left            =   45
+         Height          =   285
+         Left            =   75
+         Picture         =   "frmPlayer.frx":3571
          Stretch         =   -1  'True
-         Top             =   75
-         Width           =   375
+         Top             =   105
+         Width           =   285
       End
       Begin VB.Label Label1 
          BackColor       =   &H00000000&
@@ -140,7 +133,7 @@ Begin VB.Form frmPlayer
          Caption         =   "0"
          BeginProperty Font 
             Name            =   "Arial"
-            Size            =   8.25
+            Size            =   6.75
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -151,7 +144,7 @@ Begin VB.Form frmPlayer
          Height          =   210
          Left            =   60
          TabIndex        =   22
-         Top             =   -15
+         Top             =   0
          Width           =   2685
       End
       Begin VB.Label Label1 
@@ -631,7 +624,7 @@ Begin VB.Form frmPlayer
    End
    Begin VB.Timer Timer3 
       Enabled         =   0   'False
-      Interval        =   1
+      Interval        =   50
       Left            =   20280
       Top             =   7035
    End
@@ -1152,7 +1145,7 @@ Begin VB.Form frmPlayer
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         Picture         =   "frmPlayer.frx":3545
+         Picture         =   "frmPlayer.frx":39B3
          AutoSize        =   1
          ButtonStyle     =   3
          BevelWidth      =   1
@@ -1181,7 +1174,7 @@ Begin VB.Form frmPlayer
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         Picture         =   "frmPlayer.frx":38F7
+         Picture         =   "frmPlayer.frx":3D65
          AutoSize        =   1
          ButtonStyle     =   3
          BevelWidth      =   1
@@ -1210,7 +1203,7 @@ Begin VB.Form frmPlayer
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         Picture         =   "frmPlayer.frx":3C87
+         Picture         =   "frmPlayer.frx":40F5
          Alignment       =   8
          ButtonStyle     =   3
          BevelWidth      =   1
@@ -1329,9 +1322,9 @@ Begin VB.Form frmPlayer
    End
    Begin Threed.SSPanel PanMain 
       Height          =   9720
-      Left            =   105
+      Left            =   165
       TabIndex        =   8
-      Top             =   1155
+      Top             =   1320
       Width           =   15960
       _ExtentX        =   28152
       _ExtentY        =   17145
@@ -1350,16 +1343,16 @@ Begin VB.Form frmPlayer
       ClipControls    =   0   'False
       BevelOuter      =   0
       Begin Threed.SSPanel cmdSong 
-         Height          =   5415
+         Height          =   6435
          Index           =   0
          Left            =   75
          Negotiate       =   -1  'True
          TabIndex        =   9
-         Top             =   30
+         Top             =   15
          Visible         =   0   'False
-         Width           =   6555
-         _ExtentX        =   11562
-         _ExtentY        =   9551
+         Width           =   7740
+         _ExtentX        =   13653
+         _ExtentY        =   11351
          _Version        =   131074
          ForeColor       =   16777215
          BackColor       =   128
@@ -1381,14 +1374,14 @@ Begin VB.Form frmPlayer
          PictureAlignment=   7
          FloodColor      =   49344
          Begin Threed.SSPanel sspSongTitle 
-            Height          =   1005
+            Height          =   1035
             Index           =   0
-            Left            =   255
+            Left            =   225
             TabIndex        =   62
-            Top             =   105
+            Top             =   30
             Width           =   3285
             _ExtentX        =   5794
-            _ExtentY        =   1773
+            _ExtentY        =   1826
             _Version        =   131074
             CaptionStyle    =   1
             ForeColor       =   0
@@ -1403,11 +1396,37 @@ Begin VB.Form frmPlayer
                Strikethrough   =   0   'False
             EndProperty
             Caption         =   "SSPanel2"
+            Begin VB.Image imgDirection 
+               Height          =   240
+               Index           =   0
+               Left            =   3015
+               Stretch         =   -1  'True
+               Top             =   -15
+               Width           =   240
+            End
+            Begin VB.Label lblButtonCnt 
+               Caption         =   "0"
+               BeginProperty Font 
+                  Name            =   "Arial"
+                  Size            =   6.75
+                  Charset         =   0
+                  Weight          =   400
+                  Underline       =   0   'False
+                  Italic          =   0   'False
+                  Strikethrough   =   0   'False
+               EndProperty
+               Height          =   180
+               Index           =   0
+               Left            =   345
+               TabIndex        =   85
+               Top             =   -15
+               Width           =   285
+            End
             Begin VB.Image imgCompleted3 
                Height          =   240
                Index           =   0
                Left            =   2880
-               Picture         =   "frmPlayer.frx":418F
+               Picture         =   "frmPlayer.frx":45FD
                Top             =   645
                Width           =   240
             End
@@ -1415,7 +1434,7 @@ Begin VB.Form frmPlayer
                Height          =   240
                Index           =   0
                Left            =   15
-               Picture         =   "frmPlayer.frx":4719
+               Picture         =   "frmPlayer.frx":4B87
                Top             =   630
                Width           =   240
             End
@@ -1423,7 +1442,7 @@ Begin VB.Form frmPlayer
                Height          =   240
                Index           =   0
                Left            =   30
-               Picture         =   "frmPlayer.frx":4CA3
+               Picture         =   "frmPlayer.frx":5111
                Top             =   15
                Width           =   240
             End
@@ -1431,7 +1450,7 @@ Begin VB.Form frmPlayer
                Height          =   240
                Index           =   0
                Left            =   2880
-               Picture         =   "frmPlayer.frx":522D
+               Picture         =   "frmPlayer.frx":569B
                Top             =   15
                Width           =   240
             End
@@ -1463,17 +1482,27 @@ Begin VB.Form frmPlayer
             RoundedCorners  =   0   'False
          End
          Begin MSComctlLib.ProgressBar sspProgress 
-            Height          =   270
+            Height          =   215
             Index           =   0
-            Left            =   1155
+            Left            =   1020
             TabIndex        =   40
-            Top             =   1155
+            Top             =   1170
             Width           =   1890
             _ExtentX        =   3334
-            _ExtentY        =   476
+            _ExtentY        =   370
             _Version        =   393216
             Appearance      =   0
             Scrolling       =   1
+         End
+         Begin VB.Image imgSetup 
+            Appearance      =   0  'Flat
+            Height          =   240
+            Index           =   0
+            Left            =   3675
+            Picture         =   "frmPlayer.frx":5C25
+            Stretch         =   -1  'True
+            Top             =   855
+            Width           =   240
          End
          Begin VB.Label lblStream 
             Alignment       =   2  'Center
@@ -1517,9 +1546,9 @@ Begin VB.Form frmPlayer
          Begin VB.Image imgVol 
             Height          =   450
             Index           =   0
-            Left            =   195
+            Left            =   210
             Stretch         =   -1  'True
-            Top             =   1155
+            Top             =   1170
             Width           =   450
          End
          Begin VB.Label lblVol 
@@ -1559,13 +1588,13 @@ Begin VB.Form frmPlayer
                Strikethrough   =   0   'False
             EndProperty
             ForeColor       =   &H00808080&
-            Height          =   735
+            Height          =   300
             Index           =   0
-            Left            =   60
+            Left            =   675
             TabIndex        =   11
-            Top             =   1425
+            Top             =   1380
             Visible         =   0   'False
-            Width           =   990
+            Width           =   315
          End
          Begin VB.Label lblTimePlayed 
             AutoSize        =   -1  'True
@@ -1588,14 +1617,6 @@ Begin VB.Form frmPlayer
             Top             =   1095
             Visible         =   0   'False
             Width           =   315
-         End
-         Begin VB.Image imgDirection 
-            Height          =   240
-            Index           =   0
-            Left            =   3975
-            Stretch         =   -1  'True
-            Top             =   45
-            Width           =   240
          End
          Begin VB.Label lblStatus 
             Alignment       =   1  'Right Justify
@@ -2086,14 +2107,14 @@ Begin VB.Form frmPlayer
    Begin VB.Image imgCompletedLarge 
       Height          =   360
       Left            =   23835
-      Picture         =   "frmPlayer.frx":57B7
+      Picture         =   "frmPlayer.frx":6067
       Top             =   4440
       Width           =   360
    End
    Begin VB.Image imgCompletedSmall 
       Height          =   240
       Left            =   23925
-      Picture         =   "frmPlayer.frx":6839
+      Picture         =   "frmPlayer.frx":70E9
       Top             =   4035
       Width           =   240
    End
@@ -2121,7 +2142,7 @@ Begin VB.Form frmPlayer
       Height          =   210
       Index           =   1
       Left            =   23145
-      Picture         =   "frmPlayer.frx":6DC3
+      Picture         =   "frmPlayer.frx":7673
       Stretch         =   -1  'True
       Top             =   5175
       Width           =   210
@@ -2130,7 +2151,7 @@ Begin VB.Form frmPlayer
       Height          =   210
       Index           =   0
       Left            =   23160
-      Picture         =   "frmPlayer.frx":77C5
+      Picture         =   "frmPlayer.frx":8075
       Stretch         =   -1  'True
       Top             =   4845
       Width           =   210
@@ -2320,6 +2341,7 @@ Private Sub cmdClearPalette_Click()
    
    ClearPalet = True
    SavePalete Trim(Me.Caption), 1
+   LoadPalette Trim(Me.Caption), 1, 5
    SetPageButton 1
    ClearPalet = False
    
@@ -2387,6 +2409,7 @@ Sub ClearButton(Index As Integer)
    imgCompleted1(Index).Visible = False
    imgCompleted2(Index).Visible = False
    imgCompleted3(Index).Visible = False
+   'imgSetup(Index).Visible = False
    
    imgVol(Index).Visible = False
   ' If bDoEq Then imgEQ(Index).Visible = False
@@ -2397,7 +2420,9 @@ Sub ClearButton(Index As Integer)
    lblVol(Index).Caption = "0"
          
    cmdSong(Index).Caption = " " & GetNextButtonNumber + Index
-
+   lblButtonCnt(Index).Caption = cmdSong(Index).Caption
+   
+   Closevolume True
    
 '   GetTotalTime
    
@@ -2429,13 +2454,82 @@ Sub SetButtonsLayout()
    Dim ButtonHeight As Integer
    Dim ButtonWidth As Integer
    
+   Dim PlayAreaTop As Integer
+   Dim PlayAreaLeft As Integer
+   Dim PlayAreaHeight As Integer
+   Dim PlayAreaWidth As Integer
+   
+   Dim ProgressTop As Integer
+   Dim ProgressLeft As Integer
+   Dim ProgressWidth As Integer
+   Dim ProgressHeight As Integer
+   
+   Dim TimePlayedLeft As Integer
+   Dim TimePlayedTop As Integer
+   Dim TimePlayedWidth As Integer
+   Dim TimePlayedHeight As Integer
+   
+   Dim TimeRemainLeft As Integer
+   Dim TimeRemainTop As Integer
+   Dim TimeRemainHeight As Integer
+   Dim TimeRemainWidth As Integer
+   
+   Dim VolumeTop As Integer
+   Dim VolumeLeft As Integer
+   Dim VolumeWidth As Integer
+   Dim PlayFontSize As Integer
+   Dim TimeFontSize As Integer
+
+   
+ '  iMaxBut = 20
+   
    On Error GoTo err1
    
    iTop = 15
    iLeft = 75  '100  '120
    iCol = 0
    iRow = 0
+   
+   
+   
+   
+   
    bMoveNextBut = False
+   
+   'Set the Adjustments values for butto sizes and positioning...
+'   Select Case iMaxBut
+'      Case 9
+'         AdjustHSpacing = 10
+'         AdjustVSpacing = 90
+'         AdjustButtonWidth = 0
+'         AdjustButtonHeight = 60
+'         ButtonHeight = 3000
+'         ButtonWidth = 6660
+'      Case 16
+'         AdjustHSpacing = 15
+'         AdjustVSpacing = 90
+'         AdjustButtonWidth = 0
+'         AdjustButtonHeight = 60
+'         ButtonHeight = 2235 - (PageButHeight / 5)
+'         ButtonWidth = 4980
+'      Case 25
+'         AdjustHSpacing = 10
+'         AdjustVSpacing = 80
+'         AdjustButtonWidth = 0
+'         AdjustButtonHeight = 60
+'         ButtonHeight = 1775
+'         ButtonWidth = 3972
+'      Case 30
+'         AdjustHSpacing = 5
+'         AdjustVSpacing = 80
+'         AdjustButtonWidth = 0
+'         AdjustButtonHeight = 60
+'         ButtonHeight = 1470
+'         ButtonWidth = 3972
+'   End Select
+      
+
+   
    If ApplyStandardTheme Then
       'Set the Adjustments values for butto sizes and positioning...
       Select Case iMaxBut
@@ -2485,29 +2579,119 @@ Sub SetButtonsLayout()
             AdjustButtonWidth = 0
             ButtonHeight = 2235 - (PageButHeight / 4)
             ButtonWidth = 4980
-         Case 25
-            AdjustHSpacing = 60 'Top to Bottom
+            
+            iMaxRows = 4
+            iMaxCols = 4
+            lblStream(0).Font.Size = 7
+            lblStream(0).Font.Bold = True
+            
+            PlayAreaTop = 30
+            PlayAreaLeft = 30
+            PlayAreaHeight = 1525
+            'PlayAreaWidth = 4915
+            PlayAreaWidth = ButtonWidth + AdjustButtonWidth - 60 '3930   '4000
+                                   
+            TimeRemainLeft = 660  '115
+            TimeRemainTop = 1705
+            TimeRemainWidth = 600  '1100
+            TimeRemainHeight = 230
+            
+            ProgressLeft = 1295
+            ProgressTop = 1720
+            ProgressWidth = 2455 + 450
+            ProgressHeight = 215
+            
+            TimePlayedLeft = 4260  '4305  '3905 + 400
+            TimePlayedTop = 1705
+            TimePlayedWidth = 600  '1100
+            TimePlayedHeight = 230
+            
+            PlayFontSize = 12
+            TimeFontSize = 10
+         
+            MaxWidth = 2900
+
+         Case 20
+            AdjustHSpacing = 75 'Top to Bottom
             AdjustVSpacing = 60 'Left to Right
-            AdjustButtonHeight = -15
+            AdjustButtonHeight = -30
             AdjustButtonWidth = 0
-            ButtonHeight = 1775
-            ButtonWidth = 3972
+            ButtonHeight = 2235 - (PageButHeight / 4)
+            ButtonWidth = 4000
+            
+            iMaxRows = 4
+            iMaxCols = 5
+            
+            lblStream(0).Font.Size = 7
+            lblStream(0).Font.Bold = True
+            
+            PlayAreaTop = 30
+            PlayAreaLeft = 30
+            PlayAreaHeight = 1525
+            PlayAreaWidth = ButtonWidth + AdjustButtonWidth - 60 '3930   '4000
+                                   
+            TimeRemainLeft = 600  '115
+            TimeRemainTop = 1705
+            TimeRemainWidth = 460  '1100
+            TimeRemainHeight = 230
+            
+            ProgressLeft = 1120
+            ProgressTop = 1720
+            ProgressWidth = 2200  '2455 + 450
+            ProgressHeight = 215
+            
+            TimePlayedLeft = 3375  '4260
+            TimePlayedTop = 1705
+            TimePlayedWidth = 500  '1100
+            TimePlayedHeight = 230
+            PlayFontSize = 11
+            TimeFontSize = 9
+         
+            MaxWidth = 2900
+
          Case 30
             AdjustHSpacing = 45 'Top to Bottom
             AdjustVSpacing = 45 'Left to Right
             AdjustButtonHeight = 0
             AdjustButtonWidth = 15
-            ButtonHeight = 1470
-            ButtonWidth = 3972
+            ButtonHeight = 1660
+            ButtonWidth = 3315
+            iMaxRows = 5
+            iMaxCols = 6
+            
+            lblStream(0).Font.Size = 7
+            lblStream(0).Font.Bold = True
+            
+            PlayAreaTop = 30
+            PlayAreaLeft = 30
+            PlayAreaHeight = 1130
+            PlayAreaWidth = ButtonWidth + AdjustButtonWidth - 60 '3930   '4000
+                                   
+            TimeRemainLeft = 545  '115
+            TimeRemainTop = 1360
+            TimeRemainWidth = 460  '1100
+            TimeRemainHeight = 230
+            
+            ProgressLeft = 1060
+            ProgressTop = 1345
+            ProgressWidth = 1660  '2455 + 450
+            ProgressHeight = 215
+            
+            TimePlayedLeft = ProgressLeft + ProgressWidth + 60  '4260
+            TimePlayedTop = 1360
+            TimePlayedWidth = 500  '1100
+            TimePlayedHeight = 230
+            
+            PlayFontSize = 10
+            TimeFontSize = 7
+         
+            MaxWidth = 2900
       End Select
    End If
       
-   LoadDataIntoFile 114, App.Path & "\tmpClear"     'Clear
+   LoadDataIntoFile 114, App.Path & "\tmpClear" 'Clear
    LoadDataIntoFile 115, App.Path & "\tmpOpen"  'Open
-   LoadDataIntoFile 116, App.Path & "\tmpColor"  'Color
-   'LoadDataIntoFile 118, App.Path & "\tmpSpkr"  'Color
-   'LoadDataIntoFile "AAA", App.Path & "\tmpSpkr"   'Color
-   
+   LoadDataIntoFile 116, App.Path & "\tmpColor" 'Color
    LoadDataIntoFile 132, App.Path & "\tmpDrive" 'Drive
    LoadDataIntoFile 124, App.Path & "\tmpDrive" 'Folder with subfolder
    LoadDataIntoFile 127, App.Path & "\tmpDrive" 'Empty Folder
@@ -2515,61 +2699,97 @@ Sub SetButtonsLayout()
    LoadDataIntoFile 131, App.Path & "\tmpDrive" 'Audio files
    LoadDataIntoFile 123, App.Path & "\tmpDrive" 'Video Files
    LoadDataIntoFile 134, App.Path & "\tmpClose" 'Close
-   LoadDataIntoFile 135, App.Path & "\tmpSpkr" 'Close
-   
-
-           
+   LoadDataIntoFile 135, App.Path & "\tmpSpkr"  'Close
+        
+   '*****************************************
    'Set the initial button size and layout...
-   cmdSong(0).Top = 15   '30
-   
-   sspSongTitle(0).Top = 45
-   sspSongTitle(0).Left = 300
+   '*****************************************
+   cmdSong(0).Top = 15
+   cmdSong(0).Height = ButtonHeight + AdjustButtonHeight
+   cmdSong(0).Width = ButtonWidth + AdjustButtonWidth
+         
+   '*********************************
+   'Play AREA
+   '*********************************
+   sspSongTitle(0).Top = PlayAreaTop
+   sspSongTitle(0).Left = PlayAreaLeft
+   sspSongTitle(0).Height = PlayAreaHeight
+   sspSongTitle(0).Width = PlayAreaWidth
    sspSongTitle(0).BackStyle = ssOpaque
    sspSongTitle(0).BevelInner = ssNoneBevel
    sspSongTitle(0).BevelOuter = ssNoneBevel
+   sspSongTitle(0).Font.Size = PlayFontSize
    
-   
-   lblTimePlayed(0).Left = 145  '-30
-   lblTimePlayed(0).Height = 180
-   'lblTimePlayed(0).Width = 525
+   'Button Count label
+   lblButtonCnt(0).Caption = "1"
+   lblButtonCnt(0).Left = -15
+   lblButtonCnt(0).Top = -15
+   lblButtonCnt(0).BackStyle = 0
+   lblButtonCnt(0).ForeColor = vbWhite
+   lblButtonCnt(0).Font.Size = 7
+   lblButtonCnt(0).Font.Bold = True
+   'Direction Image
+   If iButtonDirection = 1 Then 'Top To Bottom
+      imgDirection(0).Picture = imgDirectionSource(1).Picture
+      'imgDirection(0).Left = sspSongTitle(0).Width - imgDirection(0).Width - 30
+   Else
+      imgDirection(0).Picture = imgDirectionSource(0).Picture
+      'imgDirection(0).Left = sspSongTitle(0).Width - imgDirection(0).Width - 30
+   End If
+   imgDirection(0).Top = 15
+   imgDirection(0).Left = sspSongTitle(0).Width - imgDirection(0).Width - 75
+      
+   '*********************************
+   'Labels for Playing Time/progress
+   '*********************************
+   lblTimePlayed(0).Left = TimePlayedLeft '145
+   lblTimePlayed(0).Top = TimePlayedTop '180
+   lblTimePlayed(0).Height = TimePlayedHeight
+   lblTimePlayed(0).Width = TimePlayedWidth
    lblTimePlayed(0).Caption = "00:00"
-   
-   lblTimeLeft(0).Left = 0  '160   '745  '650  '525
-  ' lblTimeLeft(0).Height = 195
-   lblTimeLeft(0).AutoSize = False  'True
-   lblTimeLeft(0).Caption = "00:00"
-
-  ' lblTimeLeft(0).Width = 405
-   
-   sspProgress(0).Left = 1215  '1125
-   
-   Change_pb_ForeColor sspProgress(0).hWnd, vbGreen    '&HFFAE27
-   Change_pb_Color sspProgress(0).hWnd, &H260F35   'Default back color
-   
-   'imgCompleted(0).Picture = LoadResPicture(133, vbResIcon)
-   
-'''   imgCompleted(0).Left = 10000
-'''   imgCompleted(0).Top = 200
-
-   
-   'cmdReset.BackColor
-
-   
-'   lblTimeLeft(0).Width = sspProgress(0).Left - 50
-   
-'   cpvVolume(0).Left = 500  '450
-'   cpvVolume(0).Height = 240
-   
-   imgVol(0).Left = 100  '150
-        
-''''   sspLevel(0).Width = 405 - 15
-''''   sspLevel(0).Top = 30
-   
+   lblTimePlayed(0).FontSize = TimeFontSize
    lblTimePlayed(0).FontBold = False
+   lblTimePlayed(0).Alignment = 0   'Left
+   
+   lblTimePlayed(0).BorderStyle = 0
+   lblTimeLeft(0).BorderStyle = 0
+   
+   lblTimeLeft(0).Left = TimeRemainLeft
+   lblTimeLeft(0).Top = TimeRemainTop
+   lblTimeLeft(0).Height = TimeRemainHeight
+   lblTimeLeft(0).Width = TimeRemainWidth
+   lblTimeLeft(0).AutoSize = False
+   lblTimeLeft(0).Caption = "00:00"
+   lblTimeLeft(0).FontSize = lblTimePlayed(0).FontSize
    lblTimeLeft(0).FontBold = False
    lblTimeLeft(0).ForeColor = &HFFC0C0
    lblTimeLeft(0).Alignment = 1     'Right
-   lblTimePlayed(0).Alignment = 0   'Left
+
+   
+   imgVol(0).Left = 100  '150
+   imgVol(0).Top = ProgressTop - 160
+   
+   sspProgress(0).Top = ProgressTop
+   sspProgress(0).Height = ProgressHeight
+   sspProgress(0).Width = ProgressWidth
+   sspProgress(0).Left = ProgressLeft
+   Change_pb_ForeColor sspProgress(0).hWnd, vbGreen    '&HFFAE27
+   Change_pb_Color sspProgress(0).hWnd, &H260F35   'Default back color
+
+   lblSelect(0).Left = 0
+   lblSelect(0).BackStyle = 0
+   
+   imgVol(0).Height = 450
+   imgVol(0).Width = 450
+   
+   lblSelect(0).Top = lblTimeLeft(0).Top - 150
+   lblSelect(0).Width = lblTimeLeft(0).Width
+   
+   imgCompleted0(0).Picture = imgCompletedLarge.Picture
+   imgCompleted1(0).Picture = imgCompletedLarge.Picture
+   imgCompleted2(0).Picture = imgCompletedLarge.Picture
+   imgCompleted3(0).Picture = imgCompletedLarge.Picture
+
    
 ''''   lblPeakL(0).Left = 60
 ''''   lblPeakR(0).Left = 210
@@ -2580,231 +2800,12 @@ Sub SetButtonsLayout()
 ''''   picLevelL(0).Left = lblPeakL(0).Left - 15  '45
 ''''   picLevelR(0).Left = lblPeakR(0).Left - 15   '195
    
-   lblSelect(0).Left = 0
-   lblSelect(0).BackStyle = 0
-   
-   imgVol(0).Height = 450
-   imgVol(0).Width = 450
-   
-   Select Case iMaxBut
-      Case 30
-         iMaxRows = 6
-         iMaxCols = 5
-         
-         lblStream(0).Font.Size = 5
-         lblStream(0).Font.Bold = False
-         
-         cmdSong(0).Height = ButtonHeight + AdjustButtonHeight
-         cmdSong(0).Width = ButtonWidth + AdjustButtonWidth
-         
-         sspSongTitle(0).Width = cmdSong(0).Width - sspSongTitle(0).Left - 250  '45 '- sspLevel(0).Width - 45
-         sspSongTitle(0).Height = cmdSong(0).Height - sspSongTitle(0).Top - 450
-         sspSongTitle(0).Font.Size = 9
-         lblTimePlayed(0).Top = sspSongTitle(0).Top + sspSongTitle(0).Height + 60 + 100
-         lblTimePlayed(0).FontSize = 8
-         lblTimeLeft(0).Top = lblTimePlayed(0).Top
-         lblTimeLeft(0).FontSize = 8
-         lblTimeLeft(0).Width = 1000
-         sspProgress(0).Top = lblTimePlayed(0).Top
-         imgVol(0).Height = 400  '450 is default
-         imgVol(0).Width = imgVol(0).Height
-         imgVol(0).Top = lblTimeLeft(0).Top - 180
-      '   If bDoEq Then imgEQ(0).Top = lblTimePlayed(0).Top   ' (sspSongTitle(0).Top + sspSongTitle(0).Height) - imgEQ(0).Height
-         sspProgress(0).Height = 215
-       '  lblTimeLeft(0).Left = imgVol(0).Left + imgVol(0).Width + 45
-         
-         lblTimePlayed(0).Left = (sspSongTitle(0).Left + sspSongTitle(0).Width) - lblTimePlayed(0).Width
-         sspProgress(0).Width = lblTimePlayed(0).Left - lblTimeLeft(0).Width - 200 '- lblTimeLeft(0).Left
-         sspProgress(0).Left = lblTimeLeft(0).Left + lblTimeLeft(0).Width + 50
-         lblTimePlayed(0).Left = sspProgress(0).Left + sspProgress(0).Width + 50
 
-'''         sspLevel(0).Left = cmdSong(0).Width - sspLevel(0).Width - 45
-'''         sspLevel(0).Height = 1475
-'''
-'''         lblPeakL(0).Top = 75
-'''         picLevelL(0).Height = 1060
-         
-         lblSelect(0).Top = lblTimeLeft(0).Top - 100
-         lblSelect(0).Width = lblTimeLeft(0).Width
-         
-         
-         imgCompleted0(0).Picture = imgCompletedSmall.Picture
-         imgCompleted1(0).Picture = imgCompletedSmall.Picture
-         imgCompleted2(0).Picture = imgCompletedSmall.Picture
-         imgCompleted3(0).Picture = imgCompletedSmall.Picture
-         
-'''         lnProgress(0).Y1 = sspProgress(0).Top + sspProgress(0).Height + 100   '1770
-'''         lnProgress(0).Y2 = lnProgress(0).Y1
-'''         lnProgress(0).X1 = 1120
-'''         RightMost = lnProgress(0).X1 + 1780
-'''         lnProgress(0).BorderWidth = 10
-         MaxWidth = 2117   '2340   '1935 'Progress control value
-   
-      Case 25
-         iMaxRows = 5
-         iMaxCols = 5
-         
-         lblStream(0).Font.Size = 6
-         lblStream(0).Font.Bold = False
-         
-         cmdSong(0).Height = ButtonHeight + AdjustButtonHeight
-         cmdSong(0).Width = ButtonWidth + AdjustButtonWidth
-         
-         sspSongTitle(0).Width = cmdSong(0).Width - sspSongTitle(0).Left - 250   '60 '- sspLevel(0).Width - 60
-         sspSongTitle(0).Height = cmdSong(0).Height - sspSongTitle(0).Top - 545
-         sspSongTitle(0).Font.Size = 9
-         lblTimePlayed(0).Height = 230
-         lblTimePlayed(0).Top = sspSongTitle(0).Top + sspSongTitle(0).Height + 100 + 130
-         lblTimePlayed(0).FontSize = 9
-         lblTimeLeft(0).FontSize = lblTimePlayed(0).FontSize
-         'lblTimeLeft(0).Height = lblTimePlayed(0).Height
-         lblTimeLeft(0).Top = lblTimePlayed(0).Top
-         lblTimeLeft(0).Width = 1050
-         sspProgress(0).Top = lblTimePlayed(0).Top
-         imgVol(0).Height = 425  '450 is default
-         imgVol(0).Width = imgVol(0).Height
-         imgVol(0).Top = lblTimeLeft(0).Top - 180
-      '   If bDoEq Then imgEQ(0).Top = lblTimePlayed(0).Top '(sspSongTitle(0).Top + sspSongTitle(0).Height) - imgEQ(0).Height
-         sspProgress(0).Height = 215
-         'lblTimeLeft(0).Left = imgVol(0).Left + imgVol(0).Width + 45
-
-         lblTimePlayed(0).Left = (sspSongTitle(0).Left + sspSongTitle(0).Width) - lblTimePlayed(0).Width
-         sspProgress(0).Width = lblTimePlayed(0).Left - lblTimeLeft(0).Width - 200 - lblTimeLeft(0).Left
-         sspProgress(0).Left = lblTimeLeft(0).Left + lblTimeLeft(0).Width + 50
-         lblTimePlayed(0).Left = sspProgress(0).Left + sspProgress(0).Width + 50
-         
-'''         sspLevel(0).Left = cmdSong(0).Width - sspLevel(0).Width - 45
-'''         sspLevel(0).Height = 1760
-'''
-'''         lblPeakL(0).Top = 60
-'''         picLevelL(0).Height = 1375
-
-         lblSelect(0).Top = lblTimeLeft(0).Top - 120
-         lblSelect(0).Width = lblTimeLeft(0).Width
-         
-         imgCompleted0(0).Picture = imgCompletedSmall.Picture
-         imgCompleted1(0).Picture = imgCompletedSmall.Picture
-         imgCompleted2(0).Picture = imgCompletedSmall.Picture
-         imgCompleted3(0).Picture = imgCompletedSmall.Picture
-         
-'''         lnProgress(0).Y1 = sspProgress(0).Top + sspProgress(0).Height + 100   '1770
-'''         lnProgress(0).Y2 = lnProgress(0).Y1
-'''         lnProgress(0).X1 = 1200
-'''         RightMost = lnProgress(0).X1 + 1600
-'''         lnProgress(0).BorderWidth = 12
-         MaxWidth = 2007    '2215   '1815 'Progress control value
-        
-      Case 16  'We will do this 5 times since we have 5 pages  = 80 buttons
-         iMaxRows = 4
-         iMaxCols = 4
-         lblStream(0).Font.Size = 7
-         lblStream(0).Font.Bold = True
-                  
-         cmdSong(0).Height = ButtonHeight + AdjustButtonHeight
-         cmdSong(0).Width = ButtonWidth + AdjustButtonWidth
-         
-         sspSongTitle(0).Width = cmdSong(0).Width - sspSongTitle(0).Left - 250   '60 '- sspLevel(0).Width - 60
-         sspSongTitle(0).Height = cmdSong(0).Height - sspSongTitle(0).Top - 645 '+ (PageButHeight / 8)
-         sspSongTitle(0).Font.Size = 12
-         lblTimePlayed(0).Height = 230
-         lblTimePlayed(0).Top = sspSongTitle(0).Top + sspSongTitle(0).Height + 130 + 160
-         lblTimePlayed(0).FontSize = 10
-         lblTimeLeft(0).FontSize = lblTimePlayed(0).FontSize
-        ' lblTimeLeft(0).Height = lblTimePlayed(0).Height
-         lblTimeLeft(0).Top = lblTimePlayed(0).Top
-         lblTimeLeft(0).Width = 1100
-         sspProgress(0).Top = lblTimePlayed(0).Top - 30
-         imgVol(0).Top = lblTimeLeft(0).Top - 175
-     '    If bDoEq Then imgEQ(0).Top = lblTimePlayed(0).Top  '(sspSongTitle(0).Top + sspSongTitle(0).Height) - imgEQ(0).Height
-         sspProgress(0).Height = 300
-         
-        ' lblTimeLeft(0).Left = imgVol(0).Left + imgVol(0).Width '+ 45
-         
-         lblTimePlayed(0).Left = (sspSongTitle(0).Left + sspSongTitle(0).Width) - lblTimePlayed(0).Width
-         sspProgress(0).Width = lblTimePlayed(0).Left - lblTimeLeft(0).Width - 250 '- lblTimeLeft(0).Left
-         sspProgress(0).Left = lblTimeLeft(0).Left + lblTimeLeft(0).Width + 50
-         lblTimePlayed(0).Left = sspProgress(0).Left + sspProgress(0).Width + 50
-           
-''''         sspLevel(0).Left = cmdSong(0).Width - sspLevel(0).Width - 45
-''''         sspLevel(0).Height = 2245
-''''
-''''         lblPeakL(0).Top = 40
-''''         picLevelL(0).Height = 1900
-         
-         lblSelect(0).Top = lblTimeLeft(0).Top - 150
-         lblSelect(0).Width = lblTimeLeft(0).Width
-         
-         imgCompleted0(0).Picture = imgCompletedLarge.Picture
-         imgCompleted1(0).Picture = imgCompletedLarge.Picture
-         imgCompleted2(0).Picture = imgCompletedLarge.Picture
-         imgCompleted3(0).Picture = imgCompletedLarge.Picture
-         
-         
-''''         lnProgress(0).Y1 = sspProgress(0).Top + sspProgress(0).Height + 100   '1770
-''''         lnProgress(0).Y2 = lnProgress(0).Y1
-''''         lnProgress(0).X1 = 1290
-''''         RightMost = lnProgress(0).X1 + 2430
-''''         lnProgress(0).BorderWidth = 15
-         MaxWidth = 2900   '3112  '2700 'Progress control value
-         
-      Case 9
-         iMaxRows = 3
-         iMaxCols = 3
-         
-         lblStream(0).Font.Size = 7
-         lblStream(0).Font.Bold = True
-                 
-         cmdSong(0).Height = ButtonHeight + AdjustButtonHeight
-         cmdSong(0).Width = ButtonWidth + AdjustButtonWidth
-         
-         sspSongTitle(0).Width = cmdSong(0).Width - sspSongTitle(0).Left - 250  '60 '- sspLevel(0).Width - 60
-         sspSongTitle(0).Height = cmdSong(0).Height - sspSongTitle(0).Top - 645
-         sspSongTitle(0).Font.Size = 14
-         sspProgress(0).Height = 300
-         lblTimePlayed(0).Height = 230
-         lblTimePlayed(0).Top = sspSongTitle(0).Top + sspSongTitle(0).Height + 130 + 160
-         lblTimePlayed(0).FontSize = 11
-         lblTimeLeft(0).FontSize = lblTimePlayed(0).FontSize
-         'lblTimeLeft(0).Height = lblTimePlayed(0).Height
-         lblTimeLeft(0).Top = lblTimePlayed(0).Top
-         lblTimeLeft(0).Width = 1150
-         sspProgress(0).Top = lblTimePlayed(0).Top - 30
-         imgVol(0).Top = lblTimeLeft(0).Top - 175
-        ' If bDoEq Then imgEQ(0).Top = lblTimePlayed(0).Top     '(sspSongTitle(0).Top + sspSongTitle(0).Height) - imgEQ(0).Height
-         'lblTimeLeft(0).Left = imgVol(0).Left + imgVol(0).Width + 45
-
-         lblTimePlayed(0).Left = (sspSongTitle(0).Left + sspSongTitle(0).Width) - lblTimePlayed(0).Width
-         sspProgress(0).Width = lblTimePlayed(0).Left - lblTimeLeft(0).Width - 250   '- lblTimeLeft(0).Left
-         sspProgress(0).Left = (lblTimeLeft(0).Left + lblTimeLeft(0).Width) + 50
-         lblTimePlayed(0).Left = (sspProgress(0).Left + sspProgress(0).Width) + 50
-         
-'''         sspLevel(0).Left = cmdSong(0).Width - sspLevel(0).Width - 45
-'''         sspLevel(0).Height = 3050
-'''
-'''         lblPeakL(0).Top = 75
-'''         picLevelL(0).Height = 2640
-         
-         lblSelect(0).Top = lblTimeLeft(0).Top - 150
-         lblSelect(0).Width = lblTimeLeft(0).Width
-         
-         imgCompleted0(0).Picture = imgCompletedLarge.Picture
-         imgCompleted1(0).Picture = imgCompletedLarge.Picture
-         imgCompleted2(0).Picture = imgCompletedLarge.Picture
-         imgCompleted3(0).Picture = imgCompletedLarge.Picture
-         
-'''         lnProgress(0).Y1 = sspProgress(0).Top + sspProgress(0).Height + 100   '1770
-'''         lnProgress(0).Y2 = lnProgress(0).Y1
-'''         lnProgress(0).X1 = 1340
-'''         RightMost = lnProgress(0).X1 + 4000
-'''         lnProgress(0).BorderWidth = 15
-         MaxWidth = 4470  '4692   '4290 'Progress control value
-         
-      End Select
       
-      'lblStream(0).Top = cmdSong(0).Height - lblStream(0).Height   'sspProgress(0).Top + sspProgress(0).Height
-      lblStream(0).Top = sspProgress(0).Top + sspProgress(0).Height + 30
-      lblStream(0).Left = sspProgress(0).Left   '30
-      lblStream(0).Width = sspProgress(0).Width
+   'lblStream(0).Top = cmdSong(0).Height - lblStream(0).Height   'sspProgress(0).Top + sspProgress(0).Height
+   lblStream(0).Top = sspProgress(0).Top + sspProgress(0).Height + 30
+   lblStream(0).Left = sspProgress(0).Left   '30
+   lblStream(0).Width = sspProgress(0).Width
       
       
 ''''      lnProgress(0).BorderColor = vbMagenta
@@ -2821,17 +2822,12 @@ Sub SetButtonsLayout()
 '''''   picLevelR(0).Top = picLevelL(0).Top
 '''''   picLevelR(0).Height = picLevelL(0).Height
       
-   'MaxWidth = 2117
    MaxWidth = sspProgress(0).Width '- 50 'Progress control value
-   ''''IncrVal = MaxWidth / 100
    
-'   imgCompleted(0).Top = (cmdSong(0).Height / 2) - (imgCompleted(0).Height / 2)
-'   imgCompleted(0).Left = cmdSong(0).Width - imgCompleted(0).Width - 200
-   
-   
-   
-   
-   imgCompleted0(0).Top = 30    '(sspSongTitle(0).Height / 2) - (imgCompleted(0).Height / 2)
+   '*********************************
+   'IMAGE when Completed song
+   '*********************************
+   imgCompleted0(0).Top = 200 '30    '(sspSongTitle(0).Height / 2) - (imgCompleted(0).Height / 2)
    imgCompleted0(0).Left = 30   'sspSongTitle(0).Width - imgCompleted0(0).Width - 200
    imgCompleted0(0).Visible = False
    
@@ -2847,44 +2843,50 @@ Sub SetButtonsLayout()
    imgCompleted3(0).Left = imgCompleted1(0).Left
    imgCompleted3(0).Visible = False
    
-   
-   
-   
-   iLblWidth = lblTimeLeft(0).Width
-   lblTimeLeft(0).AutoSize = False
+'   iLblWidth = lblTimeLeft(0).Width
+'   lblTimeLeft(0).AutoSize = False
    lblTimeLeft(0).Caption = ""
-   lblTimeLeft(0).Width = iLblWidth
+'   lblTimeLeft(0).Width = iLblWidth
    
+     
+''   If iButtonDirection = 1 Then 'Top To Bottom
+''      imgDirection(0).Picture = imgDirectionSource(1).Picture
+''      imgDirection(0).Left = sspSongTitle(0).Width - imgDirection(0).Width - 30  '370   '  sspLevel(0).Left + 100
+''   Else
+''      imgDirection(0).Picture = imgDirectionSource(0).Picture
+''      imgDirection(0).Left = sspSongTitle(0).Width - imgDirection(0).Width - 30   '370    'sspLevel(0).Left + 100
+''   End If
+''
+''   imgDirection(0).Top = 15  '60
 
-  
    
-   If iButtonDirection = 1 Then 'Top To Bottom
-      imgDirection(0).Picture = imgDirectionSource(1).Picture
-      imgDirection(0).Top = 60    '(sspLevel(0).Top + sspLevel(0).Height) - 300
-      imgDirection(0).Left = cmdSong(0).Width - imgDirection(0).Width - 30  '370   '  sspLevel(0).Left + 100
-   Else
-      imgDirection(0).Picture = imgDirectionSource(0).Picture
-      imgDirection(0).Top = 60
-      imgDirection(0).Left = cmdSong(0).Width - imgDirection(0).Width - 30   '370    'sspLevel(0).Left + 100
-   End If
    
-  'If bDoEq Then imgEQ(0).Left = imgDirection(0).Left
    
+   
+   
+   
+   '***************************************
+   'L O A D   A L L   N E W   B U T T O N S
+   '***************************************
    For iBut = 1 To iMaxBut
       '==================================
       'Create the controls dinamicaly
       Load cmdSong(iBut)
       cmdSong(iBut).Left = 25000
       cmdSong(iBut).Visible = True
-      
-      Load imgDirection(iBut)
-      Set imgDirection(iBut).Container = cmdSong(iBut)
-      imgDirection(iBut).Visible = True
-      
+
       
       Load sspSongTitle(iBut)
       Set sspSongTitle(iBut).Container = cmdSong(iBut)
       sspSongTitle(iBut).Visible = True
+      
+      Load imgDirection(iBut)
+      Set imgDirection(iBut).Container = sspSongTitle(iBut)
+      'imgDirection(iBut).Visible = True
+           
+      Load lblButtonCnt(iBut)
+      Set lblButtonCnt(iBut).Container = sspSongTitle(iBut)
+      lblButtonCnt(iBut).Visible = True
       
       Load imgCompleted0(iBut)
       'Set imgCompleted(iBut).Container = cmdSong(iBut)
@@ -2983,6 +2985,10 @@ Sub SetButtonsLayout()
       Load lblVol(iBut)
       lblVol(iBut).Visible = True
       
+''''      Load imgSetup(iBut)
+''''      Set imgSetup(iBut).Container = cmdSong(iBut)
+''''      imgSetup(iBut).Visible = True
+      
      
       '===================================
       'Set the button layout
@@ -3013,12 +3019,13 @@ Sub SetButtonsLayout()
 '            iDispBut = 80
 '      End Select
       cmdSong(iBut).Caption = " " & (GetNextButtonNumber + iBut)
+      lblButtonCnt(iBut).Caption = cmdSong(iBut).Caption
       'cmdSong(iBut).Caption = " " & iBut
       cmdSong(iBut).ForeColor = vbWhite
       
       sspSongTitle(iBut).Top = sspSongTitle(0).Top
       sspSongTitle(iBut).Left = sspSongTitle(0).Left
-      sspSongTitle(iBut).Width = sspSongTitle(0).Width - 50
+      sspSongTitle(iBut).Width = sspSongTitle(0).Width '- 50
       sspSongTitle(iBut).Height = sspSongTitle(0).Height
       sspSongTitle(iBut).Font = sspSongTitle(0).Font
       sspSongTitle(iBut).Font.Size = sspSongTitle(0).Font.Size
@@ -3246,6 +3253,12 @@ Private Sub cmdCloseVol_Click()
 
 End Sub
 
+Private Sub cmdCloseVol_MouseMove(Button As Integer, Shift As Integer, X As Single, Y As Single)
+DoEvents
+Screen.MousePointer = 14  '14
+DoEvents
+End Sub
+
 Private Sub cmdCloseVol_MouseUp(Button As Integer, Shift As Integer, X As Single, Y As Single)
 Closevolume
 End Sub
@@ -3433,7 +3446,7 @@ Private Sub cmdLoadPalette_Click()
       ClearButtons
       PanMain.Left = -10
       DoEvents
-      LoadPalette PaletteName, 1  'iPageNo
+      LoadPalette PaletteName, 1, 1 '1=ALL
       SetPageButton 1
       
       DoEvents
@@ -3536,6 +3549,8 @@ ProcessClickOK
 End Sub
 
 Private Sub cmdPage_Click(Index As Integer)
+ 
+ If lblStatus(Player1Index).Caption = "Playing" Or lblStatus(Player2Index).Caption = "Playing" Then Exit Sub
   
   iPageno = Index
   SetPageButton Index
@@ -3544,7 +3559,7 @@ Private Sub cmdPage_Click(Index As Integer)
      ClearButtons
      PanMain.Left = -10
      DoEvents
-     LoadPalette PaletteName, iPageno
+     LoadPalette PaletteName, iPageno, 2 '2=ONLY page from array
      
      DoEvents
      Me.Caption = UCase(PaletteName)
@@ -3618,7 +3633,8 @@ Private Sub cmdSavePalette_Click()
       ClearButtons
       PanMain.Left = -10
       DoEvents
-      LoadPalette PaletteName, iPageno
+      LoadPalette PaletteName, iPageno, 3  '3 = Only reload the array from file
+      LoadPalette PaletteName, iPageno, 2  '2=Reload this page from array
       
       DoEvents
       Me.Caption = UCase(PaletteName)
@@ -3803,6 +3819,8 @@ Private Sub cmdSong_DragDrop(Index As Integer, Source As Control, X As Single, Y
 '''               End If
 '''
                SavePalete Trim(Me.Caption), iPageno
+               LoadPalette Trim(Me.Caption), iPageno, 3 'We only need to reload the array from file
+               
                If Not TimerMainLevel.Enabled Then
                   InitialisePeaks 0
                End If
@@ -3819,6 +3837,43 @@ Exit Sub
 err1:
 MsgBox "Error in Module : cmdSong_DragDrop " & Chr(13) & Chr(13) & Err.Description, vbExclamation
       
+End Sub
+
+Sub FixPaletteArray(SourceIndex As Integer, TargetIndex As Integer)
+
+  Dim i As Integer
+  PlArr(PLA.efTtle, TargetIndex) = PlArr(PLA.efTtle, SourceIndex) 'Keep Full title here
+  PlArr(PLA.eTtle, TargetIndex) = PlArr(PLA.eTtle, SourceIndex)   'Fix the above to show nice title ('Determine if there are "-" in the title array, if so, split the 2)
+  PlArr(PLA.eFN, TargetIndex) = PlArr(PLA.eFN, SourceIndex)       'Keep the filename here
+  PlArr(PLA.eVol, TargetIndex) = PlArr(PLA.eVol, SourceIndex)     'Get the volume
+  PlArr(PLA.eAve, TargetIndex) = PlArr(PLA.eAve, SourceIndex)     'Use this to keep the Average when song is loaded...
+  PlArr(PLA.eClr, TargetIndex) = PlArr(PLA.eClr, SourceIndex)     'Color
+  'Clear the old data
+  For i = 0 To 10
+    PlArr(i, SourceIndex) = ""
+  Next i
+            
+End Sub
+
+Sub FixPaletteButtonArray(iOption As Integer, TargetIndex As Integer, sValue As String)
+
+  Select Case iOption
+    Case 0
+      PlArr(PLA.eTtle, TargetIndex) = sValue   'Fix the above to show nice title ('Determine if there are "-" in the title array, if so, split the 2)
+    Case 1
+      PlArr(PLA.efTtle, TargetIndex) = sValue  'Keep Full title here
+    Case 2
+      PlArr(PLA.eFN, TargetIndex) = sValue       'Keep the filename here
+    Case 3
+      PlArr(PLA.eVol, TargetIndex) = CInt(sValue)     'Get the volume
+    Case 4
+      PlArr(PLA.eAve, TargetIndex) = CInt(sValue)     'Use this to keep the Average when song is loaded...
+    Case 5
+      PlArr(PLA.eClr, TargetIndex) = CInt(sValue)     'Color
+    Case 6
+    
+  End Select
+            
 End Sub
 
 Private Sub cmdSong_MouseMove(Index As Integer, Button As Integer, Shift As Integer, X As Single, Y As Single)
@@ -3843,53 +3898,53 @@ Private Sub cmdSong_MouseUp(Index As Integer, Button As Integer, Shift As Intege
    On Error GoTo err1
    Dim iSongs As Integer
    Dim i As Integer
-   
+
 '   Timer3.Enabled = False
 '   If LongPress > 40 Then
 '      LongPress = 0
 '      Exit Sub
 '   End If
-   
+
    If iSecureMode = 2 Then Exit Sub
-   
+
    If Button = 2 Then 'Right-clicked
      iMnuFlag = 2
      Setstate Index
    Else
       If sspSongTitle(Index).Caption = "" Then
-''''         '==================================================================================
-''''         'For Demo system, only allow load of 5 songs
-''''         If DemoFlag Then
-''''            If DetermineTotButtons(True) >= DemoMax Then
-''''               MsgBox DemoMsg1 & Chr(13) & Chr(13) & DemoMsg3, vbExclamation, DemoHeading
-''''               Exit Sub
-''''            End If
-''''         End If
-''''         '==================================================================================
-''''
-''''         iMnuFlag = 2 'Make sure we only load a new song when button is not initialised
-''''         Setstate Index
-''''
-''''         palletArr(0) = ""
-''''         If Trim(Me.Caption) = "" Then
-''''            Me.Caption = "tmp001"
-''''            palletArr(0) = Trim(Me.Caption)
-''''         End If
-''''         SavePalete Trim(Me.Caption)
+                  ''''         '==================================================================================
+                  ''''         'For Demo system, only allow load of 5 songs
+                  ''''         If DemoFlag Then
+                  ''''            If DetermineTotButtons(True) >= DemoMax Then
+                  ''''               MsgBox DemoMsg1 & Chr(13) & Chr(13) & DemoMsg3, vbExclamation, DemoHeading
+                  ''''               Exit Sub
+                  ''''            End If
+                  ''''         End If
+                  ''''         '==================================================================================
+                  ''''
+                  ''''         iMnuFlag = 2 'Make sure we only load a new song when button is not initialised
+                  ''''         Setstate Index
+                  ''''
+                  ''''         palletArr(0) = ""
+                  ''''         If Trim(Me.Caption) = "" Then
+                  ''''            Me.Caption = "tmp001"
+                  ''''            palletArr(0) = Trim(Me.Caption)
+                  ''''         End If
+                  ''''         SavePalete Trim(Me.Caption)
          LoadNewSong Index
       Else
-         bTagEditMP3 = UCase(Right(sspSongTitle(Index).Tag, 3)) = "MP3"
-         'FilenameToLoad = sspSongTitle(Index).Tag
-         If lblStatus(Index).Caption = "Ready" Then ShowOptionScreen Index
-         
-         SavePalete Trim(Me.Caption), iPageno
-         
+'         bTagEditMP3 = UCase(Right(sspSongTitle(Index).Tag, 3)) = "MP3"
+'         'FilenameToLoad = sspSongTitle(Index).Tag
+'         If lblStatus(Index).Caption = "Ready" Then ShowOptionScreen Index
+'
+'         SavePalete Trim(Me.Caption), iPageno
+
       End If
    End If
-   
-   
+
+
    Exit Sub
-   
+
 err1:
 
 MsgBox "Error in Module : cmdSong_MouseUp " & Chr(13) & Chr(13) & Err.Description, vbExclamation
@@ -3921,6 +3976,7 @@ Sub LoadNewSong(Index As Integer)
    
    End If
    SavePalete Trim(Me.Caption), iPageno
+   LoadPalette Trim(Me.Caption), iPageno, 3 'We only need to reload the array from file
    
 End Sub
 
@@ -3990,7 +4046,12 @@ Sub Setstate(Index As Integer)
             LastPlaying = 0
             LastPlaying = DeterminePlayingCurrently
             'FadeSong
-            If LastPlaying <> 0 Then FadeSong 20  'FASTER fadeout and then stop. The Stop is a bit abrubt...
+            If LastPlaying <> 0 Then
+              If sspVol.Left <> 22000 Then
+                Closevolume True
+              End If
+              FadeSong 20  'FASTER fadeout and then stop. The Stop is a bit abrubt...
+            End If
             'If LastPlaying <> 0 Then StopSong LastPlaying
             DoEvents
           End If
@@ -4295,7 +4356,7 @@ Sub SetupButton(Index As Integer, SongTitle As String, SongArtist As String, Fil
    time = BASS_ChannelBytes2Seconds(chan(3), Bytes)
    
    lblTimeLeft(Index).Caption = "00:00"  'Trim((time \ 60) & ":" & Format(time Mod 60, "00"))
-   lblTimePlayed(Index).Tag = Trim((time \ 60) & ":" & Format(time Mod 60, "00"))
+   lblTimePlayed(Index).Tag = Trim(Format((time \ 60), "00") & ":" & Format(time Mod 60, "00"))
    lblTimePlayed(Index).Caption = lblTimePlayed(Index).Tag
    'lblTimeLeft(Index).Caption = "/ " & Trim((time \ 60) & ":" & Format(time Mod 60, "00"))
    
@@ -4326,6 +4387,8 @@ Sub SetupButton(Index As Integer, SongTitle As String, SongArtist As String, Fil
    
    imgDirection(Index).Visible = True
    
+'''   imgSetup(Index).Visible = True
+   
    GetTotalTime
    
    If Not TimerMainLevel.Enabled Then
@@ -4340,8 +4403,6 @@ Sub SetupButton(Index As Integer, SongTitle As String, SongArtist As String, Fil
       iRandColor = GenRndNumber(1, 16)
       SetButtonColor Index, iRandColor
    End If
-   
-   
    
    Exit Sub
    
@@ -4472,9 +4533,6 @@ For iTotRec = 1 To iTotButs
       
    End If
 Next iTotRec
-
-
-
 
    Exit Sub
    
@@ -4641,6 +4699,8 @@ Sub SetPlayingColor(Index As Integer)
    sspSongTitle(Index).BackColor = vbYellow
    sspSongTitle(Index).ForeColor = vbBlack
    
+   lblButtonCnt(Index).ForeColor = sspSongTitle(Index).ForeColor
+   
    cmdPause.BackColor = vbBlack
    cmdPause.ForeColor = vbDirectionColor
 End Sub
@@ -4649,6 +4709,8 @@ Sub SetPauseColor(Index As Integer)
    
    sspSongTitle(Index).BackColor = vbYellow
    sspSongTitle(Index).ForeColor = vbBlack
+   
+   lblButtonCnt(Index).ForeColor = sspSongTitle(Index).ForeColor
    
    cmdPause.BackColor = vbDirectionColor
    cmdPause.ForeColor = vbBlack
@@ -4697,8 +4759,10 @@ Sub SetPlayColor(Index As Integer, channel As Integer)
   ' cpvVolume(Index).BackColor = ButColors(iColor)
    
    sspSongTitle(Index).ForeColor = vbBlack
+   lblButtonCnt(Index).ForeColor = sspSongTitle(Index).ForeColor
   ' sspSongTitle(Index).BevelOuter = ssInsetBevel
    sspSongTitle(Index).BackStyle = 1
+   sspSongTitle(Index).ForeColor = vbBlack
    sspSongTitle(Index).BackColor = vbNDYellow
    sspSongTitle(Index).Font.Bold = True
   'sspSongTitle(Index).BevelWidth = 1
@@ -4744,7 +4808,7 @@ Sub Playsong(channel As Integer, Index As Integer)
    On Error GoTo err1
    
    SetPlayColor Index, channel
-   If imgVol(iVolIndex).Visible = False And sspVol.Left = 22000 Then Closevolume
+  ' If imgVol(iVolIndex).Visible = False And sspVol.Left = 22000 Then Closevolume
    
    lblStream(Index).Caption = "Stream  :  " & channel
    lblStream(Index).Tag = channel
@@ -4779,7 +4843,7 @@ Sub Playsong(channel As Integer, Index As Integer)
    If CDbl(lblTimeLeft(Index).Tag) > 0 And iButtonRemoveSilence = 1 Then
     '  Debug.Print "Starting at : " & CDbl(lblTimeLeft(Index).Tag)
       If lblTimeLeft(Index).Tag <> "" Then
-         Call BASS_ChannelSetPosition(chan(channel), BASS_ChannelSeconds2Bytes(chan(channel), CDbl(lblTimeLeft(Index).Tag)), BASS_POS_BYTE)     ' set the position
+         Call BASS_ChannelSetPosition(chan(channel), BASS_ChannelSeconds2Bytes(chan(channel), CDbl(lblTimeLeft(Index).Tag)), BASS_POS_BYTE)      ' set the position
       End If
    End If
    Duration(channel) = Format(bassTime.GetDuration(chan(channel)), "0")
@@ -4855,6 +4919,7 @@ Private Sub cmdSong_OLEDragDrop(Index As Integer, Data As Threed.SSDataObject, E
          palletArr(0) = Trim(Me.Caption)
       End If
      SavePalete Trim(Me.Caption), iPageno
+     LoadPalette Trim(Me.Caption), iPageno, 3
      
       If Not TimerMainLevel.Enabled Then
          InitialisePeaks 0
@@ -5152,7 +5217,7 @@ Select Case iButtonMaxSelected
    Case 2
       iMaxBut = 16
    Case 3
-      iMaxBut = 25
+      iMaxBut = 20
    Case 4
       iMaxBut = 30
 End Select
@@ -5166,17 +5231,19 @@ PanMain.Visible = False
 frmPlayer.Enabled = False
 Screen.MousePointer = vbHourglass
 DoEvents
+DoEvents
 'Clear and load buttons in new layout
 RemoveButtons
 DoEvents
-
 SetButtonsLayout
+DoEvents
 ClearButtons
 DoEvents
-LoadPalette PaletteName, iPageno
+LoadPalette PaletteName, iPageno, 2 'Only load current page from array
 'Enable the screen again...
 frmPlayer.Enabled = True
 PanMain.Visible = True
+DoEvents
 
 'Set the global variables to test against
 ScreenOptions(ButMaxSel) = iButtonMaxSelected
@@ -5307,7 +5374,7 @@ c = 1      ' device 1 = 1st real device
 frmLoader.Label2.Visible = True
 'DoEvents
 While BASS_GetDeviceInfo(c, i)
-  If (i.Flags And BASS_DEVICE_ENABLED) Then  ' enabled, so add it...
+  If (i.flags And BASS_DEVICE_ENABLED) Then  ' enabled, so add it...
       frmLoader.lstPlugins(1).Caption = frmLoader.lstPlugins(1).Caption & VBStrFromAnsiPtr(i.name) & Chr(13)
   End If
   c = c + 1
@@ -5345,6 +5412,12 @@ Private Sub Form_Load()
    ConvertOldPalettes
    
    lblCompiled.Caption = "Created on : " & FileDateTime(Win3(App.Path) & "\" & App.EXEName & ".EXE")
+   
+   If IsThemeActive() = False Then
+      frmLoader.lblTheme.Caption = "THEME : FALSE"
+   Else
+      frmLoader.lblTheme.Caption = "THEME : TRUE"
+   End If
    
    frmLoader.ShowLoading MsgLits.ChkDisk, 150 'Checking Disk Space
    Sleep 100
@@ -5429,7 +5502,7 @@ Private Sub Form_Load()
       Case 2
          iMaxBut = 16 'DEFAULT !!!
       Case 3
-         iMaxBut = 25
+         iMaxBut = 20
       Case 4
          iMaxBut = 30
    End Select
@@ -5583,12 +5656,12 @@ Private Sub Form_Load()
 
    errCnt = errCnt + 1 '11
    WriteLog "frmPlayer : Check Theme ..."
-   If IsThemeActive() = False Then
-      ApplyStandardTheme = True
-   Else
+  ' If IsThemeActive() = False Then
+  '    ApplyStandardTheme = True
+  ' Else
       ApplyStandardTheme = False
       'MsgBox "Windows Classic Theme detected"
-   End If
+  ' End If
 
    errCnt = errCnt + 1 '12
    WriteLog "frmPlayer : Set System Icon ..."
@@ -5646,16 +5719,21 @@ Private Sub Form_Load()
 
    WriteLog "frmPlayer : Show the form without the buttons yet visible"
    PanMain.Height = 9800 - 60
-   PanMain.Width = Me.Width + 100
+   If iButtonMaxSelected = 3 Then
+      PanMain.Width = Me.Width + 115
+   Else
+      PanMain.Width = Me.Width + 100
+   End If
    
    
    'Now set the Page buttons and soundcard positions
    sspPageMain.Left = cmdSong(1).Left
-   If iButtonDirection = 2 Then
-    sspPageMain.Top = cmdSong(13).Top + cmdSong(13).Height + 90
-   Else
-    sspPageMain.Top = cmdSong(4).Top + cmdSong(4).Height + 90
-   End If
+   
+   'If iButtonDirection = 2 Then
+    sspPageMain.Top = 8490  'cmdSong(PageButNo).Top + cmdSong(PageButNo).Height + 90
+   'Else
+   ' sspPageMain.Top = cmdSong(4).Top + cmdSong(4).Height + 90
+   'End If
    
 '''   sspButMax.Left = sspPageMain.Left + sspPageMain.Width + 200
 '''   sspButMax.Top = sspPageMain.Top
@@ -5670,7 +5748,11 @@ Private Sub Form_Load()
    DoEvents
    
    PanMain.Height = 9800 - 60
-   PanMain.Width = Me.Width + 100
+   If iButtonMaxSelected = 3 Then
+      PanMain.Width = Me.Width + 115
+   Else
+      PanMain.Width = Me.Width + 100
+   End If
    
 
    
@@ -6032,7 +6114,7 @@ Sub LoadDefaultPalette()
    
    PaletteName = UCase(GetSetting(regMainKey, regSubKey, "Palette Name"))
    If Trim(PaletteName) <> "" Then
-     LoadPalette PaletteName, 1
+     LoadPalette PaletteName, 1, 1   '1=ALL
      Me.Caption = PaletteName
      lblPaleteName.Caption = Me.Caption
    End If
@@ -6041,7 +6123,6 @@ Sub LoadDefaultPalette()
    
 err1:
    MsgBox "Error in Module : LoadDefaultPalette " & Chr(13) & Chr(13) & Err.Description, vbExclamation
-
 
 End Sub
 
@@ -6123,10 +6204,10 @@ On Error GoTo err1
 '      Me.Top = 0
 '      Me.Left = 0
       If ApplyStandardTheme Then
-         Me.Width = 20445 + 30
+         Me.Width = 20445 + 30 + 115
          Me.Height = 11010 - 60
       Else
-         Me.Width = 20445 + 30
+         Me.Width = 20445 + 30 + 115
          Me.Height = 11010 - 60
       End If
    ElseIf Me.WindowState = 1 Then
@@ -6165,6 +6246,8 @@ Sub SetButtonColor(Index As Integer, ColorIndex As Integer)
   ''' sspProgress(Index).BackColor = &HC0C0C0   ' vbBlack
 
    sspSongTitle(Index).ForeColor = ButForColors(ColorIndex)
+   lblButtonCnt(Index).ForeColor = sspSongTitle(Index).ForeColor
+  ' lblButtonCnt(Index).ForeColor = vbWhite
    sspSongTitle(Index).Font.Bold = True
    sspSongTitle(Index).BackColor = ButColors(ColorIndex)
    cmdSong(Index).ForeColor = ButForColors(ColorIndex)
@@ -6230,7 +6313,7 @@ Sub ResetButton(Index As Integer, Optional Stopped As Boolean)
    imgCompleted2(Index).Visible = False
    imgCompleted3(Index).Visible = False
 
-   sspSongTitle(Index).Width = sspSongTitle(0).Width - 50
+   sspSongTitle(Index).Width = sspSongTitle(0).Width   '- 50
  '  sspSongTitle(Index).Font3D = ssNoneFont3D
    
 '   Set sspSongTitle(Index).Picture = Nothing
@@ -6241,6 +6324,7 @@ Sub ResetButton(Index As Integer, Optional Stopped As Boolean)
    sspSongTitle(Index).BackStyle = 0
 '   sspSongTitle(Index).Outline = False
    sspSongTitle(Index).ForeColor = ButForColors(iColor)  'vbWhite
+   lblButtonCnt(Index).ForeColor = sspSongTitle(Index).ForeColor
    
    
 '   lblTimeLeft(Index).Caption = "0:00"  'Trim((time \ 60) & ":" & Format(time Mod 60, "00"))
@@ -6261,6 +6345,9 @@ Sub ResetButton(Index As Integer, Optional Stopped As Boolean)
    
    sspProgress(Index).Visible = True
    sspProgress(Index).value = 0
+   
+'''   imgSetup(Index).Visible = True
+   
   ' sspProgress(Index).FloodPercent = 0
   ' sspProgress(Index).BevelOuter = ssNoneBevel
   ' sspProgress(Index).BevelInner = ssNoneBevel
@@ -6313,6 +6400,7 @@ Sub ResetButton(Index As Integer, Optional Stopped As Boolean)
       End If
      ' cpvVolume(Index).BackColor = cmdSong(Index).BackColor
       sspSongTitle(Index).ForeColor = vbWhite
+      lblButtonCnt(Index).ForeColor = sspSongTitle(Index).ForeColor
       GetTotalTime
    End If
    
@@ -6401,6 +6489,69 @@ frmEq.Show vbModal
 
 End Sub
 
+Private Sub imgSetup_MouseMove(Index As Integer, Button As Integer, Shift As Integer, X As Single, Y As Single)
+'DoEvents
+'Screen.MousePointer = 13  '14
+'DoEvents
+End Sub
+
+Private Sub imgSetup_MouseUp(Index As Integer, Button As Integer, Shift As Integer, X As Single, Y As Single)
+   On Error GoTo err1
+   Dim iSongs As Integer
+   Dim i As Integer
+   
+'   Timer3.Enabled = False
+'   If LongPress > 40 Then
+'      LongPress = 0
+'      Exit Sub
+'   End If
+   
+   If iSecureMode = 2 Then Exit Sub
+   
+   If Button = 2 Then 'Right-clicked
+''''     iMnuFlag = 2
+''''     Setstate Index
+   Else
+      If sspSongTitle(Index).Caption = "" Then
+''''         '==================================================================================
+''''         'For Demo system, only allow load of 5 songs
+''''         If DemoFlag Then
+''''            If DetermineTotButtons(True) >= DemoMax Then
+''''               MsgBox DemoMsg1 & Chr(13) & Chr(13) & DemoMsg3, vbExclamation, DemoHeading
+''''               Exit Sub
+''''            End If
+''''         End If
+''''         '==================================================================================
+''''
+''''         iMnuFlag = 2 'Make sure we only load a new song when button is not initialised
+''''         Setstate Index
+''''
+''''         palletArr(0) = ""
+''''         If Trim(Me.Caption) = "" Then
+''''            Me.Caption = "tmp001"
+''''            palletArr(0) = Trim(Me.Caption)
+''''         End If
+''''         SavePalete Trim(Me.Caption)
+         LoadNewSong Index
+      Else
+         bTagEditMP3 = UCase(Right(sspSongTitle(Index).Tag, 3)) = "MP3"
+         'FilenameToLoad = sspSongTitle(Index).Tag
+         If lblStatus(Index).Caption = "Ready" Then ShowOptionScreen Index
+         
+         SavePalete Trim(Me.Caption), iPageno
+         LoadPalette Trim(Me.Caption), iPageno, 3
+         
+      End If
+   End If
+   
+   
+   Exit Sub
+   
+err1:
+
+MsgBox "Error in Module : cmdSong_MouseUp " & Chr(13) & Chr(13) & Err.Description, vbExclamation
+End Sub
+
 Private Sub imgVol_MouseDown(Index As Integer, Button As Integer, Shift As Integer, X As Single, Y As Single)
    On Error Resume Next
    
@@ -6413,7 +6564,8 @@ End Sub
 
 
 Private Sub imgVol_MouseMove(Index As Integer, Button As Integer, Shift As Integer, X As Single, Y As Single)
-Screen.MousePointer = vbDefault
+DoEvents
+Screen.MousePointer = 14  '14
 DoEvents
 End Sub
 
@@ -6429,9 +6581,6 @@ Private Sub imgVol_MouseUp(Index As Integer, Button As Integer, Shift As Integer
    'imgVol(Index).Picture = LoadResPicture(118, vbResIcon)    'LoadPicture(App.Path & "\tmpSpkr")
    imgVol(Index).Picture = LoadResPicture(133, vbResIcon)    'LoadPicture(App.Path & "\tmpSpkr")
    DoEvents
-   'imgVol(Index).Picture = imgVolSource.Picture
-  ' imgVol(Index).Picture = LoadPicture(App.Path & "\tmpSpkr")
-   'imgVol(Index).Picture = imgVolSource.Picture
    
    'Set Global variable
    iVolIndex = Index
@@ -6566,7 +6715,7 @@ Private Sub lblStream_MouseUp(Index As Integer, Button As Integer, Shift As Inte
       On Error Resume Next
       
       Timer3.Enabled = False
-      If LongPress > 40 Then
+      If LongPress > LongPressCnt Then
          LongPress = 0
          Exit Sub
       End If
@@ -6718,8 +6867,8 @@ Sub SetSongPos(PlayStreamHndle As Long, Index As Integer, sPos As Integer)
    iColor = Val(sspProgress(Index).Tag)
    
       sspSongTitle(Index).ForeColor = vbBlack
+      lblButtonCnt(Index).ForeColor = sspSongTitle(Index).ForeColor
       'sspSongTitle(Index).BackStyle = 1
-      sspSongTitle(Index).ForeColor = vbBlack
       sspSongTitle(Index).BackColor = vbNDYellow
 '      sspSongTitle(Index).BevelOuter = ssInsetBevel
       
@@ -6760,6 +6909,7 @@ Sub SetSongPosFromDucking(PlayStreamHndle As Long, Index As Integer, sPos As Int
       sspSongTitle(Index).ForeColor = vbBlack
       sspSongTitle(Index).BackStyle = 1
       sspSongTitle(Index).ForeColor = vbBlack
+      lblButtonCnt(Index).ForeColor = sspSongTitle(Index).ForeColor
       sspSongTitle(Index).BackColor = vbNDYellow
 '      sspSongTitle(Index).BevelOuter = ssInsetBevel
       
@@ -6832,7 +6982,7 @@ RemoveButtons
 SetButtonsLayout
 ClearButtons
 DoEvents
-LoadPalette PaletteName, iPageno
+LoadPalette PaletteName, iPageno, 1
 
 frmPlayer.Enabled = True
 Screen.MousePointer = vbDefault
@@ -6859,6 +7009,8 @@ For iBut = 1 To MaxButs
       Unload lblStatus(iBut)
       Unload imgVol(iBut)
       
+      Unload lblButtonCnt(iBut)
+      
    ' If bDoEq Then Unload imgEQ(iBut)
       
       Unload imgCompleted0(iBut)
@@ -6879,11 +7031,14 @@ For iBut = 1 To MaxButs
 ''''      Unload lblMidHR(iBut)
 ''''      Unload lblMidLR(iBut)
       Unload imgDirection(iBut)
+'''      Unload imgSetup(iBut)
       Unload sspSongTitle(iBut)
 ''''      Unload sspLevel(iBut)
    ''''   Unload lnProgress(iBut)
       'All the sub-controls are removed, Remove button control
       Unload cmdSong(iBut)
+      
+     
 Next iBut
    
 Exit Sub
@@ -7267,6 +7422,8 @@ If Me.lblStatus(Index).Caption = "Playing" Then Exit Sub
 
 '''DragingButton = True
 
+MousePointer = vbHourglass
+DoEvents
 LongPress = 0
 SelPlayerIndex = Index
 Timer3.Enabled = True
@@ -7292,8 +7449,9 @@ Private Sub sspSongTitle_MouseUp(Index As Integer, Button As Integer, Shift As I
    On Error Resume Next
    
    Timer3.Enabled = False
-   
-   If LongPress > 40 Then
+    MousePointer = vbDefault
+    DoEvents
+   If LongPress >= LongPressCnt Then
       LongPress = 0
       Exit Sub
    End If
@@ -7303,7 +7461,8 @@ Private Sub sspSongTitle_MouseUp(Index As Integer, Button As Integer, Shift As I
    
    If Button = 2 Then
       If iSecureMode = 2 Then Exit Sub
-      LoadNewSong Index
+      'LoadNewSong Index
+      ShowOptionScreen Index
    Else
 '      If iButtonPlayStopPause = 1 Then    'Pause
 '         ProcessPause
@@ -7330,6 +7489,7 @@ Private Sub sspSongTitle_OLEDragDrop(Index As Integer, Data As Threed.SSDataObje
      iMnuFlag = 4
      Setstate Index
      SavePalete Trim(Me.Caption), iPageno
+     LoadPalette Trim(Me.Caption), iPageno, 3
    End If
 
 End Sub
@@ -7352,17 +7512,25 @@ Private Sub sspVol_MouseUp(Button As Integer, Shift As Integer, X As Single, Y A
    Closevolume
 End Sub
 
-Sub Closevolume()
+Sub Closevolume(Optional SkipSave As Boolean = False)
 
 On Error GoTo err1
 
   imgVol(iVolIndex).Visible = True
 
-   ButLeft = 22000
-   sspVol.Left = ButLeft
-   cpvVol.ZOrder 1
+  ButLeft = 22000
+  sspVol.Left = ButLeft
+  cpvVol.ZOrder 1
    
-   SavePalete Trim(Me.Caption), iPageno
+  If SkipSave Then
+    If Not sspSongTitle(iVolIndex).Visible Then
+      imgVol(iVolIndex).Visible = False
+    End If
+  Else
+    SavePalete Trim(Me.Caption), iPageno
+    DoEvents
+    LoadPalette Trim(Me.Caption), iPageno, 3
+  End If
    
 Exit Sub
 err1:
@@ -7387,118 +7555,85 @@ Private Sub Timer1_Timer()
 
 End Sub
 
-Sub LoadPalette(pHeading As String, PageNo As Integer)
-   Dim iPos As Integer
-   Dim iPos2 As Integer
-   Dim iPos3 As Integer
-   Dim iPos4 As Integer
-   Dim iPos5 As Integer
-   Dim iButNum As Integer
-   Dim iInner As Integer
-   Dim FD
-   Dim FileToOpen As String
-   Dim sHeading As String
-   Dim sStr As String
-   Dim sArr() As String
-   Dim sTitle() As String
-   Dim sKeepHeading As String
-   Dim bHeadingFound As Boolean
-   Dim bEnd As Boolean
-   Dim sHeadingX1 As String
-   Dim sHeadingX2 As String
-   Dim sHeadingX3 As String
-   Dim sHeadingX4 As String
-   Dim sVol As Single
-   Dim MaxVol As Long
-   Dim iColor As Integer
-   Dim iButts As Integer
-   Dim sNow As String
-   Dim tmpIMaxBut As Integer
-   Dim tmpIbutStart As Integer
-   Dim tmpButNo As Integer
+Sub ClearArray()
+
+End Sub
+
+Sub LoadPalette(pHeading As String, PageNo As Integer, LoadOption As Integer)
+  Dim FileToOpen As String
+  
+  If Not TimerMainLevel.Enabled Then
+     InitialisePeaks 0
+     DoEvents
+  End If
+   
+  FileToOpen = App.Path & "\Palets\" & pHeading & ".dat"
+  
+  
+  
+  Select Case LoadOption
+    Case 1  'Load ALL
+      LoadPaletteArray FileToOpen
+      LoadPalettePage PageNo
+      WriteNewPaletteFile FileToOpen 'This is only done to list the file on the top when we search for Palette file...
+      
+    Case 2  'Only load the next page from array
+      LoadPalettePage PageNo
+      
+    Case 3 'When we dragged, I need to reload the array from SAVED file
+      LoadPaletteArray FileToOpen
+          
+    Case 4  'Only load current page from array
+      LoadPalettePage PageNo
+      
+    Case 5 'Clear palette array
+      ReDim PlArr(10, 181)  'Start at 1 with both dimensions
+      
+    Case Else
+      MsgBox "ELSE"
+  End Select
+
+  GetTotalTime
+
+End Sub
+
+Sub LoadPaletteArray(FileToOpen As String, Optional PlayingIndex As Integer)
+  Dim iPos As Integer
+  Dim FD
+  Dim sInput As String
+  Dim sStr As String
+  Dim sArr() As String
+  Dim sVol As Single
+  Dim sNow As String
+  Dim iRow As Integer
+  Dim time As Long
+  Dim Bytes As Long
 
    sNow = Format(Now, "YYYYMMDDHHmmSS")
    
    On Error Resume Next
-   
-   If Not TimerMainLevel.Enabled Then
-      InitialisePeaks 0
-      DoEvents
-   End If
-   
-   iPageno = PageNo
-   
-   Select Case PageNo
-     Case 1 '1-16
-       tmpIMaxBut = 16
-       tmpIbutStart = 1
-     Case 2 '17-32
-       tmpIMaxBut = 32
-       tmpIbutStart = 17
-     Case 3 '33-48
-       tmpIMaxBut = 48
-       tmpIbutStart = 33
-     Case 4 '49-64
-       tmpIMaxBut = 64
-       tmpIbutStart = 49
-     Case 5 '65-80
-       tmpIMaxBut = 80
-       tmpIbutStart = 65
-     Case 6 '81-96
-       tmpIMaxBut = 96
-       tmpIbutStart = 81
-   End Select
-   
+
+   ReDim PlArr(10, 181)  'Start at 1 with both dimensions
+  
    FD = FreeFile
-   'FileToOpen = App.Path & "\Palettes.Dat"
-   FileToOpen = App.Path & "\Palets\" & pHeading & ".dat"
+   
    i = -1
    
    If Not FSO.FileExists(FileToOpen) Then Exit Sub
-   
-   iButNum = 0
-   iInner = 0
-   bHeadingFound = False
-   
-   DemoCnt = 0
+
+   iRow = 0
    
    Open FileToOpen For Input As FD
    Do Until (EOF(FD) = True)
-     Line Input #FD, sHeading
-     
-     If Left(sHeading, 3) = "000" Then
-       Line Input #FD, sHeading
-     End If
-     
-     'If bHeadingFound Then
-       'Make sure we only read the entries in the heading block
-       'If sHeading = "[END " & UCase(pHeading) & "]" Then Exit Do
-       'Still inside, load buttons with correct data
-      iButNum = CInt(Mid(sHeading, 1, 2))  'CAN EXPAND HERE IF WE WANTED TO DO MORE THAN 99 ( IE 3 FIGURES...)  iButNum = CInt(Mid(sHeading, 1, 3))
-                    
- '     If CInt(Mid(sHeading, 1, 1)) <> PageNo Then GoTo ReadNext
-      If iButNum < tmpIbutStart Then GoTo ReadNext
-      If iButNum > tmpIMaxBut Then GoTo ReadNext
-      If iButNum = 0 Then GoTo ReadNext
+      Line Input #FD, sInput
+      'This is to skip the first line containing the create date/time
+      If Left(sInput, 3) = "000" Then
+        Line Input #FD, sInput
+      End If
       
-      Select Case iButNum
-         Case 1 To 16
-            iInner = iButNum
-         Case 17 To 32
-            iInner = iButNum - 16
-         Case 33 To 48
-            iInner = iButNum - 32
-         Case 49 To 64
-            iInner = iButNum - 48
-         Case 65 To 80
-            iInner = iButNum - 64
-         Case Is > 80
-            iInner = iButNum - 80
-      End Select
-      
-'      iInner = iButNum - GetNextButtonNumber
-       
-      iPos = InStr(3, sHeading, "|")
+      'From here on, we are dealing with the actual data
+      iRow = iRow + 1 'This will be the iteration from 1 to 180 - Song entries, we will take care of which button in seperate procedure
+      iPos = InStr(3, sInput, "|")
       If iPos > 0 Then
          '==================================================================================
          'For Demo system, only allow load of 5 songs
@@ -7516,210 +7651,324 @@ Sub LoadPalette(pHeading As String, PageNo As Integer)
          '==================================================================================
             
          'Exception takes place here. If the current song is playing, do not stop or load new info here
-         If lblStatus(iInner).Caption <> "Playing" Then
-            sArr = Split(sHeading, "|")
-           'Check if file exists on the HD still...
+        ' If lblStatus(iRow).Caption <> "Playing" Then
+            sArr = Split(sInput, "|")
+            'Check if file exists on the HD still...
+            'Skip any entries that does NOT exist on the HD anymore
             If Not FSO.FileExists(sArr(1)) Then GoTo ReadNext
-           
-            sVol = 70  '70%
-         
-            'Get the Title
-            sArr(0) = Mid(sArr(0), 4)
-            'Determine if there are "-" in the title array, if so, split the 2
-            
-            sspSongTitle(iInner).Caption = FixSongTitle(sArr(0))
-            
-            'sspSongTitle(iInner).LinkItem = sArr(0)    'Keep Full title here
-            sspSongTitle(iInner).TagVariant = sArr(0)    'Keep Full title here
-           
-            If Val(sArr(2)) > 0 Then sVol = Val(sArr(2))  'Get the volume
+            'Get the info from line and populate the Array...
+            sArr(0) = Mid(sArr(0), 5)
+            PlArr(PLA.efTtle, iRow) = sArr(0)               'Keep Full original title here
+            PlArr(PLA.eTtle, iRow) = FixSongTitle(sArr(0))  'Fix the above to show nice title ('Determine if there are "-" in the title array, if so, split the 2)
+            PlArr(PLA.eFN, iRow) = sArr(1)                  'Keep the filename here
+            sVol = 70                                       'Set Default value for Volume = 70%
+            If Val(sArr(2)) > 0 Then sVol = Val(sArr(2))    'Get the volume
             If sVol > 100 Then sVol = 99.999
-            cmdSong(iInner).TagVariant = sArr(3)           'Use this to keep the Average when song is loaded...
-            lblVol(iInner).Caption = sVol
-           
-           'Reset button to Loaded state
-           
-            cmdSong(iInner).Tag = 3
-            
-            sspSongTitle(iInner).Tag = sArr(1)   'Keep the filename here
-            
+            PlArr(PLA.eVol, iRow) = sVol
+            PlArr(PLA.eAve, iRow) = sArr(3)                 'Use this to keep the Average when song is loaded...
+            PlArr(PLA.eClr, iRow) = Val(sArr(4))            'Color
+            'Get the time for song
             Call BASS_StreamFree(chan(3))        'free the old stream
-            chan(3) = BASS_StreamCreateFile(BASSFALSE, StrPtr(sArr(1)), 0, 0, 0)
-      
-            Dim Bytes As Long
+            chan(3) = BASS_StreamCreateFile(BASSFALSE, StrPtr(PlArr(PLA.eFN, iRow)), 0, 0, 0)
             Bytes = BASS_ChannelGetLength(chan(3), BASS_POS_BYTE)
-            Dim time As Long
             time = BASS_ChannelBytes2Seconds(chan(3), Bytes)
            
             'Get the starting position by finding the silence in the front and set start after silence
-            'sspProgress(iInner).ToolTipText = CStr(ScanSilence(sArr(1)))
-            lblTimeLeft(iInner).Tag = CStr(ScanForLeadingSilences(CStr(sArr(1)), iInner))      ' CStr(ScanSilence(sArr(1)))
-            'sspProgress(iInner).TagVariant = CStr(ScanSilence(sArr(1)))
-            
-            lblTimeLeft(iInner).Caption = "00:00"  'Trim((time \ 60) & ":" & Format(time Mod 60, "00"))
-            lblTimePlayed(iInner).Tag = Trim(Format((time \ 60), "00") & ":" & Format(time Mod 60, "00"))
-            lblTimePlayed(iInner).Caption = lblTimePlayed(iInner).Tag
-   
-'           lblTimeLeft(iInner).Caption = Trim((time \ 60) & ":" & Format(time Mod 60, "00"))
-           'lblTimeLeft(iInner).Caption = "/ " & Trim((time \ 60) & ":" & Format(time Mod 60, "00"))
-                 
-           chan(3) = 0
-           cmdSong(iInner).Tag = ""
-           
-           ResetButton iInner
-''           If Not TimerMainLevel.Enabled Then
-''               pgLeft.value = MaxLevelVal  '30473
-''               pgRight.value = MaxLevelVal  '30473
-''           End If
-           
-           'Set the button color according to previously saved colors for each button...
-           iColor = Val(sArr(4)) 'Get the color variable
-           SetButtonColor iInner, iColor
-           'Determine volume, if saved with it...
-           lblVol(iInner).Caption = sVol  'Set to 75% of max  (75000)
-           'cpvVolume(iInner).Visible = True
-            imgVol(iInner).Visible = True
-'          If bDoEq Then imgEQ(iInner).Visible = True
-            imgDirection(iInner).Visible = True
-         End If
-        DoEvents
-        Sleep 100
-        DoEvents
+            PlArr(PLA.eLs, iRow) = CStr(ScanForLeadingSilences(CStr(PlArr(PLA.eFN, iRow)), iRow))
+            PlArr(PLA.eTp, iRow) = Trim(Format((time \ 60), "00") & ":" & Format(time Mod 60, "00"))
+            'Reset the Bass channel for next check
+            chan(3) = 0
+       '  End If
       End If
-
-     'End If
 ReadNext:
-   Loop
+  Loop
+  
 Close1:
-   Close FD
-   
-   'Update the time we accessed it, so this list will always be on top
-   'Open for input, so we can load the array with all the entries.
-   i = -1
-   ReDim sArr(0)
-   DemoCnt = 0
-   Open FileToOpen For Input As FD
-   Do Until (EOF(FD) = True)
-      i = i + 1
-      ReDim Preserve sArr(i)
-      Input #FD, sArr(i)
-         'Now test for NOW line...  AND OVERWRITE with true NOW
-         If Left(sArr(i), 4) = "000:" Then
-            sArr(i) = "000:" & sNow
-            'GoTo Readnext1
-         End If
-     '    GoTo Readnext1
-      'Make sure we only do it for the current selected playlist
-     ' If sArr(i) = "[" & UCase(pHeading) & "]" Then
-'         i = i + 1
-'         ReDim Preserve sArr(i)
-'         Input #FD, sArr(i)
+  Close FD
+  
+  Call BASS_StreamFree(chan(3))  ' free the stream
 
-      'End If
-Readnext1:
-   Loop
-   Close FD
-   'Write new file from array
-   Open FileToOpen For Output As FD
-   For i = 0 To UBound(sArr)
-     'If Trim(sArr(i)) <> "" Then
-     Print #FD, sArr(i)
-   Next i
-   Close FD
-   
-   Call BASS_StreamFree(chan(3))  ' free the stream
-   
-   GetTotalTime
-   
-  ' ShowButtonStreams IIf(iButtonStreams = 1, True, False)
-   If Not TimerMainLevel.Enabled Then
-      InitialisePeaks 0
-   End If
-   
-Exit Sub
+  Exit Sub
 err1:
-MsgBox "Error in Module : LoadPalette " & Chr(13) & Chr(13) & Err.Description, vbExclamation
+MsgBox "Error in Module : LoadPaletteArray " & Chr(13) & Chr(13) & Err.Description, vbExclamation
    Resume Next
    Close FD
 
 End Sub
 
-Function FixSongTitle(sData As String) As String
-Dim sTitle() As String
-Dim iChr13 As Integer
-Dim sTemp As String
-Const sNameChrs As String = "**"
+Sub WriteNewPaletteFile(FileToOpen As String)
+Dim sArr(181)
+Dim i As Integer
+Dim sNow As String
+Dim FD
+Dim FW
 
-Select Case iMaxBut
-   Case 9, 16
-      iChr13 = 2
-'   Case 16
-'      iChr13 = 2
-   Case 25, 30
-      iChr13 = 1
-'   Case 30
-'      iChr13 = 1
-End Select
-
-sTemp = sData
-
-If InStr(1, sTemp, "-") = 0 Then
-   If InStr(1, sTemp, "_") > 0 Then
-      sTemp = Replace(sTemp, "_", "-")
-   End If
-End If
-
-sTitle = Split(Replace(sTemp, "&", "&&"), "-")
-
-
-
-'Select Case UBound(sTitle)
-'   Case 1
-'      If iMaxBut = 30 And Len(Trim(sTitle(1)) & Chr(13) & sNameChrs & "  " & Trim(sTitle(0)) & "  " & sNameChrs) > 70 Then
-'         FixSongTitle = Trim(sTitle(1)) & Chr(13) & sNameChrs & "  " & Trim(sTitle(0)) & "  " & sNameChrs
-'      Else
-'         FixSongTitle = String(iChr13, Chr(13)) & Trim(sTitle(1)) & Chr(13) & sNameChrs & "  " & Trim(sTitle(0)) & "  " & sNameChrs
-'      End If
-'   Case 2
-'      FixSongTitle = String(iChr13, Chr(13)) & Trim(sTitle(1)) & " " & Trim(sTitle(2)) & Chr(13) & sNameChrs & "  " & Trim(sTitle(0)) & "  " & sNameChrs
-'   Case 3
-'      FixSongTitle = String(1, Chr(13)) & Trim(sTitle(1)) & Chr(13) & sNameChrs & "  " & Trim(sTitle(0)) & "]" & Chr(13) & Trim(sTitle(2)) & Chr(13) & Trim(sTitle(3))
-'   Case 4
-'      FixSongTitle = sNameChrs & "  " & Trim(sTitle(0)) & "  " & sNameChrs
-'   Case Else
-'      If iMaxBut = 9 Or iMaxBut = 25 Then
-'         FixSongTitle = String(iChr13 + 1, Chr(13)) & Trim(sTitle(0))
-'      Else
-'         FixSongTitle = String(iChr13, Chr(13)) & Trim(sTitle(0))
-'      End If
-'End Select
-
-Select Case UBound(sTitle)
-   Case Is > 1
-      For i = 1 To UBound(sTitle)
-         FixSongTitle = FixSongTitle & Trim(sTitle(i)) & "-"
-      Next i
-      If Right(FixSongTitle, 1) = "-" Then FixSongTitle = Mid(FixSongTitle, 1, Len(FixSongTitle) - 1)
-      FixSongTitle = FixSongTitle & Chr(13) & sNameChrs & "  " & Trim(sTitle(0)) & "  " & sNameChrs
-   Case 1
-      FixSongTitle = Trim(sTitle(1)) & Chr(13) & sNameChrs & "  " & Trim(sTitle(0)) & "  " & sNameChrs
-   Case Else
-      FixSongTitle = sNameChrs & "  " & Trim(sTitle(0)) & "  " & sNameChrs
+ 'Update the time we accessed it, so this list will always be on top
+   'Open for input, so we can load the array with all the entries.
+   i = -1
    
-End Select
-'If Trim(sTitle(1)) <> "" And Trim(sTitle(0)) <> "" Then  'Both present
-'   FixSongTitle = Trim(sTitle(1)) & Chr(13) & sNameChrs & "  " & Trim(sTitle(0)) & "  " & sNameChrs
-'ElseIf Trim(sTitle(1)) = "" Then
-'   FixSongTitle = sNameChrs & "  " & Trim(sTitle(0)) & "  " & sNameChrs
-'Else
-'   FixSongTitle = Trim(sTitle(1)) & Chr(13) & sNameChrs & "  " & Trim(sTitle(0)) & "  " & sNameChrs
-'End If
+   'FileToOpen = App.Path & "\Palets\" & pHeading & ".dat"
+   FD = FreeFile
+   sNow = Format(Now, "YYYYMMDDHHmmSS")
+   Open FileToOpen For Input As FD
+   FW = FreeFile
+   Open App.Path & "\Palets\TmpOutput.txt" For Output As FW
+   
+   Do Until (EOF(FD) = True)
+      i = i + 1
+      If i > 180 Then Exit Do
+      Line Input #FD, sArr(i)
+      'Now test for NOW line...  AND OVERWRITE with true NOW
+      If Left(sArr(i), 4) = "000:" Then
+         sArr(i) = "000:" & sNow
+      End If
+      'Print the data to a new file...
+      Print #FW, sArr(i)
+   Loop
+   Close FD
+   Close FW
+   
+    'Remove the Tmp001,dat file, sice we just re-created it
+    If FSO.FileExists(FileToOpen) Then
+    'If FSO.FileExists(App.Path & "\Palets\TmpOutput.txt") Then
+       FSO.DeleteFile FileToOpen
+       FSO.CopyFile App.Path & "\Palets\TmpOutput.txt", FileToOpen
+       FSO.DeleteFile App.Path & "\Palets\TmpOutput.txt"
+       DoEvents
+    End If
 
+Exit Sub
+err1:
+MsgBox "Error in Module : WriteNewPaletteFile " & Chr(13) & Chr(13) & Err.Description, vbExclamation
+   Resume Next
+   Close FD
+   Close FW
+   
+End Sub
 
-'Debug.Print "sData : " & sData & "  (" & Len(sData) & ")" & Chr(13) & "sTitle(0) : " & sTitle(0) & "  (" & Len(sTitle(0)) & ")" & Chr(13) & "sTitle(1) : " & sTitle(1) & "  (" & Len(sTitle(1)) & ")" & Chr(13) & "FIXED : " & FixSongTitle & "  (" & Len(FixSongTitle) & ")"
+Sub LoadPalettePage(PageNo As Integer)
+   Dim tmpIMaxBut As Integer
+   Dim tmpIbutStart As Integer
+   Dim tmpButNo As Integer
+   Dim iButIncrease As Integer
+   Dim iInner As Integer
+   Dim iButNum As Integer
+'   Dim PlayingIndex As Integer
+   
+'   PlayingIndex = 0
+'   If Player1Index <> 0 Then
+'      PlayingIndex = Player1Index
+'   ElseIf Player2Index <> 0 Then
+'      PlayingIndex = Player2Index
+'   End If
 
+  iPageno = PageNo
+  Select Case iMaxBut
+      Case 9
+         iButIncrease = 8
+      Case 16
+         iButIncrease = 15
+      Case 20
+         iButIncrease = 19
+      Case 30
+         iButIncrease = 29
+  End Select
+   
+   Select Case PageNo
+     Case 1 '1-16
+       tmpIbutStart = 1
+       tmpIMaxBut = tmpIbutStart + iButIncrease  '16
+     Case 2 '17-32
+       'tmpIbutStart = 17
+       tmpIbutStart = iMaxBut + 1
+       tmpIMaxBut = tmpIbutStart + iButIncrease  '16
+       'tmpIMaxBut = 32
+     Case 3 '33-48
+       tmpIbutStart = iMaxBut + iMaxBut + 1
+       'tmpIbutStart = 33
+       tmpIMaxBut = tmpIbutStart + iButIncrease  '16
+       'tmpIMaxBut = 48
+     Case 4 '49-64
+       'tmpIbutStart = 49
+       tmpIbutStart = iMaxBut + iMaxBut + iMaxBut + 1
+       tmpIMaxBut = tmpIbutStart + iButIncrease  '16
+       'tmpIMaxBut = 64
+       
+     Case 5 '65-80
+       'tmpIbutStart = 65
+       tmpIbutStart = iMaxBut + iMaxBut + iMaxBut + iMaxBut + 1
+       tmpIMaxBut = tmpIbutStart + iButIncrease  '16
+       'tmpIMaxBut = 80
+       
+     Case 6 '81-96
+       'tmpIbutStart = 81
+       tmpIbutStart = iMaxBut + iMaxBut + iMaxBut + iMaxBut + iMaxBut + 1
+       tmpIMaxBut = tmpIbutStart + iButIncrease  '16
+       'tmpIMaxBut = 96
+       
+   End Select
+   iInner = 0
+   
+   'Now load the buttons from array
+   For iButNum = 1 To 180
 
-End Function
+      If iButNum < tmpIbutStart Then GoTo ReadNext
+      If iButNum > tmpIMaxBut Then Exit For   ' GoTo ReadNext
+      If iButNum = 0 Then GoTo ReadNext
+
+'''      If tmpIbutStart = 1 Then
+'''         iInner = iButNum
+'''      Else
+'''         iInner = iButNum - (iMaxBut * (iPageno - 1))
+'''         iInner = tmpIMaxBut - iMaxBut
+'''      End If  'iButNum
+'''
+'''
+'''      Select Case iButNum
+'''         Case 1 To tmpIMaxBut  '16
+'''            iInner = iButNum
+'''         Case 17 To 32
+'''            iInner = iButNum - 16
+'''         Case 33 To 48
+'''            iInner = iButNum - 32
+'''         Case 49 To 64
+'''            iInner = iButNum - 48
+'''         Case 65 To 80
+'''            iInner = iButNum - 64
+'''         Case 81 To 100
+'''
+'''         Case Is > 80
+'''            iInner = iButNum - 80
+'''      End Select
+      
+    iInner = iButNum - GetNextButtonNumber
+   ' If lblStatus(iButNum).Caption <> "Playing" Then
+      If PlArr(PLA.eTtle, iButNum) <> "" Then
+        sspSongTitle(iInner).Caption = PlArr(PLA.eTtle, iButNum)       'Fixed SongTitle
+        sspSongTitle(iInner).TagVariant = PlArr(PLA.efTtle, iButNum)   'Keep Full title here
+        cmdSong(iInner).TagVariant = PlArr(PLA.eAve, iButNum)          'Use this to keep the Average when song is loaded...
+        lblVol(iInner).Caption = PlArr(PLA.eVol, iButNum)              'Keep Volume here
+        cmdSong(iInner).Tag = 3                                     'To RESET button
+        sspSongTitle(iInner).Tag = PlArr(PLA.eFN, iButNum)             'Keep the filename here
+        lblTimeLeft(iInner).Tag = PlArr(PLA.eLs, iButNum)              'Leading Silences
+        lblTimeLeft(iInner).Caption = "00:00"                       'Sets the Left lable to 0:0
+        lblTimePlayed(iInner).Tag = PlArr(PLA.eTp, iButNum)            'Sets Time Played (Right label) Put in tag for later use
+        lblTimePlayed(iInner).Caption = lblTimePlayed(iInner).Tag   'Sets Time Played (Right label)
+        cmdSong(iInner).Tag = ""
+        ResetButton iInner
+        SetButtonColor iInner, CInt(PlArr(PLA.eClr, iButNum))          'Sets Button Color
+        'Determine volume, if saved with it...
+        lblVol(iInner).Caption = PlArr(PLA.eVol, iButNum)              'Sets the Song Volume display - Set to 75% of max  (75000)
+        imgVol(iInner).Visible = True
+        imgDirection(iInner).Visible = True
+      End If
+   ' End If
+    DoEvents
+ReadNext:
+   Next iButNum
+   
+   
+   
+End Sub
+
+'''public Function FixSongTitle(sData As String) As String
+'''Dim sTitle() As String
+'''
+'''Dim sTemp As String
+'''Dim MaxChars As Integer
+'''
+'''Const sNameChrs As String = "**"
+'''
+'''Select Case iMaxBut
+'''   Case 9, 16
+'''      'iChr13 = 2
+'''      MaxChars = 40
+'''   Case 20
+'''      'iChr13 = 1
+'''      MaxChars = 30
+'''   Case 30
+'''      'iChr13 = 1
+'''      MaxChars = 28
+'''
+'''End Select
+'''
+'''sTemp = sData
+'''
+'''If InStr(1, sTemp, "-") = 0 Then
+'''   If InStr(1, sTemp, "_") > 0 Then
+'''      sTemp = Replace(sTemp, "_", "-")
+'''   End If
+'''End If
+'''sTemp = Replace(sTemp, "/", " / ")
+'''sTitle = Split(Replace(sTemp, "&", "&&"), "-")
+'''
+'''
+'''
+''''Select Case UBound(sTitle)
+''''   Case 1
+''''      If iMaxBut = 30 And Len(Trim(sTitle(1)) & Chr(13) & sNameChrs & "  " & Trim(sTitle(0)) & "  " & sNameChrs) > 70 Then
+''''         FixSongTitle = Trim(sTitle(1)) & Chr(13) & sNameChrs & "  " & Trim(sTitle(0)) & "  " & sNameChrs
+''''      Else
+''''         FixSongTitle = String(iChr13, Chr(13)) & Trim(sTitle(1)) & Chr(13) & sNameChrs & "  " & Trim(sTitle(0)) & "  " & sNameChrs
+''''      End If
+''''   Case 2
+''''      FixSongTitle = String(iChr13, Chr(13)) & Trim(sTitle(1)) & " " & Trim(sTitle(2)) & Chr(13) & sNameChrs & "  " & Trim(sTitle(0)) & "  " & sNameChrs
+''''   Case 3
+''''      FixSongTitle = String(1, Chr(13)) & Trim(sTitle(1)) & Chr(13) & sNameChrs & "  " & Trim(sTitle(0)) & "]" & Chr(13) & Trim(sTitle(2)) & Chr(13) & Trim(sTitle(3))
+''''   Case 4
+''''      FixSongTitle = sNameChrs & "  " & Trim(sTitle(0)) & "  " & sNameChrs
+''''   Case Else
+''''      If iMaxBut = 9 Or iMaxBut = 25 Then
+''''         FixSongTitle = String(iChr13 + 1, Chr(13)) & Trim(sTitle(0))
+''''      Else
+''''         FixSongTitle = String(iChr13, Chr(13)) & Trim(sTitle(0))
+''''      End If
+''''End Select
+'''
+'''Select Case UBound(sTitle)
+'''   Case Is > 1
+'''      For i = 1 To UBound(sTitle)
+'''         FixSongTitle = FixSongTitle & Trim(sTitle(i)) & "-"
+'''      Next i
+'''      If Right(FixSongTitle, 1) = "-" Then FixSongTitle = Mid(FixSongTitle, 1, Len(FixSongTitle) - 1)
+'''      FixSongTitle = FixSongTitle & Chr(13) & sNameChrs & "  " & Trim(sTitle(0)) & "  " & sNameChrs
+'''   Case 1
+'''      If Len(Trim(sTitle(1))) > MaxChars Then sTitle(1) = FixTitle(sTitle(1), MaxChars)
+'''      If Len(Trim(sTitle(0))) > MaxChars Then sTitle(0) = FixTitle(sTitle(0), MaxChars)
+'''
+'''      FixSongTitle = Trim(sTitle(1)) & Chr(13) & sNameChrs & "  " & Trim(sTitle(0)) & "  " & sNameChrs
+'''   Case Else
+'''      If Len(Trim(sTitle(0))) > MaxChars Then sTitle(0) = FixTitle(sTitle(0), MaxChars)
+'''      FixSongTitle = sNameChrs & "  " & Trim(sTitle(0)) & "  " & sNameChrs
+'''
+'''End Select
+''''If Trim(sTitle(1)) <> "" And Trim(sTitle(0)) <> "" Then  'Both present
+''''   FixSongTitle = Trim(sTitle(1)) & Chr(13) & sNameChrs & "  " & Trim(sTitle(0)) & "  " & sNameChrs
+''''ElseIf Trim(sTitle(1)) = "" Then
+''''   FixSongTitle = sNameChrs & "  " & Trim(sTitle(0)) & "  " & sNameChrs
+''''Else
+''''   FixSongTitle = Trim(sTitle(1)) & Chr(13) & sNameChrs & "  " & Trim(sTitle(0)) & "  " & sNameChrs
+''''End If
+'''
+'''
+''''Debug.Print "sData : " & sData & "  (" & Len(sData) & ")" & Chr(13) & "sTitle(0) : " & sTitle(0) & "  (" & Len(sTitle(0)) & ")" & Chr(13) & "sTitle(1) : " & sTitle(1) & "  (" & Len(sTitle(1)) & ")" & Chr(13) & "FIXED : " & FixSongTitle & "  (" & Len(FixSongTitle) & ")"
+'''
+'''
+'''End Function
+'''
+'''Function FixTitle(sTitle As String, MaxChars As Integer) As String
+'''Dim iChr13 As Integer
+'''Dim iCnt As Integer
+'''
+'''   For iCnt = MaxChars To 1 Step -1
+'''      If Mid(sTitle, iCnt, 1) = " " Then
+'''         iChr13 = iCnt  'Get last position before end where we have a space so I can wrap it there
+'''         Exit For
+'''      End If
+'''   Next iCnt
+'''   FixTitle = Left(sTitle, iChr13) & Chr(13) & Mid(sTitle, iChr13 + 1)
+'''
+'''End Function
 
 Private Sub Timer2_Timer()
 
@@ -7741,9 +7990,10 @@ Private Sub Timer3_Timer()
 '''      Exit Sub
 '''   End If
    
-   If LongPress > 40 Then
+   If LongPress > LongPressCnt Then
       Timer3.Enabled = False
-      
+      MousePointer = vbDefault
+      DoEvents
       bTagEditMP3 = UCase(Right(sspSongTitle(SelPlayerIndex).Tag, 3)) = "MP3"
       XPos = sspSongTitle(SelPlayerIndex).Parent.X
       If lblStatus(SelPlayerIndex).Caption = "Ready" Then ShowOptionScreen SelPlayerIndex
@@ -7783,7 +8033,7 @@ On Error GoTo err1
          lblVolInd.Top = 30
          cmdCloseVol.Height = 345
          cmdCloseVol.Top = 60
-      Case 25
+      Case 20
          ButTop = PanMain.Top + cmdSong(Index).Top + (sspProgress(Index).Top - 270) + 105
          iWidth = cmdSong(Index).Width - 150  'sspLevel(Index).Width - 150
          sspVol.Height = 425
@@ -7791,10 +8041,11 @@ On Error GoTo err1
          cmdCloseVol.Height = 360
          lblVolInd.Font.Size = 7
       Case 16
-         ButTop = PanMain.Top + cmdSong(Index).Top + (sspProgress(Index).Top - 170)
+         ButTop = PanMain.Top + cmdSong(Index).Top + (sspProgress(Index).Top - 200)
+         ButTop = ButTop + 60
          iWidth = cmdSong(Index).Width - 160   'sspLevel(Index).Width - 160
-         sspVol.Height = 525
-         cmdCloseVol.Top = 120
+         sspVol.Height = 420   '525
+         cmdCloseVol.Top = 60 '120
       Case 9
          ButTop = PanMain.Top + cmdSong(Index).Top + (sspProgress(Index).Top - 170)
          iWidth = sspSongTitle(Index).Width - 1  '   cmdSong(Index).Width - 160   'sspLevel(Index).Width - 160
@@ -7810,21 +8061,15 @@ On Error GoTo err1
    'Change the size accoring to the layout
    'sspVol.Height = cmdSong(Index).Height
    
-   iWidth = (sspSongTitle(Index).Width + sspSongTitle(Index).Left)   '- 15
-   sspVol.Width = iWidth  ' + 60 + 60
+   iWidth = (sspSongTitle(Index).Width + sspSongTitle(Index).Left) + 15  '- 15
+   sspVol.Width = iWidth - 90 ' + 60 + 60
    
-   cpvVol.Left = (cmdCloseVol.Left + cmdCloseVol.Width) + 100 ' 115
-   cpvVol.Top = 195 - 30 'lblVolInd.Top + 165 + 50
-   cpvVol.Width = sspVol.Width - cpvVol.Left  '700  '800  '570
-   'cpvVol.Width = sspVol.Width - 800  '570
-   'cpvVol.Height = 270  '360
+   cpvVol.Left = (cmdCloseVol.Left + cmdCloseVol.Width) + 115
+   cpvVol.Width = sspVol.Width - cpvVol.Left - 50
    cpvVol.Height = sspProgress(Index).Height
    
    lblVolInd.Left = cpvVol.Left
    lblVolInd.Width = cpvVol.Width
-   
-   cmdCloseVol.Left = 90  '(cpvVol.Left + cpvVol.Width) + 100 ' 115
-   
    
    cpvVol.Refresh
    DoEvents
@@ -7913,8 +8158,9 @@ On Error GoTo err1
          palletArr(0) = Trim(Me.Caption)
       End If
       ErrDesc = "SavePalete Trim(Me.Caption)"
+      FixPaletteButtonArray PLA.eClr, Index, CStr(gColor)
       SavePalete Trim(Me.Caption), iPageno
-               
+      LoadPalette Trim(Me.Caption), iPageno, 3
       Exit Sub
    End If
    
@@ -7929,6 +8175,7 @@ On Error GoTo err1
       End If
       ErrDesc = "SavePalete Trim(Me.Caption)"
       SavePalete Trim(Me.Caption), iPageno
+      LoadPalette Trim(Me.Caption), iPageno, 3
       Exit Sub
    End If
    
@@ -8067,6 +8314,7 @@ Sub SetBlinkColor(Index As Integer)
 '      sspSongTitle(Index).BevelOuter = ssNoneBevel
       sspSongTitle(Index).BackColor = ButColors(iColor)
    End If
+   lblButtonCnt(Index).ForeColor = sspSongTitle(Index).ForeColor
    
 Exit Sub
 err1:
@@ -8091,6 +8339,7 @@ Sub SetFadeColor(Index As Integer)
 '      sspSongTitle(Index).BevelOuter = ssNoneBevel
       sspSongTitle(Index).BackColor = ButColors(iColor)
    End If
+   lblButtonCnt(Index).ForeColor = sspSongTitle(Index).ForeColor
    
 Exit Sub
 err1:
@@ -8131,7 +8380,7 @@ Private Sub TimerP1_Timer()
    Dim iPos As Integer
    'Dim TimeLeft As Long
    Dim TimeElapsedPerc As Long
-   Dim sTime As String
+   Dim STime As String
    
    On Error Resume Next
    
@@ -8181,18 +8430,18 @@ Private Sub TimerP1_Timer()
    'sspProgress(Player1Index).FloodPercent = TimeElapsedPerc
    
    iSecs = Round(pos)  'Get the seconds rounded
-   sTime = ConvertSecondsToTime(iSecs)
-   lblTimeLeft(Player1Index).Caption = sTime
+   STime = ConvertSecondsToTime(iSecs)
+   lblTimeLeft(Player1Index).Caption = STime
    
-   sTime = ""
-   sTime = Right(bassTime.GetTime(Duration(1) - pos), 5)
-   sTime = Format(Left(sTime, 2), "00") & Right(sTime, 3)
+   STime = ""
+   STime = Right(bassTime.GetTime(Duration(1) - pos), 5)
+   STime = Format(Left(STime, 2), "00") & Right(STime, 3)
    
    'Show Time left
-   lblTimePlayed(Player1Index).Caption = sTime
-   If Val(Mid(sTime, 1, InStr(1, sTime, ":") - 1)) = 0 Then
+   lblTimePlayed(Player1Index).Caption = STime
+   If Val(Mid(STime, 1, InStr(1, STime, ":") - 1)) = 0 Then
    'If Left(sTime, 2) = "00" Then
-     If Val(Right(sTime, 2)) < 10 Then
+     If Val(Right(STime, 2)) < 10 Then
        TimerF1.Enabled = True
      End If
    End If
@@ -8221,7 +8470,7 @@ Private Sub TimerP1Level_Timer()
    Dim LevelAve As Single
    Dim LeftChan As Integer
    Dim RightChan As Integer
-   Dim levels As Single
+   Dim Levels As Single
    Dim dB As Integer
    
    On Error Resume Next
@@ -8523,7 +8772,7 @@ Private Sub TimerP2_Timer()
    Dim iMins As Integer
    Dim iPos As Integer
    Dim TimeElapsedPerc As Long
-   Dim sTime As String
+   Dim STime As String
    
    On Error Resume Next
       
@@ -8570,17 +8819,17 @@ Private Sub TimerP2_Timer()
    'sspProgress(Player2Index).FloodPercent = TimeElapsedPerc
 
    iSecs = Round(pos)  'Get the seconds rounded
-   sTime = ConvertSecondsToTime(iSecs)
-   lblTimeLeft(Player2Index).Caption = sTime
-   sTime = ""
-   sTime = Right(bassTime.GetTime(Duration(2) - pos), 5)
-   sTime = Format(Left(sTime, 2), "00") & Right(sTime, 3)
+   STime = ConvertSecondsToTime(iSecs)
+   lblTimeLeft(Player2Index).Caption = STime
+   STime = ""
+   STime = Right(bassTime.GetTime(Duration(2) - pos), 5)
+   STime = Format(Left(STime, 2), "00") & Right(STime, 3)
    
    'Show Time left
-   lblTimePlayed(Player2Index).Caption = sTime
+   lblTimePlayed(Player2Index).Caption = STime
    
-   If Left(sTime, 2) = "00" Then
-     If Val(Right(sTime, 2)) < 10 Then
+   If Left(STime, 2) = "00" Then
+     If Val(Right(STime, 2)) < 10 Then
        TimerF2.Enabled = True
      End If
    End If
@@ -8601,7 +8850,7 @@ Private Sub TimerP2Level_Timer()
    
    On Error Resume Next
    
-   Dim levels As Single
+   Dim Levels As Single
    
    LevelInd = BASS_ChannelGetLevel(chan(2))
    LeftChan = Round(LoWord(LevelInd) * iVol2)
