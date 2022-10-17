@@ -50,18 +50,26 @@ Begin VB.Form frmPlayer
          TabIndex        =   73
          Top             =   165
          Width           =   2700
-         _extentx        =   4763
-         _extenty        =   370
-         font            =   "frmPlayer.frx":3545
-         slidercolor     =   49152
-         maxvalue        =   100
-         smallchange     =   20
-         largechange     =   100
+         _ExtentX        =   4763
+         _ExtentY        =   370
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         SliderColor     =   49152
+         MaxValue        =   100
+         SmallChange     =   20
+         LargeChange     =   100
       End
       Begin VB.Image cmdCloseVol 
          Height          =   285
          Left            =   75
-         Picture         =   "frmPlayer.frx":3571
+         Picture         =   "frmPlayer.frx":3545
          Stretch         =   -1  'True
          Top             =   105
          Width           =   285
@@ -1145,7 +1153,7 @@ Begin VB.Form frmPlayer
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         Picture         =   "frmPlayer.frx":39B3
+         Picture         =   "frmPlayer.frx":3987
          AutoSize        =   1
          ButtonStyle     =   3
          BevelWidth      =   1
@@ -1174,7 +1182,7 @@ Begin VB.Form frmPlayer
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         Picture         =   "frmPlayer.frx":3D65
+         Picture         =   "frmPlayer.frx":3D39
          AutoSize        =   1
          ButtonStyle     =   3
          BevelWidth      =   1
@@ -1203,7 +1211,7 @@ Begin VB.Form frmPlayer
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         Picture         =   "frmPlayer.frx":40F5
+         Picture         =   "frmPlayer.frx":40C9
          Alignment       =   8
          ButtonStyle     =   3
          BevelWidth      =   1
@@ -1426,7 +1434,7 @@ Begin VB.Form frmPlayer
                Height          =   240
                Index           =   0
                Left            =   2880
-               Picture         =   "frmPlayer.frx":45FD
+               Picture         =   "frmPlayer.frx":45D1
                Top             =   645
                Width           =   240
             End
@@ -1434,7 +1442,7 @@ Begin VB.Form frmPlayer
                Height          =   240
                Index           =   0
                Left            =   15
-               Picture         =   "frmPlayer.frx":4B87
+               Picture         =   "frmPlayer.frx":4B5B
                Top             =   630
                Width           =   240
             End
@@ -1442,7 +1450,7 @@ Begin VB.Form frmPlayer
                Height          =   240
                Index           =   0
                Left            =   30
-               Picture         =   "frmPlayer.frx":5111
+               Picture         =   "frmPlayer.frx":50E5
                Top             =   15
                Width           =   240
             End
@@ -1450,7 +1458,7 @@ Begin VB.Form frmPlayer
                Height          =   240
                Index           =   0
                Left            =   2880
-               Picture         =   "frmPlayer.frx":569B
+               Picture         =   "frmPlayer.frx":566F
                Top             =   15
                Width           =   240
             End
@@ -1499,7 +1507,7 @@ Begin VB.Form frmPlayer
             Height          =   240
             Index           =   0
             Left            =   3675
-            Picture         =   "frmPlayer.frx":5C25
+            Picture         =   "frmPlayer.frx":5BF9
             Stretch         =   -1  'True
             Top             =   855
             Width           =   240
@@ -2107,14 +2115,14 @@ Begin VB.Form frmPlayer
    Begin VB.Image imgCompletedLarge 
       Height          =   360
       Left            =   23835
-      Picture         =   "frmPlayer.frx":6067
+      Picture         =   "frmPlayer.frx":603B
       Top             =   4440
       Width           =   360
    End
    Begin VB.Image imgCompletedSmall 
       Height          =   240
       Left            =   23925
-      Picture         =   "frmPlayer.frx":70E9
+      Picture         =   "frmPlayer.frx":70BD
       Top             =   4035
       Width           =   240
    End
@@ -2142,7 +2150,7 @@ Begin VB.Form frmPlayer
       Height          =   210
       Index           =   1
       Left            =   23145
-      Picture         =   "frmPlayer.frx":7673
+      Picture         =   "frmPlayer.frx":7647
       Stretch         =   -1  'True
       Top             =   5175
       Width           =   210
@@ -2151,7 +2159,7 @@ Begin VB.Form frmPlayer
       Height          =   210
       Index           =   0
       Left            =   23160
-      Picture         =   "frmPlayer.frx":8075
+      Picture         =   "frmPlayer.frx":8049
       Stretch         =   -1  'True
       Top             =   4845
       Width           =   210
@@ -3302,7 +3310,6 @@ Sub ClearButtons()
    
    GetTotalTime
    
-   
 End Sub
 
 Sub ShowButtonPlayArea(bShow As Boolean)
@@ -3318,7 +3325,6 @@ Sub ShowButtonPlayArea(bShow As Boolean)
          End If
      End If
    Next i
-   
    
 End Sub
 
@@ -8470,7 +8476,7 @@ Private Sub TimerP1Level_Timer()
    Dim LevelAve As Single
    Dim LeftChan As Integer
    Dim RightChan As Integer
-   Dim Levels As Single
+   Dim levels As Single
    Dim dB As Integer
    
    On Error Resume Next
@@ -8850,7 +8856,7 @@ Private Sub TimerP2Level_Timer()
    
    On Error Resume Next
    
-   Dim Levels As Single
+   Dim levels As Single
    
    LevelInd = BASS_ChannelGetLevel(chan(2))
    LeftChan = Round(LoWord(LevelInd) * iVol2)
