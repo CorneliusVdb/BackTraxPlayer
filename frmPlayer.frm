@@ -6307,6 +6307,8 @@ Sub ResetButton(Index As Integer, Optional Stopped As Boolean)
    lblStream(Index).Tag = ""
    lblStream(Index).Visible = False
    
+   Closevolume  'Make sure we close the Volume panel as well
+   
    imgVol(Index).Visible = sspVol.Left = 22000 'True
 '   If imgVol(Index).Visible = False And sspVol.Left = 22000 Then Closevolume
    
